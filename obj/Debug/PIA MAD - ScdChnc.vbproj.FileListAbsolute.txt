@@ -1,0 +1,14 @@
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.exe.config
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.exe
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.pdb
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.xml
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbprojAssemblyReference.cache
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Resources.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbproj.GenerateResource.cache
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.exe
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.xml
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.pdb
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAdminGen.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormEmplGen.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormClienteGen.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormLogin.resources
