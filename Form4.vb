@@ -1,4 +1,4 @@
-﻿Public Class Form4
+﻿Public Class FormAbcEmpl
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
