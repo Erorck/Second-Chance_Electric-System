@@ -25,16 +25,15 @@ Partial Class Form5
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -57,13 +56,14 @@ Partial Class Form5
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -81,6 +81,12 @@ Partial Class Form5
         Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         Me.EmpleadosToolStripMenuItem.Visible = False
+        '
+        'RecibosToolStripMenuItem
+        '
+        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
+        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'ClientesToolStripMenuItem
         '
@@ -100,12 +106,6 @@ Partial Class Form5
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
         Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
-        '
-        'RecibosToolStripMenuItem
-        '
-        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'ReportesToolStripMenuItem
         '
@@ -137,16 +137,6 @@ Partial Class Form5
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(97, 573)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(175, 33)
-        Me.Button2.TabIndex = 52
-        Me.Button2.Text = "Guardar/Registrar"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -333,14 +323,6 @@ Partial Class Form5
         Me.TextBox1.Size = New System.Drawing.Size(252, 20)
         Me.TextBox1.TabIndex = 30
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(341, 36)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(379, 570)
-        Me.DataGridView1.TabIndex = 29
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -374,18 +356,49 @@ Partial Class Form5
         Me.TextBox5.Size = New System.Drawing.Size(252, 20)
         Me.TextBox5.TabIndex = 56
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(341, 34)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(378, 563)
+        Me.ListBox1.TabIndex = 58
+        '
+        'Button1
+        '
+        Me.Button1.Enabled = False
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(52, 573)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(77, 33)
+        Me.Button1.TabIndex = 60
+        Me.Button1.Text = "Eliminar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(144, 573)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(175, 33)
+        Me.Button3.TabIndex = 59
+        Me.Button3.Text = "Guardar/Registrar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(732, 618)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ComboBox1)
@@ -408,12 +421,11 @@ Partial Class Form5
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form5"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestión de clientes"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -430,7 +442,6 @@ Partial Class Form5
     Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label13 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents ComboBox1 As ComboBox
@@ -453,9 +464,11 @@ Partial Class Form5
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label14 As Label
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label15 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
 End Class

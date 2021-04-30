@@ -121,7 +121,13 @@
   <data name="Logo_ScdChnc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IMG\Logo_ScdChnc.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="30 Tag Der Toten - Sin titulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IMG\30 Tag Der Toten - Sin titulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alexey-shirokikh-landscape06-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IMG\alexey-shirokikh-landscape06-05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sol blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>IMG\Sol blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

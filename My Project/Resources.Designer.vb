@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _30_Tag_Der_Toten___Sin_titulos() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("30 Tag Der Toten - Sin titulos", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property alexey_shirokikh_landscape06_05() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("alexey-shirokikh-landscape06-05", resourceCulture)
@@ -76,6 +86,16 @@ Namespace My.Resources
         Friend ReadOnly Property Logo_ScdChnc() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Logo_ScdChnc", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Sol_blanco() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Sol blanco", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

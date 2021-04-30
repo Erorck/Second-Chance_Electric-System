@@ -179,5 +179,11 @@
   <ItemGroup>
     <None Include="My Project\IMG\alexey-shirokikh-landscape06-05.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\30 Tag Der Toten - Sin titulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Sol blanco.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

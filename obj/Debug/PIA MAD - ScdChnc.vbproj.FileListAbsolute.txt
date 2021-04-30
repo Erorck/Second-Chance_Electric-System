@@ -12,4 +12,6 @@ C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA 
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormEmplGen.resources
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormClienteGen.resources
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormLogin.resources
-C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form4.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcEmpl.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form5.resources
+C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form6.resources

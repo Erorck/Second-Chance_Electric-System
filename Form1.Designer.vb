@@ -27,12 +27,12 @@ Partial Class FormAdminGen
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,14 +61,20 @@ Partial Class FormAdminGen
         'GestionToolStripMenuItem
         '
         Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GestionToolStripMenuItem.Text = "Gestion"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
+        '
+        'RecibosToolStripMenuItem
+        '
+        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
+        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'ReportesToolStripMenuItem
         '
@@ -83,12 +89,6 @@ Partial Class FormAdminGen
         Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
         Me.CerrarSesiónToolStripMenuItem.Text = "Cuenta"
         '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
-        '
         'CambiarContraseñaToolStripMenuItem
         '
         Me.CambiarContraseñaToolStripMenuItem.Name = "CambiarContraseñaToolStripMenuItem"
@@ -101,11 +101,11 @@ Partial Class FormAdminGen
         Me.CerrarSesiónToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.CerrarSesiónToolStripMenuItem1.Text = "Cerrar sesión"
         '
-        'RecibosToolStripMenuItem
+        'SalirToolStripMenuItem
         '
-        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.RecibosToolStripMenuItem.Text = "Recibos"
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'FormAdminGen
         '

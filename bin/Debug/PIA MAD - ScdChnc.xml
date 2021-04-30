@@ -22,12 +22,22 @@ PIA MAD - ScdChnc
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:PIA_MAD___ScdChnc.My.Resources.Resources._30_Tag_Der_Toten___Sin_titulos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PIA_MAD___ScdChnc.My.Resources.Resources.alexey_shirokikh_landscape06_05">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:PIA_MAD___ScdChnc.My.Resources.Resources.Logo_ScdChnc">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PIA_MAD___ScdChnc.My.Resources.Resources.Sol_blanco">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
