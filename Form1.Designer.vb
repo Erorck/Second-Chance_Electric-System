@@ -27,18 +27,24 @@ Partial Class FormAdminGen
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsumoHistóricoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultaDeReciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestiónTarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestiónConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.RecibosToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -53,7 +59,7 @@ Partial Class FormAdminGen
         '
         'ClientesToolStripMenuItem
         '
-        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.ServiciosToolStripMenuItem})
+        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.GestiónTarifasToolStripMenuItem, Me.GestiónConsumosToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
         Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
@@ -61,23 +67,18 @@ Partial Class FormAdminGen
         'GestionToolStripMenuItem
         '
         Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.GestionToolStripMenuItem.Text = "Gestion"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
-        '
-        'RecibosToolStripMenuItem
-        '
-        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'ReportesToolStripMenuItem
         '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GeneralToolStripMenuItem, Me.ConsumoHistóricoToolStripMenuItem, Me.ConsultaDeReciboToolStripMenuItem, Me.TarifasToolStripMenuItem, Me.ConsumosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
@@ -106,6 +107,48 @@ Partial Class FormAdminGen
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'GeneralToolStripMenuItem
+        '
+        Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+        Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GeneralToolStripMenuItem.Text = "General"
+        '
+        'ConsumoHistóricoToolStripMenuItem
+        '
+        Me.ConsumoHistóricoToolStripMenuItem.Name = "ConsumoHistóricoToolStripMenuItem"
+        Me.ConsumoHistóricoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsumoHistóricoToolStripMenuItem.Text = "Consumo histórico"
+        '
+        'ConsultaDeReciboToolStripMenuItem
+        '
+        Me.ConsultaDeReciboToolStripMenuItem.Name = "ConsultaDeReciboToolStripMenuItem"
+        Me.ConsultaDeReciboToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsultaDeReciboToolStripMenuItem.Text = "Recibos"
+        '
+        'TarifasToolStripMenuItem
+        '
+        Me.TarifasToolStripMenuItem.Name = "TarifasToolStripMenuItem"
+        Me.TarifasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TarifasToolStripMenuItem.Text = "Tarifas"
+        '
+        'ConsumosToolStripMenuItem
+        '
+        Me.ConsumosToolStripMenuItem.Name = "ConsumosToolStripMenuItem"
+        Me.ConsumosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsumosToolStripMenuItem.Text = "Consumos"
+        '
+        'GestiónTarifasToolStripMenuItem
+        '
+        Me.GestiónTarifasToolStripMenuItem.Name = "GestiónTarifasToolStripMenuItem"
+        Me.GestiónTarifasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GestiónTarifasToolStripMenuItem.Text = "Gestión Tarifas"
+        '
+        'GestiónConsumosToolStripMenuItem
+        '
+        Me.GestiónConsumosToolStripMenuItem.Name = "GestiónConsumosToolStripMenuItem"
+        Me.GestiónConsumosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GestiónConsumosToolStripMenuItem.Text = "Gestión Consumos"
         '
         'FormAdminGen
         '
@@ -136,5 +179,11 @@ Partial Class FormAdminGen
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents RecibosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsumoHistóricoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsultaDeReciboToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TarifasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsumosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestiónTarifasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestiónConsumosToolStripMenuItem As ToolStripMenuItem
 End Class

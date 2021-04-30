@@ -23,17 +23,6 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -63,80 +52,25 @@ Partial Class Form5
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestiónTarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestiónConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsumoHistóricoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultaDeReciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.RecibosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.SalirToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(732, 24)
-        Me.MenuStrip1.TabIndex = 53
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'EmpleadosToolStripMenuItem
-        '
-        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
-        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
-        Me.EmpleadosToolStripMenuItem.Visible = False
-        '
-        'RecibosToolStripMenuItem
-        '
-        Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.RecibosToolStripMenuItem.Text = "Recibos"
-        '
-        'ClientesToolStripMenuItem
-        '
-        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.ServiciosToolStripMenuItem})
-        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
-        '
-        'GestionToolStripMenuItem
-        '
-        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.GestionToolStripMenuItem.Text = "Gestion"
-        '
-        'ServiciosToolStripMenuItem
-        '
-        Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.ServiciosToolStripMenuItem.Text = "Servicios"
-        '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'CerrarSesiónToolStripMenuItem
-        '
-        Me.CerrarSesiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CambiarContraseñaToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem1})
-        Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.CerrarSesiónToolStripMenuItem.Text = "Cuenta"
-        '
-        'CambiarContraseñaToolStripMenuItem
-        '
-        Me.CambiarContraseñaToolStripMenuItem.Name = "CambiarContraseñaToolStripMenuItem"
-        Me.CambiarContraseñaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CambiarContraseñaToolStripMenuItem.Text = "Cambiar contraseña"
-        '
-        'CerrarSesiónToolStripMenuItem1
-        '
-        Me.CerrarSesiónToolStripMenuItem1.Name = "CerrarSesiónToolStripMenuItem1"
-        Me.CerrarSesiónToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.CerrarSesiónToolStripMenuItem1.Text = "Cerrar sesión"
-        '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'Label13
         '
@@ -385,12 +319,121 @@ Partial Class Form5
         Me.Button3.Text = "Guardar/Registrar"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(732, 24)
+        Me.MenuStrip1.TabIndex = 61
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'EmpleadosToolStripMenuItem
+        '
+        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
+        '
+        'ClientesToolStripMenuItem
+        '
+        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.GestiónTarifasToolStripMenuItem, Me.GestiónConsumosToolStripMenuItem})
+        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        '
+        'GestionToolStripMenuItem
+        '
+        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestionToolStripMenuItem.Text = "Gestion"
+        '
+        'ServiciosToolStripMenuItem
+        '
+        Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.ServiciosToolStripMenuItem.Text = "Servicios"
+        '
+        'GestiónTarifasToolStripMenuItem
+        '
+        Me.GestiónTarifasToolStripMenuItem.Name = "GestiónTarifasToolStripMenuItem"
+        Me.GestiónTarifasToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestiónTarifasToolStripMenuItem.Text = "Gestión Tarifas"
+        '
+        'GestiónConsumosToolStripMenuItem
+        '
+        Me.GestiónConsumosToolStripMenuItem.Name = "GestiónConsumosToolStripMenuItem"
+        Me.GestiónConsumosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestiónConsumosToolStripMenuItem.Text = "Gestión Consumos"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GeneralToolStripMenuItem, Me.ConsumoHistóricoToolStripMenuItem, Me.ConsultaDeReciboToolStripMenuItem, Me.TarifasToolStripMenuItem, Me.ConsumosToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
+        'GeneralToolStripMenuItem
+        '
+        Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+        Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GeneralToolStripMenuItem.Text = "General"
+        '
+        'ConsumoHistóricoToolStripMenuItem
+        '
+        Me.ConsumoHistóricoToolStripMenuItem.Name = "ConsumoHistóricoToolStripMenuItem"
+        Me.ConsumoHistóricoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsumoHistóricoToolStripMenuItem.Text = "Consumo histórico"
+        '
+        'ConsultaDeReciboToolStripMenuItem
+        '
+        Me.ConsultaDeReciboToolStripMenuItem.Name = "ConsultaDeReciboToolStripMenuItem"
+        Me.ConsultaDeReciboToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsultaDeReciboToolStripMenuItem.Text = "Recibos"
+        '
+        'TarifasToolStripMenuItem
+        '
+        Me.TarifasToolStripMenuItem.Name = "TarifasToolStripMenuItem"
+        Me.TarifasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TarifasToolStripMenuItem.Text = "Tarifas"
+        '
+        'ConsumosToolStripMenuItem
+        '
+        Me.ConsumosToolStripMenuItem.Name = "ConsumosToolStripMenuItem"
+        Me.ConsumosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConsumosToolStripMenuItem.Text = "Consumos"
+        '
+        'CerrarSesiónToolStripMenuItem
+        '
+        Me.CerrarSesiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CambiarContraseñaToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem1})
+        Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
+        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.CerrarSesiónToolStripMenuItem.Text = "Cuenta"
+        '
+        'CambiarContraseñaToolStripMenuItem
+        '
+        Me.CambiarContraseñaToolStripMenuItem.Name = "CambiarContraseñaToolStripMenuItem"
+        Me.CambiarContraseñaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CambiarContraseñaToolStripMenuItem.Text = "Cambiar contraseña"
+        '
+        'CerrarSesiónToolStripMenuItem1
+        '
+        Me.CerrarSesiónToolStripMenuItem1.Name = "CerrarSesiónToolStripMenuItem1"
+        Me.CerrarSesiónToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.CerrarSesiónToolStripMenuItem1.Text = "Cerrar sesión"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(732, 618)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListBox1)
@@ -398,7 +441,6 @@ Partial Class Form5
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ComboBox1)
@@ -430,18 +472,6 @@ Partial Class Form5
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GestionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ServiciosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents RecibosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSesiónToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label13 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents ComboBox1 As ComboBox
@@ -471,4 +501,21 @@ Partial Class Form5
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ServiciosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestiónTarifasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GestiónConsumosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsumoHistóricoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsultaDeReciboToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TarifasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsumosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CerrarSesiónToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
 End Class
