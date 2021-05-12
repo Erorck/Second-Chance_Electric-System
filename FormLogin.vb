@@ -5,7 +5,7 @@
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
         Me.Hide()
-        FormAdminGen.ShowDialog()
+        FormGeneral.ShowDialog()
         Me.Show()
     End Sub
 

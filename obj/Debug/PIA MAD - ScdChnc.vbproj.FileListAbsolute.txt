@@ -15,3 +15,27 @@ C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA 
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcEmpl.resources
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form5.resources
 C:\Users\USUARIO\Documents\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form6.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.exe.config
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.exe
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.pdb
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.xml
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbprojAssemblyReference.cache
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAdminGen.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormEmplGen.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormClienteGen.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcEmpl.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormLogin.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Resources.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbproj.GenerateResource.cache
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbproj.CoreCompileInputs.cache
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.exe
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.xml
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.pdb
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcCliente.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcServ.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcRcb.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormConsulRcb.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcTar.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcCons.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepGeneral.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepConsH.resources
