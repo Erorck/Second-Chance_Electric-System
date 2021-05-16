@@ -68,25 +68,25 @@ Partial Class FormGeneral
         'GestionToolStripMenuItem
         '
         Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GestionToolStripMenuItem.Text = "Gestion"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
         'GestiónTarifasToolStripMenuItem
         '
         Me.GestiónTarifasToolStripMenuItem.Name = "GestiónTarifasToolStripMenuItem"
-        Me.GestiónTarifasToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestiónTarifasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GestiónTarifasToolStripMenuItem.Text = "Gestión Tarifas"
         '
         'GestiónConsumosToolStripMenuItem
         '
         Me.GestiónConsumosToolStripMenuItem.Name = "GestiónConsumosToolStripMenuItem"
-        Me.GestiónConsumosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.GestiónConsumosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GestiónConsumosToolStripMenuItem.Text = "Gestión Consumos"
         '
         'ReportesToolStripMenuItem

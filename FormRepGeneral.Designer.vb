@@ -46,6 +46,7 @@ Partial Class FormRepGeneral
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -218,18 +219,29 @@ Partial Class FormRepGeneral
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(359, 94)
+        Me.Button1.Location = New System.Drawing.Point(306, 89)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 31
         Me.Button1.Text = "Filtrar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(401, 89)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(94, 23)
+        Me.Button2.TabIndex = 41
+        Me.Button2.Text = "Generar PDF"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'FormRepGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label2)
@@ -273,4 +285,5 @@ Partial Class FormRepGeneral
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

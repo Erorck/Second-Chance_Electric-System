@@ -73,22 +73,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormCambiarContra.Designer.vb">
+      <DependentUpon>FormCambiarContra.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="FormCambiarContra.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.vb">
-      <DependentUpon>Form10.vb</DependentUpon>
+    <Compile Include="FormRepCons.Designer.vb">
+      <DependentUpon>FormRepCons.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form10.vb">
+    <Compile Include="FormRepCons.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.vb">
-      <DependentUpon>Form11.vb</DependentUpon>
+    <Compile Include="FormRepTar.Designer.vb">
+      <DependentUpon>FormRepTar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form11.vb">
+    <Compile Include="FormRepTar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneral.Designer.vb">
+      <DependentUpon>FormGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbcCons.Designer.vb">
+      <DependentUpon>FormAbcCons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbcCons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepGeneral.Designer.vb">
+      <DependentUpon>FormRepGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepGeneral.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRepConsH.Designer.vb">
@@ -109,40 +127,40 @@
     <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="FormAbcEmpl.Designer.vb">
+      <DependentUpon>FormAbcEmpl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="FormAbcEmpl.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="FormAbcCliente.Designer.vb">
+      <DependentUpon>FormAbcCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form5.vb">
+    <Compile Include="FormAbcCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.vb">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <Compile Include="FormAbcServ.Designer.vb">
+      <DependentUpon>FormAbcServ.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form6.vb">
+    <Compile Include="FormAbcServ.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.vb">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <Compile Include="FormAbcRcb.Designer.vb">
+      <DependentUpon>FormAbcRcb.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form7.vb">
+    <Compile Include="FormAbcRcb.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.vb">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <Compile Include="FormConsulRcb.Designer.vb">
+      <DependentUpon>FormConsulRcb.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form8.vb">
+    <Compile Include="FormConsulRcb.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.vb">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <Compile Include="FormAbcTar.Designer.vb">
+      <DependentUpon>FormAbcTar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form9.vb">
+    <Compile Include="FormAbcTar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.vb">
@@ -169,14 +187,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FormCambiarContra.resx">
+      <DependentUpon>FormCambiarContra.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.vb</DependentUpon>
+    <EmbeddedResource Include="FormRepCons.resx">
+      <DependentUpon>FormRepCons.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.vb</DependentUpon>
+    <EmbeddedResource Include="FormRepTar.resx">
+      <DependentUpon>FormRepTar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneral.resx">
+      <DependentUpon>FormGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbcCons.resx">
+      <DependentUpon>FormAbcCons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepGeneral.resx">
+      <DependentUpon>FormRepGeneral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRepConsH.resx">
       <DependentUpon>FormRepConsH.vb</DependentUpon>
@@ -187,23 +214,23 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="FormAbcEmpl.resx">
+      <DependentUpon>FormAbcEmpl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <EmbeddedResource Include="FormAbcCliente.resx">
+      <DependentUpon>FormAbcCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <EmbeddedResource Include="FormAbcServ.resx">
+      <DependentUpon>FormAbcServ.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <EmbeddedResource Include="FormAbcRcb.resx">
+      <DependentUpon>FormAbcRcb.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <EmbeddedResource Include="FormConsulRcb.resx">
+      <DependentUpon>FormConsulRcb.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <EmbeddedResource Include="FormAbcTar.resx">
+      <DependentUpon>FormAbcTar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>

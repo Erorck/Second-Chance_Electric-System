@@ -253,6 +253,7 @@ Partial Class FormConsulRcb
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FormConsulRcb"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consulta de Recibos"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)

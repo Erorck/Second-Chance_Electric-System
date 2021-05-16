@@ -20,7 +20,9 @@
     End Sub
 
     Private Sub CambiarContraseñaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CambiarContraseñaToolStripMenuItem.Click
-
+        Me.Hide()
+        FormCambiarContra.ShowDialog()
+        Me.Show()
     End Sub
 
     Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem.Click
@@ -44,7 +46,9 @@
     End Sub
 
     Private Sub TarifasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TarifasToolStripMenuItem.Click
-
+        Me.Hide()
+        FormRepTar.ShowDialog()
+        Me.Show()
     End Sub
 
     Private Sub GestiónTarifasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GestiónTarifasToolStripMenuItem.Click
@@ -68,6 +72,12 @@
     Private Sub ConsumoHistóricoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsumoHistóricoToolStripMenuItem.Click
         Me.Hide()
         FormRepConsH.ShowDialog()
+        Me.Show()
+    End Sub
+
+    Private Sub ConsumosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsumosToolStripMenuItem.Click
+        Me.Hide()
+        FormRepCons.ShowDialog()
         Me.Show()
     End Sub
 End Class

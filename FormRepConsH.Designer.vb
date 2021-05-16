@@ -45,6 +45,7 @@ Partial Class FormRepConsH
         Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -52,7 +53,7 @@ Partial Class FormRepConsH
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(359, 94)
+        Me.Button1.Location = New System.Drawing.Point(305, 89)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 38
@@ -70,7 +71,7 @@ Partial Class FormRepConsH
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(414, 46)
+        Me.Label2.Location = New System.Drawing.Point(388, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(64, 28)
         Me.Label2.TabIndex = 36
@@ -80,7 +81,7 @@ Partial Class FormRepConsH
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(484, 46)
+        Me.ComboBox3.Location = New System.Drawing.Point(458, 46)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(109, 28)
         Me.ComboBox3.TabIndex = 35
@@ -90,7 +91,7 @@ Partial Class FormRepConsH
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(244, 49)
+        Me.Label1.Location = New System.Drawing.Point(218, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 20)
         Me.Label1.TabIndex = 34
@@ -100,7 +101,7 @@ Partial Class FormRepConsH
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(313, 46)
+        Me.ComboBox2.Location = New System.Drawing.Point(287, 46)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(80, 28)
         Me.ComboBox2.TabIndex = 33
@@ -214,11 +215,22 @@ Partial Class FormRepConsH
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(399, 89)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(94, 23)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "Generar PDF"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'FormRepConsH
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
@@ -227,6 +239,7 @@ Partial Class FormRepConsH
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Name = "FormRepConsH"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consumo Histórico"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
@@ -259,4 +272,5 @@ Partial Class FormRepConsH
     Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button2 As Button
 End Class
