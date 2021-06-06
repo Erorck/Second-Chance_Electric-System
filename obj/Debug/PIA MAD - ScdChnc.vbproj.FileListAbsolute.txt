@@ -20,7 +20,6 @@ D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\b
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.pdb
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\PIA MAD - ScdChnc.xml
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbprojAssemblyReference.cache
-D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAdminGen.resources
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormEmplGen.resources
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormClienteGen.resources
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcEmpl.resources
@@ -39,3 +38,10 @@ D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\o
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormAbcCons.resources
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepGeneral.resources
 D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepConsH.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormCambiarContra.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepCons.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormRepTar.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.FormGeneral.resources
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\bin\Debug\FontAwesome.Sharp.dll
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA MAD - ScdChnc.vbproj.CopyComplete
+D:\RESPALDO\ESCUELA\MAD - 001\PIA - Nuevo\PIA MAD\Aplicacion\PIA MAD - ScdChnc\obj\Debug\PIA_MAD___ScdChnc.Form1.resources

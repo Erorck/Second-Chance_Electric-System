@@ -5,11 +5,15 @@
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
         Me.Hide()
-        FormGeneral.ShowDialog()
-        Me.Show()
+        FormAbcEmpl.ShowDialog()
+
     End Sub
 
     Private Sub buttonExit_Click(sender As Object, e As EventArgs) Handles buttonExit.Click
-        Me.Close()
+        Application.Exit()
+    End Sub
+
+    Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

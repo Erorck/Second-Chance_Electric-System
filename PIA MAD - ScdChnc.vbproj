@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormCambiarContra.Designer.vb">
       <DependentUpon>FormCambiarContra.vb</DependentUpon>
     </Compile>
@@ -115,10 +124,10 @@
     <Compile Include="FormRepConsH.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="FormMainEmpl.Designer.vb">
+      <DependentUpon>FormMainEmpl.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="FormMainEmpl.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form3.Designer.vb">
@@ -185,8 +194,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ScdChncDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScdChncDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCambiarContra.resx">
       <DependentUpon>FormCambiarContra.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,8 +225,8 @@
     <EmbeddedResource Include="FormRepConsH.resx">
       <DependentUpon>FormRepConsH.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="FormMainEmpl.resx">
+      <DependentUpon>FormMainEmpl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
@@ -253,6 +270,18 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="ScdChncDataSet.xsc">
+      <DependentUpon>ScdChncDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScdChncDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScdChncDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScdChncDataSet.xss">
+      <DependentUpon>ScdChncDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\IMG\Logo_ScdChnc.bmp" />
@@ -274,6 +303,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\IMG\Nebulosa 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Iconos\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Iconos\maximize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Iconos\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Iconos\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Iconos\person-settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\IMG\Header.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

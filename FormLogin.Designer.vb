@@ -48,18 +48,22 @@ Partial Class FormLogin
         'txtBUser
         '
         Me.txtBUser.Location = New System.Drawing.Point(409, 138)
+        Me.txtBUser.MaxLength = 6
         Me.txtBUser.Name = "txtBUser"
         Me.txtBUser.Size = New System.Drawing.Size(198, 20)
         Me.txtBUser.TabIndex = 1
+        Me.txtBUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtBPass
         '
         Me.txtBPass.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.txtBPass.Location = New System.Drawing.Point(409, 204)
+        Me.txtBPass.MaxLength = 20
         Me.txtBPass.Name = "txtBPass"
         Me.txtBPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtBPass.Size = New System.Drawing.Size(198, 20)
         Me.txtBPass.TabIndex = 3
+        Me.txtBPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
@@ -109,7 +113,7 @@ Partial Class FormLogin
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Logo_ScdChnc
-        Me.PictureBox1.Location = New System.Drawing.Point(-5, -14)
+        Me.PictureBox1.Location = New System.Drawing.Point(-6, -12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(348, 543)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -131,6 +135,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBUser)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio de sesion"
