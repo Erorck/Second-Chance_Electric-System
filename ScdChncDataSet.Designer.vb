@@ -291,6 +291,30 @@ Partial Public Class ScdChncDataSet
         
         Private columnApellido_M As Global.System.Data.DataColumn
         
+        Private columnContraseña As Global.System.Data.DataColumn
+        
+        Private columnEmail As Global.System.Data.DataColumn
+        
+        Private columnCURP As Global.System.Data.DataColumn
+        
+        Private columnDHS As Global.System.Data.DataColumn
+        
+        Private columnDV As Global.System.Data.DataColumn
+        
+        Private columnGenero As Global.System.Data.DataColumn
+        
+        Private columnRFC As Global.System.Data.DataColumn
+        
+        Private columnHomoC As Global.System.Data.DataColumn
+        
+        Private columnF_Nac As Global.System.Data.DataColumn
+        
+        Private columnUsuario_Mod As Global.System.Data.DataColumn
+        
+        Private columnF_Mod As Global.System.Data.DataColumn
+        
+        Private columnEstatus As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -359,6 +383,102 @@ Partial Public Class ScdChncDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ContraseñaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnContraseña
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property EmailColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnEmail
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property CURPColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCURP
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property DHSColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDHS
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property DVColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDV
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property GeneroColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnGenero
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property RFCColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnRFC
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property HomoCColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnHomoC
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property F_NacColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnF_Nac
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Usuario_ModColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnUsuario_Mod
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property F_ModColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnF_Mod
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property EstatusColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnEstatus
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -395,9 +515,9 @@ Partial Public Class ScdChncDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddEmpleadoRow(ByVal Nombre As String, ByVal Apellido_P As String, ByVal Apellido_M As String) As EmpleadoRow
+        Public Overloads Function AddEmpleadoRow(ByVal Nombre As String, ByVal Apellido_P As String, ByVal Apellido_M As String, ByVal Contraseña As String, ByVal Email As String, ByVal CURP As String, ByVal DHS As Byte, ByVal DV As Byte, ByVal Genero As String, ByVal RFC As String, ByVal HomoC As String, ByVal F_Nac As Date, ByVal Usuario_Mod As Short, ByVal F_Mod As Date, ByVal Estatus As String) As EmpleadoRow
             Dim rowEmpleadoRow As EmpleadoRow = CType(Me.NewRow,EmpleadoRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre, Apellido_P, Apellido_M}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre, Apellido_P, Apellido_M, Contraseña, Email, CURP, DHS, DV, Genero, RFC, HomoC, F_Nac, Usuario_Mod, F_Mod, Estatus}
             rowEmpleadoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowEmpleadoRow)
             Return rowEmpleadoRow
@@ -430,6 +550,18 @@ Partial Public Class ScdChncDataSet
             Me.columnNombre = MyBase.Columns("Nombre")
             Me.columnApellido_P = MyBase.Columns("Apellido_P")
             Me.columnApellido_M = MyBase.Columns("Apellido_M")
+            Me.columnContraseña = MyBase.Columns("Contraseña")
+            Me.columnEmail = MyBase.Columns("Email")
+            Me.columnCURP = MyBase.Columns("CURP")
+            Me.columnDHS = MyBase.Columns("DHS")
+            Me.columnDV = MyBase.Columns("DV")
+            Me.columnGenero = MyBase.Columns("Genero")
+            Me.columnRFC = MyBase.Columns("RFC")
+            Me.columnHomoC = MyBase.Columns("HomoC")
+            Me.columnF_Nac = MyBase.Columns("F_Nac")
+            Me.columnUsuario_Mod = MyBase.Columns("Usuario_Mod")
+            Me.columnF_Mod = MyBase.Columns("F_Mod")
+            Me.columnEstatus = MyBase.Columns("Estatus")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -443,6 +575,30 @@ Partial Public Class ScdChncDataSet
             MyBase.Columns.Add(Me.columnApellido_P)
             Me.columnApellido_M = New Global.System.Data.DataColumn("Apellido_M", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnApellido_M)
+            Me.columnContraseña = New Global.System.Data.DataColumn("Contraseña", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnContraseña)
+            Me.columnEmail = New Global.System.Data.DataColumn("Email", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnEmail)
+            Me.columnCURP = New Global.System.Data.DataColumn("CURP", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCURP)
+            Me.columnDHS = New Global.System.Data.DataColumn("DHS", GetType(Byte), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDHS)
+            Me.columnDV = New Global.System.Data.DataColumn("DV", GetType(Byte), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDV)
+            Me.columnGenero = New Global.System.Data.DataColumn("Genero", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnGenero)
+            Me.columnRFC = New Global.System.Data.DataColumn("RFC", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnRFC)
+            Me.columnHomoC = New Global.System.Data.DataColumn("HomoC", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnHomoC)
+            Me.columnF_Nac = New Global.System.Data.DataColumn("F_Nac", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnF_Nac)
+            Me.columnUsuario_Mod = New Global.System.Data.DataColumn("Usuario_Mod", GetType(Short), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnUsuario_Mod)
+            Me.columnF_Mod = New Global.System.Data.DataColumn("F_Mod", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnF_Mod)
+            Me.columnEstatus = New Global.System.Data.DataColumn("Estatus", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnEstatus)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNo_Usuario}, true))
             Me.columnNo_Usuario.AutoIncrement = true
             Me.columnNo_Usuario.AutoIncrementSeed = -1
@@ -456,6 +612,21 @@ Partial Public Class ScdChncDataSet
             Me.columnApellido_P.MaxLength = 25
             Me.columnApellido_M.AllowDBNull = false
             Me.columnApellido_M.MaxLength = 25
+            Me.columnContraseña.AllowDBNull = false
+            Me.columnContraseña.MaxLength = 20
+            Me.columnEmail.MaxLength = 40
+            Me.columnCURP.MaxLength = 18
+            Me.columnDHS.AllowDBNull = false
+            Me.columnDV.AllowDBNull = false
+            Me.columnGenero.AllowDBNull = false
+            Me.columnGenero.MaxLength = 2
+            Me.columnRFC.MaxLength = 13
+            Me.columnHomoC.MaxLength = 3
+            Me.columnF_Nac.AllowDBNull = false
+            Me.columnUsuario_Mod.AllowDBNull = false
+            Me.columnF_Mod.AllowDBNull = false
+            Me.columnEstatus.AllowDBNull = false
+            Me.columnEstatus.MaxLength = 1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -643,6 +814,202 @@ Partial Public Class ScdChncDataSet
                 Me(Me.tableEmpleado.Apellido_MColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Contraseña() As String
+            Get
+                Return CType(Me(Me.tableEmpleado.ContraseñaColumn),String)
+            End Get
+            Set
+                Me(Me.tableEmpleado.ContraseñaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Email() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableEmpleado.EmailColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Email' in table 'Empleado' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableEmpleado.EmailColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property CURP() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableEmpleado.CURPColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'CURP' in table 'Empleado' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableEmpleado.CURPColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property DHS() As Byte
+            Get
+                Return CType(Me(Me.tableEmpleado.DHSColumn),Byte)
+            End Get
+            Set
+                Me(Me.tableEmpleado.DHSColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property DV() As Byte
+            Get
+                Return CType(Me(Me.tableEmpleado.DVColumn),Byte)
+            End Get
+            Set
+                Me(Me.tableEmpleado.DVColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Genero() As String
+            Get
+                Return CType(Me(Me.tableEmpleado.GeneroColumn),String)
+            End Get
+            Set
+                Me(Me.tableEmpleado.GeneroColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property RFC() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableEmpleado.RFCColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'RFC' in table 'Empleado' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableEmpleado.RFCColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property HomoC() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableEmpleado.HomoCColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'HomoC' in table 'Empleado' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableEmpleado.HomoCColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property F_Nac() As Date
+            Get
+                Return CType(Me(Me.tableEmpleado.F_NacColumn),Date)
+            End Get
+            Set
+                Me(Me.tableEmpleado.F_NacColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Usuario_Mod() As Short
+            Get
+                Return CType(Me(Me.tableEmpleado.Usuario_ModColumn),Short)
+            End Get
+            Set
+                Me(Me.tableEmpleado.Usuario_ModColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property F_Mod() As Date
+            Get
+                Return CType(Me(Me.tableEmpleado.F_ModColumn),Date)
+            End Get
+            Set
+                Me(Me.tableEmpleado.F_ModColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Estatus() As String
+            Get
+                Return CType(Me(Me.tableEmpleado.EstatusColumn),String)
+            End Get
+            Set
+                Me(Me.tableEmpleado.EstatusColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsEmailNull() As Boolean
+            Return Me.IsNull(Me.tableEmpleado.EmailColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetEmailNull()
+            Me(Me.tableEmpleado.EmailColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsCURPNull() As Boolean
+            Return Me.IsNull(Me.tableEmpleado.CURPColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetCURPNull()
+            Me(Me.tableEmpleado.CURPColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsRFCNull() As Boolean
+            Return Me.IsNull(Me.tableEmpleado.RFCColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetRFCNull()
+            Me(Me.tableEmpleado.RFCColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsHomoCNull() As Boolean
+            Return Me.IsNull(Me.tableEmpleado.HomoCColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetHomoCNull()
+            Me(Me.tableEmpleado.HomoCColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -815,32 +1182,131 @@ Namespace ScdChncDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Nombre", "Nombre")
             tableMapping.ColumnMappings.Add("Apellido_P", "Apellido_P")
             tableMapping.ColumnMappings.Add("Apellido_M", "Apellido_M")
+            tableMapping.ColumnMappings.Add("Contraseña", "Contraseña")
+            tableMapping.ColumnMappings.Add("Email", "Email")
+            tableMapping.ColumnMappings.Add("CURP", "CURP")
+            tableMapping.ColumnMappings.Add("DHS", "DHS")
+            tableMapping.ColumnMappings.Add("DV", "DV")
+            tableMapping.ColumnMappings.Add("Genero", "Genero")
+            tableMapping.ColumnMappings.Add("RFC", "RFC")
+            tableMapping.ColumnMappings.Add("HomoC", "HomoC")
+            tableMapping.ColumnMappings.Add("F_Nac", "F_Nac")
+            tableMapping.ColumnMappings.Add("Usuario_Mod", "Usuario_Mod")
+            tableMapping.ColumnMappings.Add("F_Mod", "F_Mod")
+            tableMapping.ColumnMappings.Add("Estatus", "Estatus")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Empleado] WHERE (([No_Usuario] = @Original_No_Usuario) AND ([N"& _ 
-                "ombre] = @Original_Nombre) AND ([Apellido_P] = @Original_Apellido_P) AND ([Apell"& _ 
-                "ido_M] = @Original_Apellido_M))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Empleado] WHERE (([No_Usuario] = @Original_No_Usuario) AND ([Nombre]"& _ 
+                " = @Original_Nombre) AND ([Apellido_P] = @Original_Apellido_P) AND ([Apellido_M]"& _ 
+                " = @Original_Apellido_M) AND ((@IsNull_CURP = 1 AND [CURP] IS NULL) OR ([CURP] ="& _ 
+                " @Original_CURP)) AND ([Contraseña] = @Original_Contraseña) AND ([DHS] = @Origin"& _ 
+                "al_DHS) AND ([DV] = @Original_DV) AND ((@IsNull_Email = 1 AND [Email] IS NULL) O"& _ 
+                "R ([Email] = @Original_Email)) AND ([Estatus] = @Original_Estatus) AND ([F_Mod] "& _ 
+                "= @Original_F_Mod) AND ([F_Nac] = @Original_F_Nac) AND ([Genero] = @Original_Gen"& _ 
+                "ero) AND ((@IsNull_HomoC = 1 AND [HomoC] IS NULL) OR ([HomoC] = @Original_HomoC)"& _ 
+                ") AND ((@IsNull_RFC = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ([Usu"& _ 
+                "ario_Mod] = @Original_Usuario_Mod))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_No_Usuario", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "No_Usuario", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Apellido_P", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_P", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Apellido_M", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_M", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CURP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CURP", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Contraseña", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Contraseña", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DHS", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DHS", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DV", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DV", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Email", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Email", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Estatus", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estatus", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_F_Mod", Global.System.Data.SqlDbType.SmallDateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Mod", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_F_Nac", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Nac", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_HomoC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_HomoC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_RFC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_RFC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Usuario_Mod", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Usuario_Mod", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Empleado] ([Nombre], [Apellido_P], [Apellido_M], [CURP], [Contraseña"& _ 
+                "], [DHS], [DV], [Email], [Estatus], [F_Mod], [F_Nac], [Genero], [HomoC], [RFC], "& _ 
+                "[Usuario_Mod]) VALUES (@Nombre, @Apellido_P, @Apellido_M, @CURP, @Contraseña, @D"& _ 
+                "HS, @DV, @Email, @Estatus, @F_Mod, @F_Nac, @Genero, @HomoC, @RFC, @Usuario_Mod);"& _ 
+                ""&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT No_Usuario, Nombre, Apellido_P, Apellido_M, CURP, Contraseña, DHS, DV, "& _ 
+                "Email, Estatus, F_Mod, F_Nac, Genero, HomoC, RFC, Usuario_Mod FROM Empleado WHER"& _ 
+                "E (No_Usuario = SCOPE_IDENTITY())"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Apellido_P", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_P", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Apellido_M", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_M", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CURP", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Contraseña", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Contraseña", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DHS", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DHS", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DV", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DV", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Estatus", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estatus", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@F_Mod", Global.System.Data.SqlDbType.SmallDateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Mod", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@F_Nac", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Nac", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@HomoC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RFC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Usuario_Mod", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Usuario_Mod", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Empleado] SET [Nombre] = @Nombre, [Apellido_P] = @Apellido_P, [Apel"& _ 
-                "lido_M] = @Apellido_M WHERE (([No_Usuario] = @Original_No_Usuario) AND ([Nombre]"& _ 
-                " = @Original_Nombre) AND ([Apellido_P] = @Original_Apellido_P) AND ([Apellido_M]"& _ 
-                " = @Original_Apellido_M));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT No_Usuario, Nombre, Apellido_P, Apellido_M FR"& _ 
-                "OM Empleado WHERE (No_Usuario = @No_Usuario)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Empleado] SET [Nombre] = @Nombre, [Apellido_P] = @Apellido_P, [Apellido_M"& _ 
+                "] = @Apellido_M, [CURP] = @CURP, [Contraseña] = @Contraseña, [DHS] = @DHS, [DV] "& _ 
+                "= @DV, [Email] = @Email, [Estatus] = @Estatus, [F_Mod] = @F_Mod, [F_Nac] = @F_Na"& _ 
+                "c, [Genero] = @Genero, [HomoC] = @HomoC, [RFC] = @RFC, [Usuario_Mod] = @Usuario_"& _ 
+                "Mod WHERE (([No_Usuario] = @Original_No_Usuario) AND ([Nombre] = @Original_Nombr"& _ 
+                "e) AND ([Apellido_P] = @Original_Apellido_P) AND ([Apellido_M] = @Original_Apell"& _ 
+                "ido_M) AND ((@IsNull_CURP = 1 AND [CURP] IS NULL) OR ([CURP] = @Original_CURP)) "& _ 
+                "AND ([Contraseña] = @Original_Contraseña) AND ([DHS] = @Original_DHS) AND ([DV] "& _ 
+                "= @Original_DV) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Orig"& _ 
+                "inal_Email)) AND ([Estatus] = @Original_Estatus) AND ([F_Mod] = @Original_F_Mod)"& _ 
+                " AND ([F_Nac] = @Original_F_Nac) AND ([Genero] = @Original_Genero) AND ((@IsNull"& _ 
+                "_HomoC = 1 AND [HomoC] IS NULL) OR ([HomoC] = @Original_HomoC)) AND ((@IsNull_RF"& _ 
+                "C = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ([Usuario_Mod] = @Origi"& _ 
+                "nal_Usuario_Mod));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT No_Usuario, Nombre, Apellido_P, Apellido_M, CURP, Con"& _ 
+                "traseña, DHS, DV, Email, Estatus, F_Mod, F_Nac, Genero, HomoC, RFC, Usuario_Mod "& _ 
+                "FROM Empleado WHERE (No_Usuario = @No_Usuario)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Apellido_P", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_P", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Apellido_M", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_M", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CURP", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Contraseña", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Contraseña", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DHS", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DHS", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DV", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DV", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Estatus", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estatus", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@F_Mod", Global.System.Data.SqlDbType.SmallDateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Mod", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@F_Nac", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Nac", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@HomoC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RFC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Usuario_Mod", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Usuario_Mod", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_No_Usuario", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "No_Usuario", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Apellido_P", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_P", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Apellido_M", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Apellido_M", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CURP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CURP", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CURP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Contraseña", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Contraseña", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DHS", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DHS", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_DV", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "DV", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Email", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Email", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Email", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Estatus", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estatus", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_F_Mod", Global.System.Data.SqlDbType.SmallDateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Mod", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_F_Nac", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "F_Nac", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_HomoC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_HomoC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "HomoC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_RFC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_RFC", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "RFC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Usuario_Mod", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Usuario_Mod", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@No_Usuario", Global.System.Data.SqlDbType.SmallInt, 2, Global.System.Data.ParameterDirection.Input, 0, 0, "No_Usuario", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
@@ -857,7 +1323,8 @@ Namespace ScdChncDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT No_Usuario, Nombre, Apellido_P, Apellido_M FROM dbo.Empleado"
+            Me._commandCollection(0).CommandText = "SELECT No_Usuario, Nombre, Apellido_P, Apellido_M, CURP, Contraseña, DHS, DV, Ema"& _ 
+                "il, Estatus, F_Mod, F_Nac, Genero, HomoC, RFC, Usuario_Mod FROM Empleado"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -917,7 +1384,23 @@ Namespace ScdChncDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_No_Usuario As Short, ByVal Original_Nombre As String, ByVal Original_Apellido_P As String, ByVal Original_Apellido_M As String) As Integer
+        Public Overloads Overridable Function Delete( _
+                    ByVal Original_No_Usuario As Short,  _
+                    ByVal Original_Nombre As String,  _
+                    ByVal Original_Apellido_P As String,  _
+                    ByVal Original_Apellido_M As String,  _
+                    ByVal Original_CURP As String,  _
+                    ByVal Original_Contraseña As String,  _
+                    ByVal Original_DHS As Byte,  _
+                    ByVal Original_DV As Byte,  _
+                    ByVal Original_Email As String,  _
+                    ByVal Original_Estatus As String,  _
+                    ByVal Original_F_Mod As Date,  _
+                    ByVal Original_F_Nac As Date,  _
+                    ByVal Original_Genero As String,  _
+                    ByVal Original_HomoC As String,  _
+                    ByVal Original_RFC As String,  _
+                    ByVal Original_Usuario_Mod As Short) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_No_Usuario,Short)
             If (Original_Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Nombre")
@@ -934,6 +1417,54 @@ Namespace ScdChncDataSetTableAdapters
             Else
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Apellido_M,String)
             End If
+            If (Original_CURP Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_CURP,String)
+            End If
+            If (Original_Contraseña Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Contraseña")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Contraseña,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_DHS,Byte)
+            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_DV,Byte)
+            If (Original_Email Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_Email,String)
+            End If
+            If (Original_Estatus Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Estatus")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(Original_Estatus,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_F_Mod,Date)
+            Me.Adapter.DeleteCommand.Parameters(13).Value = CType(Original_F_Nac,Date)
+            If (Original_Genero Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Genero")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_Genero,String)
+            End If
+            If (Original_HomoC Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_HomoC,String)
+            End If
+            If (Original_RFC Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_RFC,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(19).Value = CType(Original_Usuario_Mod,Short)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -952,8 +1483,115 @@ Namespace ScdChncDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal Nombre As String, ByVal Apellido_P As String, ByVal Apellido_M As String, ByVal CURP As String, ByVal Contraseña As String, ByVal DHS As Byte, ByVal DV As Byte, ByVal Email As String, ByVal Estatus As String, ByVal F_Mod As Date, ByVal F_Nac As Date, ByVal Genero As String, ByVal HomoC As String, ByVal RFC As String, ByVal Usuario_Mod As Short) As Integer
+            If (Nombre Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Nombre")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Nombre,String)
+            End If
+            If (Apellido_P Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Apellido_P")
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Apellido_P,String)
+            End If
+            If (Apellido_M Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Apellido_M")
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Apellido_M,String)
+            End If
+            If (CURP Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(CURP,String)
+            End If
+            If (Contraseña Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Contraseña")
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(Contraseña,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(DHS,Byte)
+            Me.Adapter.InsertCommand.Parameters(6).Value = CType(DV,Byte)
+            If (Email Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Email,String)
+            End If
+            If (Estatus Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Estatus")
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Estatus,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(9).Value = CType(F_Mod,Date)
+            Me.Adapter.InsertCommand.Parameters(10).Value = CType(F_Nac,Date)
+            If (Genero Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Genero")
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(Genero,String)
+            End If
+            If (HomoC Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(HomoC,String)
+            End If
+            If (RFC Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(13).Value = CType(RFC,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(14).Value = CType(Usuario_Mod,Short)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Nombre As String, ByVal Apellido_P As String, ByVal Apellido_M As String, ByVal Original_No_Usuario As Short, ByVal Original_Nombre As String, ByVal Original_Apellido_P As String, ByVal Original_Apellido_M As String, ByVal No_Usuario As Short) As Integer
+        Public Overloads Overridable Function Update( _
+                    ByVal Nombre As String,  _
+                    ByVal Apellido_P As String,  _
+                    ByVal Apellido_M As String,  _
+                    ByVal CURP As String,  _
+                    ByVal Contraseña As String,  _
+                    ByVal DHS As Byte,  _
+                    ByVal DV As Byte,  _
+                    ByVal Email As String,  _
+                    ByVal Estatus As String,  _
+                    ByVal F_Mod As Date,  _
+                    ByVal F_Nac As Date,  _
+                    ByVal Genero As String,  _
+                    ByVal HomoC As String,  _
+                    ByVal RFC As String,  _
+                    ByVal Usuario_Mod As Short,  _
+                    ByVal Original_No_Usuario As Short,  _
+                    ByVal Original_Nombre As String,  _
+                    ByVal Original_Apellido_P As String,  _
+                    ByVal Original_Apellido_M As String,  _
+                    ByVal Original_CURP As String,  _
+                    ByVal Original_Contraseña As String,  _
+                    ByVal Original_DHS As Byte,  _
+                    ByVal Original_DV As Byte,  _
+                    ByVal Original_Email As String,  _
+                    ByVal Original_Estatus As String,  _
+                    ByVal Original_F_Mod As Date,  _
+                    ByVal Original_F_Nac As Date,  _
+                    ByVal Original_Genero As String,  _
+                    ByVal Original_HomoC As String,  _
+                    ByVal Original_RFC As String,  _
+                    ByVal Original_Usuario_Mod As Short,  _
+                    ByVal No_Usuario As Short) As Integer
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
             Else
@@ -969,23 +1607,111 @@ Namespace ScdChncDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Apellido_M,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_No_Usuario,Short)
+            If (CURP Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(CURP,String)
+            End If
+            If (Contraseña Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Contraseña")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Contraseña,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(DHS,Byte)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(DV,Byte)
+            If (Email Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Email,String)
+            End If
+            If (Estatus Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Estatus")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Estatus,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(F_Mod,Date)
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(F_Nac,Date)
+            If (Genero Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Genero")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Genero,String)
+            End If
+            If (HomoC Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(HomoC,String)
+            End If
+            If (RFC Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(RFC,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Usuario_Mod,Short)
+            Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_No_Usuario,Short)
             If (Original_Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Nombre")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_Nombre,String)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_Nombre,String)
             End If
             If (Original_Apellido_P Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Apellido_P")
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_Apellido_P,String)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Apellido_P,String)
             End If
             If (Original_Apellido_M Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Apellido_M")
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_Apellido_M,String)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_Apellido_M,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(No_Usuario,Short)
+            If (Original_CURP Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_CURP,String)
+            End If
+            If (Original_Contraseña Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Contraseña")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Contraseña,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_DHS,Byte)
+            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_DV,Byte)
+            If (Original_Email Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_Email,String)
+            End If
+            If (Original_Estatus Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Estatus")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_Estatus,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_F_Mod,Date)
+            Me.Adapter.UpdateCommand.Parameters(28).Value = CType(Original_F_Nac,Date)
+            If (Original_Genero Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Genero")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Genero,String)
+            End If
+            If (Original_HomoC Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_HomoC,String)
+            End If
+            If (Original_RFC Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_RFC,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(34).Value = CType(Original_Usuario_Mod,Short)
+            Me.Adapter.UpdateCommand.Parameters(35).Value = CType(No_Usuario,Short)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -1005,8 +1731,39 @@ Namespace ScdChncDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Nombre As String, ByVal Apellido_P As String, ByVal Apellido_M As String, ByVal Original_No_Usuario As Short, ByVal Original_Nombre As String, ByVal Original_Apellido_P As String, ByVal Original_Apellido_M As String) As Integer
-            Return Me.Update(Nombre, Apellido_P, Apellido_M, Original_No_Usuario, Original_Nombre, Original_Apellido_P, Original_Apellido_M, Original_No_Usuario)
+        Public Overloads Overridable Function Update( _
+                    ByVal Nombre As String,  _
+                    ByVal Apellido_P As String,  _
+                    ByVal Apellido_M As String,  _
+                    ByVal CURP As String,  _
+                    ByVal Contraseña As String,  _
+                    ByVal DHS As Byte,  _
+                    ByVal DV As Byte,  _
+                    ByVal Email As String,  _
+                    ByVal Estatus As String,  _
+                    ByVal F_Mod As Date,  _
+                    ByVal F_Nac As Date,  _
+                    ByVal Genero As String,  _
+                    ByVal HomoC As String,  _
+                    ByVal RFC As String,  _
+                    ByVal Usuario_Mod As Short,  _
+                    ByVal Original_No_Usuario As Short,  _
+                    ByVal Original_Nombre As String,  _
+                    ByVal Original_Apellido_P As String,  _
+                    ByVal Original_Apellido_M As String,  _
+                    ByVal Original_CURP As String,  _
+                    ByVal Original_Contraseña As String,  _
+                    ByVal Original_DHS As Byte,  _
+                    ByVal Original_DV As Byte,  _
+                    ByVal Original_Email As String,  _
+                    ByVal Original_Estatus As String,  _
+                    ByVal Original_F_Mod As Date,  _
+                    ByVal Original_F_Nac As Date,  _
+                    ByVal Original_Genero As String,  _
+                    ByVal Original_HomoC As String,  _
+                    ByVal Original_RFC As String,  _
+                    ByVal Original_Usuario_Mod As Short) As Integer
+            Return Me.Update(Nombre, Apellido_P, Apellido_M, CURP, Contraseña, DHS, DV, Email, Estatus, F_Mod, F_Nac, Genero, HomoC, RFC, Usuario_Mod, Original_No_Usuario, Original_Nombre, Original_Apellido_P, Original_Apellido_M, Original_CURP, Original_Contraseña, Original_DHS, Original_DV, Original_Email, Original_Estatus, Original_F_Mod, Original_F_Nac, Original_Genero, Original_HomoC, Original_RFC, Original_Usuario_Mod, Original_No_Usuario)
         End Function
     End Class
     

@@ -97,6 +97,266 @@ PIA MAD - ScdChnc
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Cliente">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Cliente.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Cliente.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Cliente.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.DS_Tabla_Cliente,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.DS_Tabla_Cliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.DS_Tabla_Cliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.DS_Tabla_Cliente)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Consumo">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Consumo.ConsumoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Consumo.ConsumoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Consumo.ConsumoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.ConsumoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.DS_Tabla_Consumo,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.DS_Tabla_Consumo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.DS_Tabla_Consumo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.DS_Tabla_Consumo)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_ConsumoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Cliente">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Cliente.All_ClientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Cliente.All_ClientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Cliente.All_ClientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.All_ClientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.DS_Vista_Cliente,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.DS_Vista_Cliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.DS_Vista_Cliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.DS_Vista_Cliente)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Consumo">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Consumo.All_ConsumptionsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Consumo.All_ConsumptionsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_Consumo.All_ConsumptionsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.All_ConsumptionsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.DS_Vista_Consumo,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.DS_Vista_Consumo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.DS_Vista_Consumo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.DS_Vista_Consumo)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Vista_ConsumoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 <member name="T:PIA_MAD___ScdChnc.ScdChncDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.
@@ -158,6 +418,136 @@ Update Order Option
 </summary>
 </member>
 <member name="T:PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1.All_EmployeesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1.All_EmployeesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1.All_EmployeesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.All_EmployeesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.ScdChncDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.ScdChncDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.ScdChncDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.ScdChncDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2.All_ClientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2.All_ClientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2.All_ClientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.All_ClientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.ScdChncDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.ScdChncDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.ScdChncDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.ScdChncDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.ScdChncDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

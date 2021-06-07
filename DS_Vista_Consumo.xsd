@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Vista_Consumo" targetNamespace="http://tempuri.org/DS_Vista_Consumo.xsd" xmlns:mstns="http://tempuri.org/DS_Vista_Consumo.xsd" xmlns="http://tempuri.org/DS_Vista_Consumo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ScdChncConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ScdChncConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PIA_MAD___ScdChnc.My.MySettings.GlobalReference.Default.ScdChncConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="All ConsumptionsTableAdapter" GeneratorDataComponentClassName="All_ConsumptionsTableAdapter" Name="All Consumptions" UserDataComponentName="All ConsumptionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ScdChncConnectionString (MySettings)" DbObjectName="ScdChnc.dbo.[All Consumptions]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Numero_Consumo, Numero_Mes, Mes, Año, Servicio, Numero_Servicio, Tipo, Consumo_Basico, Consumo_Intermedio, Consumo_Excedente, Modificado_por, Fecha_modificacion, Estado FROM dbo.[All Consumptions]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Numero_Consumo" DataSetColumn="Numero_Consumo" />
+              <Mapping SourceColumn="Numero_Mes" DataSetColumn="Numero_Mes" />
+              <Mapping SourceColumn="Mes" DataSetColumn="Mes" />
+              <Mapping SourceColumn="Año" DataSetColumn="Año" />
+              <Mapping SourceColumn="Servicio" DataSetColumn="Servicio" />
+              <Mapping SourceColumn="Numero_Servicio" DataSetColumn="Numero_Servicio" />
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+              <Mapping SourceColumn="Consumo_Basico" DataSetColumn="Consumo_Basico" />
+              <Mapping SourceColumn="Consumo_Intermedio" DataSetColumn="Consumo_Intermedio" />
+              <Mapping SourceColumn="Consumo_Excedente" DataSetColumn="Consumo_Excedente" />
+              <Mapping SourceColumn="Modificado_por" DataSetColumn="Modificado_por" />
+              <Mapping SourceColumn="Fecha_modificacion" DataSetColumn="Fecha_modificacion" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Vista_Consumo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DS_Vista_Consumo" msprop:Generator_UserDSName="DS_Vista_Consumo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="All_x0020_Consumptions" msprop:Generator_TableClassName="All_ConsumptionsDataTable" msprop:Generator_TableVarName="tableAll_Consumptions" msprop:Generator_TablePropName="All_Consumptions" msprop:Generator_RowDeletingName="All_ConsumptionsRowDeleting" msprop:Generator_RowChangingName="All_ConsumptionsRowChanging" msprop:Generator_RowEvHandlerName="All_ConsumptionsRowChangeEventHandler" msprop:Generator_RowDeletedName="All_ConsumptionsRowDeleted" msprop:Generator_UserTableName="All Consumptions" msprop:Generator_RowChangedName="All_ConsumptionsRowChanged" msprop:Generator_RowEvArgName="All_ConsumptionsRowChangeEvent" msprop:Generator_RowClassName="All_ConsumptionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Consumo" msprop:Generator_ColumnVarNameInTable="columnNumero_Consumo" msprop:Generator_ColumnPropNameInRow="Numero_Consumo" msprop:Generator_ColumnPropNameInTable="Numero_ConsumoColumn" msprop:Generator_UserColumnName="Numero_Consumo" type="xs:int" />
+              <xs:element name="Numero_Mes" msprop:Generator_ColumnVarNameInTable="columnNumero_Mes" msprop:Generator_ColumnPropNameInRow="Numero_Mes" msprop:Generator_ColumnPropNameInTable="Numero_MesColumn" msprop:Generator_UserColumnName="Numero_Mes" type="xs:unsignedByte" />
+              <xs:element name="Mes" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:short" />
+              <xs:element name="Servicio" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnServicio" msprop:Generator_ColumnPropNameInRow="Servicio" msprop:Generator_ColumnPropNameInTable="ServicioColumn" msprop:Generator_UserColumnName="Servicio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="94" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Servicio" msprop:Generator_ColumnVarNameInTable="columnNumero_Servicio" msprop:Generator_ColumnPropNameInRow="Numero_Servicio" msprop:Generator_ColumnPropNameInTable="Numero_ServicioColumn" msprop:Generator_UserColumnName="Numero_Servicio" type="xs:int" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Consumo_Basico" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsumo_Basico" msprop:Generator_ColumnPropNameInRow="Consumo_Basico" msprop:Generator_ColumnPropNameInTable="Consumo_BasicoColumn" msprop:Generator_UserColumnName="Consumo_Basico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Consumo_Intermedio" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsumo_Intermedio" msprop:Generator_ColumnPropNameInRow="Consumo_Intermedio" msprop:Generator_ColumnPropNameInTable="Consumo_IntermedioColumn" msprop:Generator_UserColumnName="Consumo_Intermedio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Consumo_Excedente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConsumo_Excedente" msprop:Generator_ColumnPropNameInRow="Consumo_Excedente" msprop:Generator_ColumnPropNameInTable="Consumo_ExcedenteColumn" msprop:Generator_UserColumnName="Consumo_Excedente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Modificado_por" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnModificado_por" msprop:Generator_ColumnPropNameInRow="Modificado_por" msprop:Generator_ColumnPropNameInTable="Modificado_porColumn" msprop:Generator_UserColumnName="Modificado_por" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_modificacion" msprop:Generator_ColumnVarNameInTable="columnFecha_modificacion" msprop:Generator_ColumnPropNameInRow="Fecha_modificacion" msprop:Generator_ColumnPropNameInTable="Fecha_modificacionColumn" msprop:Generator_UserColumnName="Fecha_modificacion" type="xs:dateTime" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

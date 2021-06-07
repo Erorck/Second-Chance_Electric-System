@@ -5,7 +5,7 @@
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
         Me.Hide()
-        FormAbcEmpl.ShowDialog()
+        FormEmplGen.ShowDialog()
 
     End Sub
 

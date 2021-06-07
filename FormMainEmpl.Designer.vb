@@ -24,26 +24,27 @@ Partial Class FormEmplGen
     Private Sub InitializeComponent()
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
-        Me.PanelMenu = New System.Windows.Forms.Panel()
-        Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
-        Me.btnClientes = New System.Windows.Forms.Button()
-        Me.btnReportes = New System.Windows.Forms.Button()
-        Me.btnCuenta = New System.Windows.Forms.Button()
-        Me.btnEmpleados = New System.Windows.Forms.Button()
-        Me.PanelHeader = New System.Windows.Forms.Panel()
         Me.Logo = New System.Windows.Forms.PictureBox()
+        Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.PanelHeader = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnCuenta = New System.Windows.Forms.Button()
+        Me.btnReportes = New System.Windows.Forms.Button()
+        Me.btnClientes = New System.Windows.Forms.Button()
+        Me.btnEmpleados = New System.Windows.Forms.Button()
+        Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
+        Me.btnConsumos = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
-        Me.PanelMenu.SuspendLayout()
-        Me.PanelBarraTitulo.SuspendLayout()
-        Me.PanelHeader.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelMenu.SuspendLayout()
+        Me.PanelHeader.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelBarraTitulo.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,9 +73,21 @@ Partial Class FormEmplGen
         Me.PanelFormularios.Size = New System.Drawing.Size(850, 660)
         Me.PanelFormularios.TabIndex = 2
         '
+        'Logo
+        '
+        Me.Logo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Logo.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Logo
+        Me.Logo.Location = New System.Drawing.Point(0, 0)
+        Me.Logo.Name = "Logo"
+        Me.Logo.Size = New System.Drawing.Size(850, 660)
+        Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Logo.TabIndex = 0
+        Me.Logo.TabStop = False
+        '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.DarkCyan
+        Me.PanelMenu.Controls.Add(Me.btnConsumos)
         Me.PanelMenu.Controls.Add(Me.PanelHeader)
         Me.PanelMenu.Controls.Add(Me.btnCuenta)
         Me.PanelMenu.Controls.Add(Me.btnReportes)
@@ -85,6 +98,96 @@ Partial Class FormEmplGen
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(250, 660)
         Me.PanelMenu.TabIndex = 1
+        '
+        'PanelHeader
+        '
+        Me.PanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(13, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.PanelHeader.Controls.Add(Me.PictureBox1)
+        Me.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelHeader.Location = New System.Drawing.Point(0, 0)
+        Me.PanelHeader.Name = "PanelHeader"
+        Me.PanelHeader.Size = New System.Drawing.Size(250, 140)
+        Me.PanelHeader.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Header
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(223, 109)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'btnCuenta
+        '
+        Me.btnCuenta.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnCuenta.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCuenta.FlatAppearance.BorderSize = 0
+        Me.btnCuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCuenta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCuenta.Location = New System.Drawing.Point(0, 290)
+        Me.btnCuenta.Name = "btnCuenta"
+        Me.btnCuenta.Size = New System.Drawing.Size(250, 40)
+        Me.btnCuenta.TabIndex = 3
+        Me.btnCuenta.Text = "Cuenta"
+        Me.btnCuenta.UseVisualStyleBackColor = False
+        '
+        'btnReportes
+        '
+        Me.btnReportes.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReportes.FlatAppearance.BorderSize = 0
+        Me.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReportes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReportes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnReportes.Location = New System.Drawing.Point(0, 240)
+        Me.btnReportes.Name = "btnReportes"
+        Me.btnReportes.Size = New System.Drawing.Size(250, 40)
+        Me.btnReportes.TabIndex = 2
+        Me.btnReportes.Text = "Reportes"
+        Me.btnReportes.UseVisualStyleBackColor = False
+        '
+        'btnClientes
+        '
+        Me.btnClientes.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClientes.FlatAppearance.BorderSize = 0
+        Me.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClientes.Location = New System.Drawing.Point(0, 190)
+        Me.btnClientes.Name = "btnClientes"
+        Me.btnClientes.Size = New System.Drawing.Size(250, 40)
+        Me.btnClientes.TabIndex = 1
+        Me.btnClientes.Text = "Clientes"
+        Me.btnClientes.UseVisualStyleBackColor = False
+        '
+        'btnEmpleados
+        '
+        Me.btnEmpleados.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEmpleados.FlatAppearance.BorderSize = 0
+        Me.btnEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmpleados.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEmpleados.Location = New System.Drawing.Point(0, 140)
+        Me.btnEmpleados.Name = "btnEmpleados"
+        Me.btnEmpleados.Size = New System.Drawing.Size(250, 40)
+        Me.btnEmpleados.TabIndex = 0
+        Me.btnEmpleados.Text = "Empleados"
+        Me.btnEmpleados.UseVisualStyleBackColor = False
         '
         'PanelBarraTitulo
         '
@@ -98,107 +201,6 @@ Partial Class FormEmplGen
         Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
         Me.PanelBarraTitulo.Size = New System.Drawing.Size(1100, 40)
         Me.PanelBarraTitulo.TabIndex = 0
-        '
-        'btnClientes
-        '
-        Me.btnClientes.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClientes.FlatAppearance.BorderSize = 0
-        Me.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClientes.Location = New System.Drawing.Point(0, 204)
-        Me.btnClientes.Name = "btnClientes"
-        Me.btnClientes.Size = New System.Drawing.Size(250, 40)
-        Me.btnClientes.TabIndex = 1
-        Me.btnClientes.Text = "Clientes"
-        Me.btnClientes.UseVisualStyleBackColor = False
-        '
-        'btnReportes
-        '
-        Me.btnReportes.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReportes.FlatAppearance.BorderSize = 0
-        Me.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReportes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReportes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnReportes.Location = New System.Drawing.Point(0, 249)
-        Me.btnReportes.Name = "btnReportes"
-        Me.btnReportes.Size = New System.Drawing.Size(250, 40)
-        Me.btnReportes.TabIndex = 2
-        Me.btnReportes.Text = "Reportes"
-        Me.btnReportes.UseVisualStyleBackColor = False
-        '
-        'btnCuenta
-        '
-        Me.btnCuenta.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnCuenta.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCuenta.FlatAppearance.BorderSize = 0
-        Me.btnCuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCuenta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCuenta.Location = New System.Drawing.Point(0, 294)
-        Me.btnCuenta.Name = "btnCuenta"
-        Me.btnCuenta.Size = New System.Drawing.Size(250, 40)
-        Me.btnCuenta.TabIndex = 3
-        Me.btnCuenta.Text = "Cuenta"
-        Me.btnCuenta.UseVisualStyleBackColor = False
-        '
-        'btnEmpleados
-        '
-        Me.btnEmpleados.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEmpleados.FlatAppearance.BorderSize = 0
-        Me.btnEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEmpleados.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEmpleados.Location = New System.Drawing.Point(0, 159)
-        Me.btnEmpleados.Name = "btnEmpleados"
-        Me.btnEmpleados.Size = New System.Drawing.Size(250, 40)
-        Me.btnEmpleados.TabIndex = 0
-        Me.btnEmpleados.Text = "Empleados"
-        Me.btnEmpleados.UseVisualStyleBackColor = False
-        '
-        'PanelHeader
-        '
-        Me.PanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(13, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.PanelHeader.Controls.Add(Me.PictureBox1)
-        Me.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeader.Location = New System.Drawing.Point(0, 0)
-        Me.PanelHeader.Name = "PanelHeader"
-        Me.PanelHeader.Size = New System.Drawing.Size(250, 140)
-        Me.PanelHeader.TabIndex = 1
-        '
-        'Logo
-        '
-        Me.Logo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Logo.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Logo
-        Me.Logo.Location = New System.Drawing.Point(0, 0)
-        Me.Logo.Name = "Logo"
-        Me.Logo.Size = New System.Drawing.Size(850, 660)
-        Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Logo.TabIndex = 0
-        Me.Logo.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Header
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 15)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(223, 109)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'btnRestaurar
         '
@@ -249,6 +251,23 @@ Partial Class FormEmplGen
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
+        'btnConsumos
+        '
+        Me.btnConsumos.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnConsumos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnConsumos.FlatAppearance.BorderSize = 0
+        Me.btnConsumos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsumos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsumos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsumos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConsumos.Location = New System.Drawing.Point(0, 340)
+        Me.btnConsumos.Name = "btnConsumos"
+        Me.btnConsumos.Size = New System.Drawing.Size(250, 40)
+        Me.btnConsumos.TabIndex = 4
+        Me.btnConsumos.Text = "Consumos"
+        Me.btnConsumos.UseVisualStyleBackColor = False
+        '
         'FormEmplGen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -257,18 +276,18 @@ Partial Class FormEmplGen
         Me.ClientSize = New System.Drawing.Size(1100, 700)
         Me.Controls.Add(Me.PanelContenedor)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MinimumSize = New System.Drawing.Size(1100, 666)
+        Me.MinimumSize = New System.Drawing.Size(370, 420)
         Me.Name = "FormEmplGen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "¡Bienvenido!"
         Me.PanelContenedor.ResumeLayout(False)
         Me.PanelFormularios.ResumeLayout(False)
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMenu.ResumeLayout(False)
+        Me.PanelHeader.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelBarraTitulo.ResumeLayout(False)
         Me.PanelBarraTitulo.PerformLayout()
-        Me.PanelHeader.ResumeLayout(False)
-        CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -292,4 +311,5 @@ Partial Class FormEmplGen
     Friend WithEvents Logo As PictureBox
     Friend WithEvents PanelHeader As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnConsumos As Button
 End Class
