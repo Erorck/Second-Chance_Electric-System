@@ -23,46 +23,43 @@ Partial Class FormAbcCliente
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DVLabel As System.Windows.Forms.Label
         Dim DHSLabel As System.Windows.Forms.Label
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DS_Tabla_Cliente = New PIA_MAD___ScdChnc.DS_Tabla_Cliente()
+        Me.lbFechaMod = New System.Windows.Forms.Label()
+        Me.lbUsuarioMod = New System.Windows.Forms.Label()
+        Me.lbId = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbGenero = New System.Windows.Forms.ComboBox()
         Me.DVTextBox = New System.Windows.Forms.TextBox()
         Me.DHSTextBox = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cbEstado = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.FechaNac = New System.Windows.Forms.DateTimePicker()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.txtApellidoM = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.txtCURP = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtApellidoP = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DS_Tabla_Cliente = New PIA_MAD___ScdChnc.DS_Tabla_Cliente()
-        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.ClienteTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.ClienteTableAdapter()
         Me.TableAdapterManager = New PIA_MAD___ScdChnc.DS_Tabla_ClienteTableAdapters.TableAdapterManager()
         Me.DS_Vista_Cliente = New PIA_MAD___ScdChnc.DS_Vista_Cliente()
@@ -70,21 +67,54 @@ Partial Class FormAbcCliente
         Me.AllClientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.All_ClientsTableAdapter = New PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.All_ClientsTableAdapter()
         Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DomicilioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Domicilio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtDomicilio = New System.Windows.Forms.TextBox()
+        Me.btnHabilitar = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
         DVLabel = New System.Windows.Forms.Label()
         DHSLabel = New System.Windows.Forms.Label()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DS_Tabla_Cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DS_Tabla_Cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DS_Vista_Cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DSVistaClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AllClientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'DVLabel
+        '
+        DVLabel.AutoSize = True
+        DVLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DVLabel.Location = New System.Drawing.Point(118, 351)
+        DVLabel.Name = "DVLabel"
+        DVLabel.Size = New System.Drawing.Size(90, 13)
+        DVLabel.TabIndex = 96
+        DVLabel.Text = "Digito Verificador:"
+        '
+        'DHSLabel
+        '
+        DHSLabel.AutoSize = True
+        DHSLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DHSLabel.Location = New System.Drawing.Point(33, 325)
+        DHSLabel.Name = "DHSLabel"
+        DHSLabel.Size = New System.Drawing.Size(175, 13)
+        DHSLabel.TabIndex = 95
+        DHSLabel.Text = "Diferenciador de Homonima y Siglo:"
         '
         'btnCerrarFormulario
         '
@@ -110,39 +140,40 @@ Partial Class FormAbcCliente
         Me.Label16.TabIndex = 62
         Me.Label16.Text = "Gestión Clientes"
         '
-        'Button2
+        'btnEliminar
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(115, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Enabled = False
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(28, 518)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(77, 33)
-        Me.Button2.TabIndex = 64
-        Me.Button2.Text = "Eliminar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(115, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEliminar.Enabled = False
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.btnEliminar.Location = New System.Drawing.Point(38, 600)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(77, 33)
+        Me.btnEliminar.TabIndex = 64
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnGuardar
         '
-        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(120, 518)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(175, 33)
-        Me.Button4.TabIndex = 63
-        Me.Button4.Text = "Guardar/Registrar"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnGuardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnGuardar.Location = New System.Drawing.Point(121, 561)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(175, 33)
+        Me.btnGuardar.TabIndex = 63
+        Me.btnGuardar.Text = "Guardar/Registrar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'ClienteDataGridView
         '
+        Me.ClienteDataGridView.AllowUserToAddRows = False
         Me.ClienteDataGridView.AllowUserToDeleteRows = False
         Me.ClienteDataGridView.AutoGenerateColumns = False
         Me.ClienteDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
@@ -157,7 +188,7 @@ Partial Class FormAbcCliente
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ClienteDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Usuario, Me.NombreDataGridViewTextBoxColumn, Me.Apellido_P, Me.Apellido_M, Me.DomicilioDataGridViewTextBoxColumn, Me.Estatus})
+        Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Usuario, Me.Nombre, Me.Apellido_P, Me.Apellido_M, Me.Estatus, Me.Contraseña, Me.Email, Me.CURP, Me.DHS, Me.DV, Me.Genero, Me.Domicilio, Me.F_Nac, Me.Usuario_Mod, Me.F_Mod})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
@@ -171,51 +202,59 @@ Partial Class FormAbcCliente
         Me.ClienteDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClienteDataGridView.Location = New System.Drawing.Point(356, 64)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
+        Me.ClienteDataGridView.ReadOnly = True
         Me.ClienteDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.ClienteDataGridView.Size = New System.Drawing.Size(478, 557)
         Me.ClienteDataGridView.TabIndex = 65
         '
-        'Label19
+        'ClienteBindingSource
         '
-        Me.Label19.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label19.AutoSize = True
-        Me.Label19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "F_Mod", True))
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label19.Location = New System.Drawing.Point(152, 484)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(46, 15)
-        Me.Label19.TabIndex = 105
-        Me.Label19.Text = "FECHA"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ClienteBindingSource.DataMember = "Cliente"
+        Me.ClienteBindingSource.DataSource = Me.DS_Tabla_Cliente
         '
-        'Label18
+        'DS_Tabla_Cliente
         '
-        Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label18.AutoSize = True
-        Me.Label18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Usuario_Mod", True))
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label18.Location = New System.Drawing.Point(192, 462)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(97, 15)
-        Me.Label18.TabIndex = 104
-        Me.Label18.Text = "USUARIO_MOD"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DS_Tabla_Cliente.DataSetName = "DS_Tabla_Cliente"
+        Me.DS_Tabla_Cliente.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Label17
+        'lbFechaMod
         '
-        Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label17.AutoSize = True
-        Me.Label17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "No_Usuario", True))
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label17.Location = New System.Drawing.Point(87, 76)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(35, 15)
-        Me.Label17.TabIndex = 103
-        Me.Label17.Text = "1111"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbFechaMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbFechaMod.AutoSize = True
+        Me.lbFechaMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbFechaMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbFechaMod.Location = New System.Drawing.Point(168, 534)
+        Me.lbFechaMod.Name = "lbFechaMod"
+        Me.lbFechaMod.Size = New System.Drawing.Size(46, 15)
+        Me.lbFechaMod.TabIndex = 105
+        Me.lbFechaMod.Text = "FECHA"
+        Me.lbFechaMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbUsuarioMod
+        '
+        Me.lbUsuarioMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbUsuarioMod.AutoSize = True
+        Me.lbUsuarioMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbUsuarioMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbUsuarioMod.Location = New System.Drawing.Point(37, 519)
+        Me.lbUsuarioMod.Name = "lbUsuarioMod"
+        Me.lbUsuarioMod.Size = New System.Drawing.Size(97, 15)
+        Me.lbUsuarioMod.TabIndex = 104
+        Me.lbUsuarioMod.Text = "USUARIO_MOD"
+        Me.lbUsuarioMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbId
+        '
+        Me.lbId.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbId.AutoSize = True
+        Me.lbId.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbId.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbId.Location = New System.Drawing.Point(87, 76)
+        Me.lbId.Name = "lbId"
+        Me.lbId.Size = New System.Drawing.Size(35, 15)
+        Me.lbId.TabIndex = 103
+        Me.lbId.Text = "1111"
+        Me.lbId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label1
         '
@@ -223,92 +262,49 @@ Partial Class FormAbcCliente
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(36, 329)
+        Me.Label1.Location = New System.Drawing.Point(37, 371)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 15)
         Me.Label1.TabIndex = 102
         Me.Label1.Text = "Genero"
         '
-        'ComboBox2
+        'cbGenero
         '
-        Me.ComboBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"MA - MASCULINO", "FE - FEMENINO"})
-        Me.ComboBox2.Location = New System.Drawing.Point(37, 347)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 101
-        '
-        'DVLabel
-        '
-        DVLabel.AutoSize = True
-        DVLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DVLabel.Location = New System.Drawing.Point(117, 309)
-        DVLabel.Name = "DVLabel"
-        DVLabel.Size = New System.Drawing.Size(90, 13)
-        DVLabel.TabIndex = 96
-        DVLabel.Text = "Digito Verificador:"
+        Me.cbGenero.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbGenero.FormattingEnabled = True
+        Me.cbGenero.Items.AddRange(New Object() {"MA - MASCULINO", "FE - FEMENINO"})
+        Me.cbGenero.Location = New System.Drawing.Point(38, 389)
+        Me.cbGenero.Name = "cbGenero"
+        Me.cbGenero.Size = New System.Drawing.Size(115, 21)
+        Me.cbGenero.TabIndex = 101
         '
         'DVTextBox
         '
-        Me.DVTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "DV", True))
-        Me.DVTextBox.Location = New System.Drawing.Point(213, 306)
+        Me.DVTextBox.Location = New System.Drawing.Point(214, 348)
         Me.DVTextBox.MaxLength = 1
         Me.DVTextBox.Name = "DVTextBox"
         Me.DVTextBox.Size = New System.Drawing.Size(26, 20)
         Me.DVTextBox.TabIndex = 99
         Me.DVTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'DHSLabel
-        '
-        DHSLabel.AutoSize = True
-        DHSLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DHSLabel.Location = New System.Drawing.Point(32, 283)
-        DHSLabel.Name = "DHSLabel"
-        DHSLabel.Size = New System.Drawing.Size(175, 13)
-        DHSLabel.TabIndex = 95
-        DHSLabel.Text = "Diferenciador de Homonima y Siglo:"
-        '
         'DHSTextBox
         '
-        Me.DHSTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "DHS", True))
-        Me.DHSTextBox.Location = New System.Drawing.Point(213, 280)
+        Me.DHSTextBox.Location = New System.Drawing.Point(214, 322)
         Me.DHSTextBox.MaxLength = 1
         Me.DHSTextBox.Name = "DHSTextBox"
         Me.DHSTextBox.Size = New System.Drawing.Size(26, 20)
         Me.DHSTextBox.TabIndex = 97
         Me.DHSTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label14
-        '
-        Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label14.Location = New System.Drawing.Point(160, 191)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(125, 15)
-        Me.Label14.TabIndex = 94
-        Me.Label14.Text = "Confirmar contraseña"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Contraseña", True))
-        Me.TextBox5.Location = New System.Drawing.Point(162, 207)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(115, 20)
-        Me.TextBox5.TabIndex = 93
-        '
         'Label13
         '
         Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(36, 484)
+        Me.Label13.Location = New System.Drawing.Point(37, 534)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(117, 15)
+        Me.Label13.Size = New System.Drawing.Size(136, 15)
         Me.Label13.TabIndex = 92
         Me.Label13.Text = "Fecha modificación:"
         '
@@ -316,35 +312,24 @@ Partial Class FormAbcCliente
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(34, 462)
+        Me.Label5.Location = New System.Drawing.Point(35, 504)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(164, 15)
+        Me.Label5.Size = New System.Drawing.Size(193, 15)
         Me.Label5.TabIndex = 91
         Me.Label5.Text = "Ultimo usuario en modificar: "
         '
-        'ComboBox1
+        'cbEstado
         '
-        Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"A - ACTIVO", "S - SUSPENDIDO", "E - ELIMINADO"})
-        Me.ComboBox1.Location = New System.Drawing.Point(37, 427)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 90
-        '
-        'Label12
-        '
-        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(237, 254)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(76, 13)
-        Me.Label12.TabIndex = 89
-        Me.Label12.Text = "Edad: 26 años"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cbEstado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbEstado.Enabled = False
+        Me.cbEstado.FormattingEnabled = True
+        Me.cbEstado.Items.AddRange(New Object() {"A - ACTIVO", "S - SUSPENDIDO", "E - ELIMINADO"})
+        Me.cbEstado.Location = New System.Drawing.Point(38, 469)
+        Me.cbEstado.Name = "cbEstado"
+        Me.cbEstado.Size = New System.Drawing.Size(121, 21)
+        Me.cbEstado.TabIndex = 90
         '
         'Label11
         '
@@ -352,20 +337,19 @@ Partial Class FormAbcCliente
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(36, 234)
+        Me.Label11.Location = New System.Drawing.Point(37, 276)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(122, 15)
         Me.Label11.TabIndex = 88
         Me.Label11.Text = "Fecha de nacimiento"
         '
-        'DateTimePicker1
+        'FechaNac
         '
-        Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DateTimePicker1.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClienteBindingSource, "F_Nac", True))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(38, 250)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(195, 20)
-        Me.DateTimePicker1.TabIndex = 87
+        Me.FechaNac.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.FechaNac.Location = New System.Drawing.Point(39, 292)
+        Me.FechaNac.Name = "FechaNac"
+        Me.FechaNac.Size = New System.Drawing.Size(195, 20)
+        Me.FechaNac.TabIndex = 87
         '
         'Label10
         '
@@ -379,15 +363,14 @@ Partial Class FormAbcCliente
         Me.Label10.TabIndex = 86
         Me.Label10.Text = "Apellido Materno"
         '
-        'TextBox9
+        'txtApellidoM
         '
-        Me.TextBox9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox9.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_M", True))
-        Me.TextBox9.Location = New System.Drawing.Point(180, 165)
-        Me.TextBox9.MaxLength = 25
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox9.TabIndex = 85
+        Me.txtApellidoM.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtApellidoM.Location = New System.Drawing.Point(180, 165)
+        Me.txtApellidoM.MaxLength = 25
+        Me.txtApellidoM.Name = "txtApellidoM"
+        Me.txtApellidoM.Size = New System.Drawing.Size(136, 20)
+        Me.txtApellidoM.TabIndex = 85
         '
         'Label9
         '
@@ -407,7 +390,7 @@ Partial Class FormAbcCliente
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(34, 410)
+        Me.Label6.Location = New System.Drawing.Point(35, 452)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 15)
         Me.Label6.TabIndex = 83
@@ -419,22 +402,22 @@ Partial Class FormAbcCliente
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(164, 329)
+        Me.Label8.Location = New System.Drawing.Point(157, 371)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(41, 15)
         Me.Label8.TabIndex = 80
         Me.Label8.Text = "CURP"
         '
-        'TextBox8
+        'txtCURP
         '
-        Me.TextBox8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "CURP", True))
-        Me.TextBox8.Location = New System.Drawing.Point(167, 348)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox8.TabIndex = 79
-        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtCURP.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtCURP.Enabled = False
+        Me.txtCURP.Location = New System.Drawing.Point(161, 390)
+        Me.txtCURP.Name = "txtCURP"
+        Me.txtCURP.ReadOnly = True
+        Me.txtCURP.Size = New System.Drawing.Size(135, 20)
+        Me.txtCURP.TabIndex = 79
+        Me.txtCURP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
@@ -442,20 +425,19 @@ Partial Class FormAbcCliente
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(34, 371)
+        Me.Label3.Location = New System.Drawing.Point(35, 413)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 15)
         Me.Label3.TabIndex = 78
         Me.Label3.Text = "Email"
         '
-        'TextBox3
+        'txtEmail
         '
-        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Email", True))
-        Me.TextBox3.Location = New System.Drawing.Point(37, 387)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(252, 20)
-        Me.TextBox3.TabIndex = 77
+        Me.txtEmail.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtEmail.Location = New System.Drawing.Point(38, 429)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(176, 20)
+        Me.txtEmail.TabIndex = 77
         '
         'Label4
         '
@@ -469,15 +451,14 @@ Partial Class FormAbcCliente
         Me.Label4.TabIndex = 76
         Me.Label4.Text = "Apellido Paterno"
         '
-        'TextBox4
+        'txtApellidoP
         '
-        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido_P", True))
-        Me.TextBox4.Location = New System.Drawing.Point(38, 165)
-        Me.TextBox4.MaxLength = 25
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox4.TabIndex = 75
+        Me.txtApellidoP.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtApellidoP.Location = New System.Drawing.Point(38, 165)
+        Me.txtApellidoP.MaxLength = 25
+        Me.txtApellidoP.Name = "txtApellidoP"
+        Me.txtApellidoP.Size = New System.Drawing.Size(136, 20)
+        Me.txtApellidoP.TabIndex = 75
         '
         'Label2
         '
@@ -494,13 +475,11 @@ Partial Class FormAbcCliente
         'txtNombre
         '
         Me.txtNombre.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtNombre.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre", True))
         Me.txtNombre.Location = New System.Drawing.Point(38, 122)
         Me.txtNombre.MaxLength = 30
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(175, 20)
         Me.txtNombre.TabIndex = 73
-        Me.txtNombre.Text = "Tu nombre"
         '
         'Label15
         '
@@ -514,24 +493,13 @@ Partial Class FormAbcCliente
         Me.Label15.TabIndex = 72
         Me.Label15.Text = "Contraseña"
         '
-        'TextBox1
+        'txtPass
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Contraseña", True))
-        Me.TextBox1.Location = New System.Drawing.Point(38, 207)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(115, 20)
-        Me.TextBox1.TabIndex = 71
-        '
-        'DS_Tabla_Cliente
-        '
-        Me.DS_Tabla_Cliente.DataSetName = "DS_Tabla_Cliente"
-        Me.DS_Tabla_Cliente.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ClienteBindingSource
-        '
-        Me.ClienteBindingSource.DataMember = "Cliente"
-        Me.ClienteBindingSource.DataSource = Me.DS_Tabla_Cliente
+        Me.txtPass.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPass.Location = New System.Drawing.Point(38, 207)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(115, 20)
+        Me.txtPass.TabIndex = 71
         '
         'ClienteTableAdapter
         '
@@ -570,19 +538,20 @@ Partial Class FormAbcCliente
         Me.No_Usuario.ReadOnly = True
         Me.No_Usuario.Width = 68
         '
-        'NombreDataGridViewTextBoxColumn
+        'Nombre
         '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NombreDataGridViewTextBoxColumn.Width = 69
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 69
         '
         'Apellido_P
         '
         Me.Apellido_P.DataPropertyName = "Apellido_P"
         Me.Apellido_P.HeaderText = "Apellido paterno"
         Me.Apellido_P.Name = "Apellido_P"
+        Me.Apellido_P.ReadOnly = True
         Me.Apellido_P.Width = 99
         '
         'Apellido_M
@@ -590,62 +559,198 @@ Partial Class FormAbcCliente
         Me.Apellido_M.DataPropertyName = "Apellido_M"
         Me.Apellido_M.HeaderText = "Apellido materno"
         Me.Apellido_M.Name = "Apellido_M"
+        Me.Apellido_M.ReadOnly = True
         Me.Apellido_M.Width = 101
-        '
-        'DomicilioDataGridViewTextBoxColumn
-        '
-        Me.DomicilioDataGridViewTextBoxColumn.DataPropertyName = "Domicilio"
-        Me.DomicilioDataGridViewTextBoxColumn.HeaderText = "Domicilio"
-        Me.DomicilioDataGridViewTextBoxColumn.Name = "DomicilioDataGridViewTextBoxColumn"
-        Me.DomicilioDataGridViewTextBoxColumn.Width = 74
         '
         'Estatus
         '
         Me.Estatus.DataPropertyName = "Estatus"
         Me.Estatus.HeaderText = "Estatus"
         Me.Estatus.Name = "Estatus"
+        Me.Estatus.ReadOnly = True
         Me.Estatus.Width = 67
+        '
+        'Contraseña
+        '
+        Me.Contraseña.DataPropertyName = "Contraseña"
+        Me.Contraseña.HeaderText = "Contraseña"
+        Me.Contraseña.Name = "Contraseña"
+        Me.Contraseña.ReadOnly = True
+        Me.Contraseña.Visible = False
+        Me.Contraseña.Width = 86
+        '
+        'Email
+        '
+        Me.Email.DataPropertyName = "Email"
+        Me.Email.HeaderText = "Email"
+        Me.Email.Name = "Email"
+        Me.Email.ReadOnly = True
+        Me.Email.Visible = False
+        Me.Email.Width = 57
+        '
+        'CURP
+        '
+        Me.CURP.DataPropertyName = "CURP"
+        Me.CURP.HeaderText = "CURP"
+        Me.CURP.Name = "CURP"
+        Me.CURP.ReadOnly = True
+        Me.CURP.Visible = False
+        Me.CURP.Width = 62
+        '
+        'DHS
+        '
+        Me.DHS.DataPropertyName = "DHS"
+        Me.DHS.HeaderText = "DHS"
+        Me.DHS.Name = "DHS"
+        Me.DHS.ReadOnly = True
+        Me.DHS.Visible = False
+        Me.DHS.Width = 55
+        '
+        'DV
+        '
+        Me.DV.DataPropertyName = "DV"
+        Me.DV.HeaderText = "DV"
+        Me.DV.Name = "DV"
+        Me.DV.ReadOnly = True
+        Me.DV.Visible = False
+        Me.DV.Width = 47
+        '
+        'Genero
+        '
+        Me.Genero.DataPropertyName = "Genero"
+        Me.Genero.HeaderText = "Genero"
+        Me.Genero.Name = "Genero"
+        Me.Genero.ReadOnly = True
+        Me.Genero.Visible = False
+        Me.Genero.Width = 67
+        '
+        'Domicilio
+        '
+        Me.Domicilio.DataPropertyName = "Domicilio"
+        Me.Domicilio.HeaderText = "Domicilio"
+        Me.Domicilio.Name = "Domicilio"
+        Me.Domicilio.ReadOnly = True
+        Me.Domicilio.Visible = False
+        Me.Domicilio.Width = 74
+        '
+        'F_Nac
+        '
+        Me.F_Nac.DataPropertyName = "F_Nac"
+        Me.F_Nac.HeaderText = "F_Nac"
+        Me.F_Nac.Name = "F_Nac"
+        Me.F_Nac.ReadOnly = True
+        Me.F_Nac.Visible = False
+        Me.F_Nac.Width = 64
+        '
+        'Usuario_Mod
+        '
+        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
+        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
+        Me.Usuario_Mod.Name = "Usuario_Mod"
+        Me.Usuario_Mod.ReadOnly = True
+        Me.Usuario_Mod.Visible = False
+        Me.Usuario_Mod.Width = 95
+        '
+        'F_Mod
+        '
+        Me.F_Mod.DataPropertyName = "F_Mod"
+        Me.F_Mod.HeaderText = "F_Mod"
+        Me.F_Mod.Name = "F_Mod"
+        Me.F_Mod.ReadOnly = True
+        Me.F_Mod.Visible = False
+        Me.F_Mod.Width = 65
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label7.Location = New System.Drawing.Point(37, 238)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(59, 15)
+        Me.Label7.TabIndex = 107
+        Me.Label7.Text = "Domicilio"
+        '
+        'txtDomicilio
+        '
+        Me.txtDomicilio.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtDomicilio.Location = New System.Drawing.Point(39, 253)
+        Me.txtDomicilio.MaxLength = 30
+        Me.txtDomicilio.Name = "txtDomicilio"
+        Me.txtDomicilio.Size = New System.Drawing.Size(175, 20)
+        Me.txtDomicilio.TabIndex = 106
+        '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnHabilitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnHabilitar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHabilitar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHabilitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnHabilitar.Location = New System.Drawing.Point(121, 600)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(77, 33)
+        Me.btnHabilitar.TabIndex = 110
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = False
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(110, Byte), Integer))
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLimpiar.Location = New System.Drawing.Point(38, 561)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(77, 30)
+        Me.btnLimpiar.TabIndex = 109
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'FormAbcCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(860, 776)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label17)
+        Me.ClientSize = New System.Drawing.Size(860, 650)
+        Me.Controls.Add(Me.btnHabilitar)
+        Me.Controls.Add(Me.btnLimpiar)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtDomicilio)
+        Me.Controls.Add(Me.lbFechaMod)
+        Me.Controls.Add(Me.lbUsuarioMod)
+        Me.Controls.Add(Me.lbId)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cbGenero)
         Me.Controls.Add(DVLabel)
         Me.Controls.Add(Me.DVTextBox)
         Me.Controls.Add(DHSLabel)
         Me.Controls.Add(Me.DHSTextBox)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.cbEstado)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.FechaNac)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.txtApellidoM)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.txtCURP)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtApellidoP)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.ClienteDataGridView)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -654,8 +759,8 @@ Partial Class FormAbcCliente
         Me.Text = "Gestión de clientes"
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DS_Tabla_Cliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DS_Tabla_Cliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DS_Vista_Cliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DSVistaClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AllClientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -665,38 +770,35 @@ Partial Class FormAbcCliente
     End Sub
     Friend WithEvents btnCerrarFormulario As PictureBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnGuardar As Button
     Friend WithEvents ClienteDataGridView As DataGridView
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
+    Friend WithEvents lbFechaMod As Label
+    Friend WithEvents lbUsuarioMod As Label
+    Friend WithEvents lbId As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cbGenero As ComboBox
     Friend WithEvents DVTextBox As TextBox
     Friend WithEvents DHSTextBox As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label12 As Label
+    Friend WithEvents cbEstado As ComboBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents FechaNac As DateTimePicker
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents txtApellidoM As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents txtCURP As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtApellidoP As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPass As TextBox
     Friend WithEvents DS_Tabla_Cliente As DS_Tabla_Cliente
     Friend WithEvents ClienteBindingSource As BindingSource
     Friend WithEvents ClienteTableAdapter As DS_Tabla_ClienteTableAdapters.ClienteTableAdapter
@@ -706,9 +808,22 @@ Partial Class FormAbcCliente
     Friend WithEvents AllClientsBindingSource As BindingSource
     Friend WithEvents All_ClientsTableAdapter As DS_Vista_ClienteTableAdapters.All_ClientsTableAdapter
     Friend WithEvents No_Usuario As DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Apellido_P As DataGridViewTextBoxColumn
     Friend WithEvents Apellido_M As DataGridViewTextBoxColumn
-    Friend WithEvents DomicilioDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Estatus As DataGridViewTextBoxColumn
+    Friend WithEvents Contraseña As DataGridViewTextBoxColumn
+    Friend WithEvents Email As DataGridViewTextBoxColumn
+    Friend WithEvents CURP As DataGridViewTextBoxColumn
+    Friend WithEvents DHS As DataGridViewTextBoxColumn
+    Friend WithEvents DV As DataGridViewTextBoxColumn
+    Friend WithEvents Genero As DataGridViewTextBoxColumn
+    Friend WithEvents Domicilio As DataGridViewTextBoxColumn
+    Friend WithEvents F_Nac As DataGridViewTextBoxColumn
+    Friend WithEvents Usuario_Mod As DataGridViewTextBoxColumn
+    Friend WithEvents F_Mod As DataGridViewTextBoxColumn
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtDomicilio As TextBox
+    Friend WithEvents btnHabilitar As Button
+    Friend WithEvents btnLimpiar As Button
 End Class

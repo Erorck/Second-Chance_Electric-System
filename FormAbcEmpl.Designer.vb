@@ -26,10 +26,10 @@ Partial Class FormAbcEmpl
         Dim DHSLabel As System.Windows.Forms.Label
         Dim DVLabel As System.Windows.Forms.Label
         Dim HomoCLabel As System.Windows.Forms.Label
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.EmpleadoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ScdChncDataSet = New PIA_MAD___ScdChnc.ScdChncDataSet()
@@ -57,22 +57,6 @@ Partial Class FormAbcEmpl
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.EmpleadoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HomoC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpleadoTableAdapter = New PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.EmpleadoTableAdapter()
         Me.TableAdapterManager = New PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.TableAdapterManager()
         Me.DHSTextBox = New System.Windows.Forms.TextBox()
@@ -90,6 +74,22 @@ Partial Class FormAbcEmpl
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.btnHabilitar = New System.Windows.Forms.Button()
+        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HomoC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         DHSLabel = New System.Windows.Forms.Label()
         DVLabel = New System.Windows.Forms.Label()
         HomoCLabel = New System.Windows.Forms.Label()
@@ -348,11 +348,11 @@ Partial Class FormAbcEmpl
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label5.Location = New System.Drawing.Point(40, 507)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(164, 15)
+        Me.Label5.Size = New System.Drawing.Size(193, 15)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Ultimo usuario en modificar: "
         '
@@ -360,11 +360,11 @@ Partial Class FormAbcEmpl
         '
         Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(42, 529)
+        Me.Label13.Location = New System.Drawing.Point(41, 538)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(117, 15)
+        Me.Label13.Size = New System.Drawing.Size(136, 15)
         Me.Label13.TabIndex = 25
         Me.Label13.Text = "Fecha modificación:"
         '
@@ -415,29 +415,30 @@ Partial Class FormAbcEmpl
         '
         Me.EmpleadoDataGridView.AllowUserToAddRows = False
         Me.EmpleadoDataGridView.AllowUserToDeleteRows = False
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.EmpleadoDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.EmpleadoDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.EmpleadoDataGridView.AutoGenerateColumns = False
+        Me.EmpleadoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.EmpleadoDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.EmpleadoDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.EmpleadoDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.EmpleadoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.EmpleadoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Usuario, Me.Nombre, Me.Apellido_P, Me.Apellido_M, Me.Contraseña, Me.Email, Me.CURP, Me.DHS, Me.DV, Me.Genero, Me.RFC, Me.HomoC, Me.F_Nac, Me.Usuario_Mod, Me.F_Mod, Me.Estatus})
+        Me.EmpleadoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Usuario, Me.Nombre, Me.Apellido_P, Me.Apellido_M, Me.Estatus, Me.Contraseña, Me.Email, Me.CURP, Me.DHS, Me.DV, Me.Genero, Me.RFC, Me.HomoC, Me.F_Nac, Me.Usuario_Mod, Me.F_Mod})
         Me.EmpleadoDataGridView.DataSource = Me.EmpleadoBindingSource
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.EmpleadoDataGridView.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.EmpleadoDataGridView.DefaultCellStyle = DataGridViewCellStyle3
         Me.EmpleadoDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.EmpleadoDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.EmpleadoDataGridView.Location = New System.Drawing.Point(376, 72)
@@ -445,16 +446,175 @@ Partial Class FormAbcEmpl
         Me.EmpleadoDataGridView.Name = "EmpleadoDataGridView"
         Me.EmpleadoDataGridView.ReadOnly = True
         Me.EmpleadoDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(74, Byte), Integer))
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.EmpleadoDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(74, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.EmpleadoDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.EmpleadoDataGridView.Size = New System.Drawing.Size(444, 523)
         Me.EmpleadoDataGridView.TabIndex = 62
+        '
+        'EmpleadoTableAdapter
+        '
+        Me.EmpleadoTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.EmpleadoTableAdapter = Me.EmpleadoTableAdapter
+        Me.TableAdapterManager.UpdateOrder = PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'DHSTextBox
+        '
+        Me.DHSTextBox.Location = New System.Drawing.Point(218, 276)
+        Me.DHSTextBox.MaxLength = 1
+        Me.DHSTextBox.Name = "DHSTextBox"
+        Me.DHSTextBox.Size = New System.Drawing.Size(26, 20)
+        Me.DHSTextBox.TabIndex = 63
+        Me.DHSTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'DVTextBox
+        '
+        Me.DVTextBox.Location = New System.Drawing.Point(218, 302)
+        Me.DVTextBox.MaxLength = 1
+        Me.DVTextBox.Name = "DVTextBox"
+        Me.DVTextBox.Size = New System.Drawing.Size(26, 20)
+        Me.DVTextBox.TabIndex = 64
+        Me.DVTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'HomoCTextBox
+        '
+        Me.HomoCTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.HomoCTextBox.Location = New System.Drawing.Point(45, 387)
+        Me.HomoCTextBox.MaxLength = 3
+        Me.HomoCTextBox.Name = "HomoCTextBox"
+        Me.HomoCTextBox.Size = New System.Drawing.Size(45, 20)
+        Me.HomoCTextBox.TabIndex = 65
+        Me.HomoCTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'cbGenero
+        '
+        Me.cbGenero.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbGenero.FormattingEnabled = True
+        Me.cbGenero.Items.AddRange(New Object() {"MA - MASCULINO", "FE - FEMENINO"})
+        Me.cbGenero.Location = New System.Drawing.Point(42, 343)
+        Me.cbGenero.Name = "cbGenero"
+        Me.cbGenero.Size = New System.Drawing.Size(121, 21)
+        Me.cbGenero.TabIndex = 66
+        '
+        'Label16
+        '
+        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label16.Location = New System.Drawing.Point(41, 325)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(48, 15)
+        Me.Label16.TabIndex = 67
+        Me.Label16.Text = "Genero"
+        '
+        'lbId
+        '
+        Me.lbId.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbId.AutoSize = True
+        Me.lbId.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbId.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbId.Location = New System.Drawing.Point(92, 72)
+        Me.lbId.Name = "lbId"
+        Me.lbId.Size = New System.Drawing.Size(35, 15)
+        Me.lbId.TabIndex = 68
+        Me.lbId.Text = "1111"
+        Me.lbId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbUsuarioMod
+        '
+        Me.lbUsuarioMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbUsuarioMod.AutoSize = True
+        Me.lbUsuarioMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbUsuarioMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbUsuarioMod.Location = New System.Drawing.Point(42, 523)
+        Me.lbUsuarioMod.Name = "lbUsuarioMod"
+        Me.lbUsuarioMod.Size = New System.Drawing.Size(97, 15)
+        Me.lbUsuarioMod.TabIndex = 69
+        Me.lbUsuarioMod.Text = "USUARIO_MOD"
+        Me.lbUsuarioMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'All_EmployeesBindingSource
+        '
+        Me.All_EmployeesBindingSource.DataMember = "All Employees"
+        Me.All_EmployeesBindingSource.DataSource = Me.ScdChncDataSet1
+        '
+        'ScdChncDataSet1
+        '
+        Me.ScdChncDataSet1.DataSetName = "ScdChncDataSet1"
+        Me.ScdChncDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'All_EmployeesTableAdapter
+        '
+        Me.All_EmployeesTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.Connection = Nothing
+        Me.TableAdapterManager1.UpdateOrder = PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'lbFechaMod
+        '
+        Me.lbFechaMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbFechaMod.AutoSize = True
+        Me.lbFechaMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbFechaMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbFechaMod.Location = New System.Drawing.Point(172, 538)
+        Me.lbFechaMod.Name = "lbFechaMod"
+        Me.lbFechaMod.Size = New System.Drawing.Size(46, 15)
+        Me.lbFechaMod.TabIndex = 70
+        Me.lbFechaMod.Text = "FECHA"
+        Me.lbFechaMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(110, Byte), Integer))
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnLimpiar.Location = New System.Drawing.Point(43, 565)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(77, 30)
+        Me.btnLimpiar.TabIndex = 71
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = False
+        '
+        'btnCerrarFormulario
+        '
+        Me.btnCerrarFormulario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrarFormulario.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Close
+        Me.btnCerrarFormulario.Location = New System.Drawing.Point(829, 12)
+        Me.btnCerrarFormulario.Name = "btnCerrarFormulario"
+        Me.btnCerrarFormulario.Size = New System.Drawing.Size(16, 16)
+        Me.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.btnCerrarFormulario.TabIndex = 62
+        Me.btnCerrarFormulario.TabStop = False
+        '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnHabilitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnHabilitar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHabilitar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHabilitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnHabilitar.Location = New System.Drawing.Point(127, 608)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(77, 33)
+        Me.btnHabilitar.TabIndex = 72
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = False
         '
         'No_Usuario
         '
@@ -462,6 +622,7 @@ Partial Class FormAbcEmpl
         Me.No_Usuario.HeaderText = "Usuario"
         Me.No_Usuario.Name = "No_Usuario"
         Me.No_Usuario.ReadOnly = True
+        Me.No_Usuario.Width = 68
         '
         'Nombre
         '
@@ -469,6 +630,7 @@ Partial Class FormAbcEmpl
         Me.Nombre.HeaderText = "Nombre"
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 69
         '
         'Apellido_P
         '
@@ -476,6 +638,7 @@ Partial Class FormAbcEmpl
         Me.Apellido_P.HeaderText = "Apellido paterno"
         Me.Apellido_P.Name = "Apellido_P"
         Me.Apellido_P.ReadOnly = True
+        Me.Apellido_P.Width = 99
         '
         'Apellido_M
         '
@@ -483,6 +646,15 @@ Partial Class FormAbcEmpl
         Me.Apellido_M.HeaderText = "Apellido materno"
         Me.Apellido_M.Name = "Apellido_M"
         Me.Apellido_M.ReadOnly = True
+        Me.Apellido_M.Width = 101
+        '
+        'Estatus
+        '
+        Me.Estatus.DataPropertyName = "Estatus"
+        Me.Estatus.HeaderText = "Estatus"
+        Me.Estatus.Name = "Estatus"
+        Me.Estatus.ReadOnly = True
+        Me.Estatus.Width = 67
         '
         'Contraseña
         '
@@ -571,173 +743,6 @@ Partial Class FormAbcEmpl
         Me.F_Mod.Name = "F_Mod"
         Me.F_Mod.ReadOnly = True
         Me.F_Mod.Visible = False
-        '
-        'Estatus
-        '
-        Me.Estatus.DataPropertyName = "Estatus"
-        Me.Estatus.HeaderText = "Estatus"
-        Me.Estatus.Name = "Estatus"
-        Me.Estatus.ReadOnly = True
-        Me.Estatus.Visible = False
-        '
-        'EmpleadoTableAdapter
-        '
-        Me.EmpleadoTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.EmpleadoTableAdapter = Me.EmpleadoTableAdapter
-        Me.TableAdapterManager.UpdateOrder = PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'DHSTextBox
-        '
-        Me.DHSTextBox.Location = New System.Drawing.Point(218, 276)
-        Me.DHSTextBox.MaxLength = 1
-        Me.DHSTextBox.Name = "DHSTextBox"
-        Me.DHSTextBox.Size = New System.Drawing.Size(26, 20)
-        Me.DHSTextBox.TabIndex = 63
-        Me.DHSTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'DVTextBox
-        '
-        Me.DVTextBox.Location = New System.Drawing.Point(218, 302)
-        Me.DVTextBox.MaxLength = 1
-        Me.DVTextBox.Name = "DVTextBox"
-        Me.DVTextBox.Size = New System.Drawing.Size(26, 20)
-        Me.DVTextBox.TabIndex = 64
-        Me.DVTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'HomoCTextBox
-        '
-        Me.HomoCTextBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.HomoCTextBox.Location = New System.Drawing.Point(45, 387)
-        Me.HomoCTextBox.MaxLength = 3
-        Me.HomoCTextBox.Name = "HomoCTextBox"
-        Me.HomoCTextBox.Size = New System.Drawing.Size(45, 20)
-        Me.HomoCTextBox.TabIndex = 65
-        Me.HomoCTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'cbGenero
-        '
-        Me.cbGenero.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbGenero.FormattingEnabled = True
-        Me.cbGenero.Items.AddRange(New Object() {"MA - MASCULINO", "FE - FEMENINO"})
-        Me.cbGenero.Location = New System.Drawing.Point(42, 343)
-        Me.cbGenero.Name = "cbGenero"
-        Me.cbGenero.Size = New System.Drawing.Size(121, 21)
-        Me.cbGenero.TabIndex = 66
-        '
-        'Label16
-        '
-        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label16.Location = New System.Drawing.Point(41, 325)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(48, 15)
-        Me.Label16.TabIndex = 67
-        Me.Label16.Text = "Genero"
-        '
-        'lbId
-        '
-        Me.lbId.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbId.AutoSize = True
-        Me.lbId.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbId.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbId.Location = New System.Drawing.Point(92, 72)
-        Me.lbId.Name = "lbId"
-        Me.lbId.Size = New System.Drawing.Size(35, 15)
-        Me.lbId.TabIndex = 68
-        Me.lbId.Text = "1111"
-        Me.lbId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lbUsuarioMod
-        '
-        Me.lbUsuarioMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbUsuarioMod.AutoSize = True
-        Me.lbUsuarioMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbUsuarioMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbUsuarioMod.Location = New System.Drawing.Point(198, 507)
-        Me.lbUsuarioMod.Name = "lbUsuarioMod"
-        Me.lbUsuarioMod.Size = New System.Drawing.Size(97, 15)
-        Me.lbUsuarioMod.TabIndex = 69
-        Me.lbUsuarioMod.Text = "USUARIO_MOD"
-        Me.lbUsuarioMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'All_EmployeesBindingSource
-        '
-        Me.All_EmployeesBindingSource.DataMember = "All Employees"
-        Me.All_EmployeesBindingSource.DataSource = Me.ScdChncDataSet1
-        '
-        'ScdChncDataSet1
-        '
-        Me.ScdChncDataSet1.DataSetName = "ScdChncDataSet1"
-        Me.ScdChncDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'All_EmployeesTableAdapter
-        '
-        Me.All_EmployeesTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager1
-        '
-        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager1.Connection = Nothing
-        Me.TableAdapterManager1.UpdateOrder = PIA_MAD___ScdChnc.ScdChncDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'lbFechaMod
-        '
-        Me.lbFechaMod.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbFechaMod.AutoSize = True
-        Me.lbFechaMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbFechaMod.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbFechaMod.Location = New System.Drawing.Point(158, 529)
-        Me.lbFechaMod.Name = "lbFechaMod"
-        Me.lbFechaMod.Size = New System.Drawing.Size(46, 15)
-        Me.lbFechaMod.TabIndex = 70
-        Me.lbFechaMod.Text = "FECHA"
-        Me.lbFechaMod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'btnLimpiar
-        '
-        Me.btnLimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(110, Byte), Integer))
-        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnLimpiar.Location = New System.Drawing.Point(43, 565)
-        Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(77, 30)
-        Me.btnLimpiar.TabIndex = 71
-        Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = False
-        '
-        'btnCerrarFormulario
-        '
-        Me.btnCerrarFormulario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCerrarFormulario.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Close
-        Me.btnCerrarFormulario.Location = New System.Drawing.Point(829, 12)
-        Me.btnCerrarFormulario.Name = "btnCerrarFormulario"
-        Me.btnCerrarFormulario.Size = New System.Drawing.Size(16, 16)
-        Me.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btnCerrarFormulario.TabIndex = 62
-        Me.btnCerrarFormulario.TabStop = False
-        '
-        'btnHabilitar
-        '
-        Me.btnHabilitar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnHabilitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.btnHabilitar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnHabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHabilitar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHabilitar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnHabilitar.Location = New System.Drawing.Point(127, 608)
-        Me.btnHabilitar.Name = "btnHabilitar"
-        Me.btnHabilitar.Size = New System.Drawing.Size(77, 33)
-        Me.btnHabilitar.TabIndex = 72
-        Me.btnHabilitar.Text = "Habilitar"
-        Me.btnHabilitar.UseVisualStyleBackColor = False
         '
         'FormAbcEmpl
         '
@@ -842,10 +847,12 @@ Partial Class FormAbcEmpl
     Friend WithEvents lbFechaMod As Label
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents EmpleadoDataGridView As DataGridView
+    Friend WithEvents btnHabilitar As Button
     Friend WithEvents No_Usuario As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Apellido_P As DataGridViewTextBoxColumn
     Friend WithEvents Apellido_M As DataGridViewTextBoxColumn
+    Friend WithEvents Estatus As DataGridViewTextBoxColumn
     Friend WithEvents Contraseña As DataGridViewTextBoxColumn
     Friend WithEvents Email As DataGridViewTextBoxColumn
     Friend WithEvents CURP As DataGridViewTextBoxColumn
@@ -857,6 +864,4 @@ Partial Class FormAbcEmpl
     Friend WithEvents F_Nac As DataGridViewTextBoxColumn
     Friend WithEvents Usuario_Mod As DataGridViewTextBoxColumn
     Friend WithEvents F_Mod As DataGridViewTextBoxColumn
-    Friend WithEvents Estatus As DataGridViewTextBoxColumn
-    Friend WithEvents btnHabilitar As Button
 End Class

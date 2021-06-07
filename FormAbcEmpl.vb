@@ -172,9 +172,13 @@ Public Class FormAbcEmpl
                 Temp = EmpleadoDataGridView.Rows(i).Cells("Estatus").Value.ToString
                 cbEstado.SelectedValue = Temp
 
-                btnHabilitar.Enabled = True
-                btnEliminar.Enabled = True
-
+                If cbEstado.SelectedValue = "A" Then
+                    btnHabilitar.Enabled = False
+                    btnEliminar.Enabled = True
+                Else
+                    btnHabilitar.Enabled = True
+                    btnEliminar.Enabled = False
+                End If
 
             End If
 
@@ -363,6 +367,7 @@ Public Class FormAbcEmpl
         txtEmail.Clear()
         cbEstado.SelectedIndex = 0
         lbUsuarioMod.Text = ""
+        lbFechaMod.Text = ""
         FechaNac.Value = New Date(1986, 4, 26)
 
         btnHabilitar.Enabled = False
