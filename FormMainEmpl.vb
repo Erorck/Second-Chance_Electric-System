@@ -140,6 +140,26 @@ Public Class FormEmplGen
         btnServicios.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
+    Private Sub btnRepTar_Click(sender As Object, e As EventArgs) Handles btnRepTar.Click
+        AbrirFormEnPanel(Of FormRepTar)()
+        btnRepTar.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
+    Private Sub btnRepCons_Click(sender As Object, e As EventArgs) Handles btnRepCons.Click
+        AbrirFormEnPanel(Of FormRepCons)()
+        btnRepCons.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
+    Private Sub btnRepGeneral_Click(sender As Object, e As EventArgs) Handles btnRepGeneral.Click
+        AbrirFormEnPanel(Of FormRepGeneral)()
+        btnRepGeneral.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
+    Private Sub btnGenRcb_Click(sender As Object, e As EventArgs) Handles btnGenRcb.Click
+        AbrirFormEnPanel(Of FormAbcRcb)()
+        btnGenRcb.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         AbrirFormEnPanel(Of FormAbcEmpl)()
         btnEmpleados.BackColor = Color.FromArgb(26, 50, 54)
@@ -167,6 +187,18 @@ Public Class FormEmplGen
         End If
         If (Application.OpenForms("FormAbcServ") Is Nothing) Then
             btnServicios.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormAbcEmpl") Is Nothing) Then
+            btnRepTar.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormRepCons") Is Nothing) Then
+            btnRepCons.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormRepGeneral") Is Nothing) Then
+            btnRepGeneral.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormAbcRcb") Is Nothing) Then
+            btnGenRcb.BackColor = Color.DarkCyan
         End If
     End Sub
 

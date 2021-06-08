@@ -47,7 +47,9 @@ Public Class FormAbcCons
             connection.Close()
             da.Dispose()
         End Try
+#End Region
 
+#Region "CARGAR COMBOBOX MES"
         Dim typeString As System.Type = System.Type.GetType("System.String")
         Dim typeInt As System.Type = System.Type.GetType("System.Int32")
 
@@ -72,12 +74,11 @@ Public Class FormAbcCons
         cbMes.DisplayMember = "Name"
         cbMes.ValueMember = "Id"
         cbMes.SelectedIndex = -1
-
 #End Region
+
 
         lbUsuarioMod.Text = ""
         lbFechaMod.Text = ""
-
     End Sub
 #End Region
 

@@ -227,6 +227,91 @@ Update Order Option
 Used to sort self-referenced table's rows
 </summary>
 </member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.ReciboDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.All_ReceiptsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.ReciboRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.All_ReceiptsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.ReciboRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_Rcb.All_ReceiptsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.ReciboTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.All_ReceiptsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.UpdateUpdatedRows(PIA_MAD___ScdChnc.DS_Tabla_Rcb,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.UpdateInsertedRows(PIA_MAD___ScdChnc.DS_Tabla_Rcb,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.UpdateDeletedRows(PIA_MAD___ScdChnc.DS_Tabla_Rcb,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.UpdateAll(PIA_MAD___ScdChnc.DS_Tabla_Rcb)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 <member name="T:PIA_MAD___ScdChnc.DS_Tabla_Servicios">
 <summary>
 Represents a strongly typed in-memory cache of data.

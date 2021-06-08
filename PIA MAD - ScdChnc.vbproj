@@ -86,6 +86,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Tabla_Consumo.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Tabla_Rcb.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Tabla_Rcb.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Tabla_Servicios.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -321,6 +326,17 @@
     </None>
     <None Include="DS_Tabla_Consumo.xss">
       <DependentUpon>DS_Tabla_Consumo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Tabla_Rcb.xsc">
+      <DependentUpon>DS_Tabla_Rcb.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Tabla_Rcb.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Tabla_Rcb.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Tabla_Rcb.xss">
+      <DependentUpon>DS_Tabla_Rcb.xsd</DependentUpon>
     </None>
     <None Include="DS_Tabla_Servicios.xsc">
       <DependentUpon>DS_Tabla_Servicios.xsd</DependentUpon>
