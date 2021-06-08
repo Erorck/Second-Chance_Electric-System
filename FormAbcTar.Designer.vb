@@ -23,8 +23,8 @@ Partial Class FormAbcTar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnLimpiar = New System.Windows.Forms.Button()
@@ -113,7 +113,7 @@ Partial Class FormAbcTar
         Me.lbId.AutoSize = True
         Me.lbId.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbId.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbId.Location = New System.Drawing.Point(265, 346)
+        Me.lbId.Location = New System.Drawing.Point(270, 346)
         Me.lbId.Name = "lbId"
         Me.lbId.Size = New System.Drawing.Size(71, 20)
         Me.lbId.TabIndex = 134
@@ -224,7 +224,7 @@ Partial Class FormAbcTar
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(189, 346)
+        Me.Label6.Location = New System.Drawing.Point(194, 346)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 20)
         Me.Label6.TabIndex = 125
@@ -280,27 +280,27 @@ Partial Class FormAbcTar
         Me.TarifaDataViewGrid.AutoGenerateColumns = False
         Me.TarifaDataViewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.TarifaDataViewGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.NullValue = "NULL"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TarifaDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.NullValue = "NULL"
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TarifaDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.TarifaDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TarifaDataViewGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Tarifa, Me.Mes, Me.Año, Me.Tar_B, Me.Tar_I, Me.Tar_E, Me.Tipo, Me.Usuario_Mod, Me.F_Mod})
         Me.TarifaDataViewGrid.DataSource = Me.TarifaBindingSource
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle8.NullValue = "NULL"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TarifaDataViewGrid.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle12.NullValue = "NULL"
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TarifaDataViewGrid.DefaultCellStyle = DataGridViewCellStyle12
         Me.TarifaDataViewGrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.TarifaDataViewGrid.Location = New System.Drawing.Point(25, 76)
         Me.TarifaDataViewGrid.Name = "TarifaDataViewGrid"

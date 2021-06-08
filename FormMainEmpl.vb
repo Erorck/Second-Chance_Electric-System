@@ -107,15 +107,11 @@ Public Class FormEmplGen
             Formulario.BringToFront()
 
         End If
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnCuenta.Click
-        sw = FormCambiarContra.Width + 250
-        sh = FormCambiarContra.Height + 40
-
         AbrirFormEnPanel(Of FormCambiarContra)()
-        Me.MaximumSize = New Size(sw, sh)
-        Me.Size = New Size(sw, sh)
         btnCuenta.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
@@ -137,6 +133,11 @@ Public Class FormEmplGen
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnTarifas.Click
         AbrirFormEnPanel(Of FormAbcTar)()
         btnTarifas.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
+    Private Sub btnServicios_Click(sender As Object, e As EventArgs) Handles btnServicios.Click
+        AbrirFormEnPanel(Of FormAbcServ)()
+        btnServicios.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
@@ -163,6 +164,9 @@ Public Class FormEmplGen
         End If
         If (Application.OpenForms("FormAbcTar") Is Nothing) Then
             btnTarifas.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormAbcServ") Is Nothing) Then
+            btnServicios.BackColor = Color.DarkCyan
         End If
     End Sub
 

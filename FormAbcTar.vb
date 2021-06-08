@@ -307,5 +307,101 @@ Public Class FormAbcTar
         MessageBox.Show(Msg)
         LimpiarRegistro()
     End Sub
+
 #End Region
+
+#Region "Carga masiva"
+    Private Sub btnSubirArchivo_Click(sender As Object, e As EventArgs) Handles btnSubirArchivo.Click
+        Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
+        Dim params(9) As SqlParameter
+        Dim i As String
+        Dim Msg As String
+        Dim Temp As String
+
+        Dim fichero As String
+        Dim dlAbrir As New System.Windows.Forms.OpenFileDialog
+
+        dlAbrir.Filter = "Archivos de Excel (*.xlsx)|*.xlsx|" &
+        "Todos los archivos (*.*)|*.*"
+        dlAbrir.Multiselect = False
+        dlAbrir.CheckFileExists = False
+        dlAbrir.Title = "Selección de fichero"
+        dlAbrir.ShowDialog()
+        If dlAbrir.FileName <> "" Then
+            fichero = dlAbrir.FileName
+            Temp = fichero
+        Else
+            MessageBox.Show("Ruta no encontrada")
+            Return
+        End If
+
+        i = lbId.Text
+
+
+        params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
+        params(0).Value = "INSM"
+
+        params(1) = New SqlParameter("@No_Tarifa", SqlDbType.Int)
+        params(1).Value = Nothing
+
+        params(2) = New SqlParameter("@Mes", SqlDbType.Int)
+        params(2).Value = Nothing
+
+        params(3) = New SqlParameter("@Año", SqlDbType.Int)
+        params(3).Value = Nothing
+
+        params(4) = New SqlParameter("@Tar_B", SqlDbType.Decimal)
+        params(4).Value = Nothing
+
+        params(5) = New SqlParameter("@Tar_I", SqlDbType.Decimal)
+        params(5).Value = Nothing
+
+        params(6) = New SqlParameter("@Tar_E", SqlDbType.Decimal)
+        params(6).Value = Nothing
+
+        params(7) = New SqlParameter("@Tipo", SqlDbType.VarChar)
+        params(7).Value = Nothing
+
+        params(8) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
+        params(8).Value = Nothing
+
+        params(9) = New SqlParameter("@Archivo", SqlDbType.VarChar)
+        params(9).Value = Temp
+
+
+        Dim command As New SqlCommand()
+        command.Connection = connection
+        command.CommandType = CommandType.StoredProcedure
+        command.CommandText = "sp_Tarifa"
+
+        command.Parameters.AddRange(params)
+
+        Try
+            connection.Open()
+
+            command.ExecuteNonQuery()
+
+            connection.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            connection.Close()
+        End Try
+
+
+        With TarifaDataViewGrid
+            'clear out the datasource for the Grid view
+            .DataSource = Nothing
+            'refill the table adapter from the dataset table 
+            Me.TarifaTableAdapter.Fill(Me.DS_Tabla_Tarifa.Tarifa)
+            'reset the datasource from the binding source
+            .DataSource = Me.TarifaBindingSource
+            'should redraw with the new data
+            .Refresh()
+        End With
+
+        LimpiarRegistro()
+    End Sub
+#End Region
+
 End Class

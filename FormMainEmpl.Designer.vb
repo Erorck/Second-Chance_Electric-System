@@ -39,6 +39,7 @@ Partial Class FormEmplGen
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.btnTarifas = New System.Windows.Forms.Button()
+        Me.btnServicios = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +89,7 @@ Partial Class FormEmplGen
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.DarkCyan
+        Me.PanelMenu.Controls.Add(Me.btnServicios)
         Me.PanelMenu.Controls.Add(Me.btnTarifas)
         Me.PanelMenu.Controls.Add(Me.btnConsumos)
         Me.PanelMenu.Controls.Add(Me.PanelHeader)
@@ -109,9 +111,9 @@ Partial Class FormEmplGen
         Me.btnConsumos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnConsumos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnConsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConsumos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsumos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConsumos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnConsumos.Location = New System.Drawing.Point(0, 340)
+        Me.btnConsumos.Location = New System.Drawing.Point(0, 290)
         Me.btnConsumos.Name = "btnConsumos"
         Me.btnConsumos.Size = New System.Drawing.Size(250, 40)
         Me.btnConsumos.TabIndex = 4
@@ -147,9 +149,9 @@ Partial Class FormEmplGen
         Me.btnCuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCuenta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCuenta.Location = New System.Drawing.Point(0, 290)
+        Me.btnCuenta.Location = New System.Drawing.Point(0, 440)
         Me.btnCuenta.Name = "btnCuenta"
         Me.btnCuenta.Size = New System.Drawing.Size(250, 40)
         Me.btnCuenta.TabIndex = 3
@@ -164,9 +166,9 @@ Partial Class FormEmplGen
         Me.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReportes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReportes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReportes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnReportes.Location = New System.Drawing.Point(0, 240)
+        Me.btnReportes.Location = New System.Drawing.Point(0, 390)
         Me.btnReportes.Name = "btnReportes"
         Me.btnReportes.Size = New System.Drawing.Size(250, 40)
         Me.btnReportes.TabIndex = 2
@@ -181,7 +183,7 @@ Partial Class FormEmplGen
         Me.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnClientes.Location = New System.Drawing.Point(0, 190)
         Me.btnClientes.Name = "btnClientes"
@@ -199,7 +201,7 @@ Partial Class FormEmplGen
         Me.btnEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEmpleados.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnEmpleados.Location = New System.Drawing.Point(0, 140)
         Me.btnEmpleados.Name = "btnEmpleados"
@@ -278,14 +280,31 @@ Partial Class FormEmplGen
         Me.btnTarifas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnTarifas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.btnTarifas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTarifas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTarifas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTarifas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnTarifas.Location = New System.Drawing.Point(0, 390)
+        Me.btnTarifas.Location = New System.Drawing.Point(0, 340)
         Me.btnTarifas.Name = "btnTarifas"
         Me.btnTarifas.Size = New System.Drawing.Size(250, 40)
         Me.btnTarifas.TabIndex = 5
         Me.btnTarifas.Text = "Tarifas"
         Me.btnTarifas.UseVisualStyleBackColor = False
+        '
+        'btnServicios
+        '
+        Me.btnServicios.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnServicios.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnServicios.FlatAppearance.BorderSize = 0
+        Me.btnServicios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnServicios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnServicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnServicios.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnServicios.Location = New System.Drawing.Point(0, 240)
+        Me.btnServicios.Name = "btnServicios"
+        Me.btnServicios.Size = New System.Drawing.Size(250, 40)
+        Me.btnServicios.TabIndex = 6
+        Me.btnServicios.Text = "Servicios"
+        Me.btnServicios.UseVisualStyleBackColor = False
         '
         'FormEmplGen
         '
@@ -332,4 +351,5 @@ Partial Class FormEmplGen
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnConsumos As Button
     Friend WithEvents btnTarifas As Button
+    Friend WithEvents btnServicios As Button
 End Class
