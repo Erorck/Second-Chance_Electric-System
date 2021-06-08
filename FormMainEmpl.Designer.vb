@@ -26,6 +26,7 @@ Partial Class FormEmplGen
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.Logo = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnConsumos = New System.Windows.Forms.Button()
         Me.PanelHeader = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCuenta = New System.Windows.Forms.Button()
@@ -37,7 +38,7 @@ Partial Class FormEmplGen
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnConsumos = New System.Windows.Forms.Button()
+        Me.btnTarifas = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +88,7 @@ Partial Class FormEmplGen
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.DarkCyan
+        Me.PanelMenu.Controls.Add(Me.btnTarifas)
         Me.PanelMenu.Controls.Add(Me.btnConsumos)
         Me.PanelMenu.Controls.Add(Me.PanelHeader)
         Me.PanelMenu.Controls.Add(Me.btnCuenta)
@@ -98,6 +100,23 @@ Partial Class FormEmplGen
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(250, 660)
         Me.PanelMenu.TabIndex = 1
+        '
+        'btnConsumos
+        '
+        Me.btnConsumos.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnConsumos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnConsumos.FlatAppearance.BorderSize = 0
+        Me.btnConsumos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsumos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsumos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsumos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConsumos.Location = New System.Drawing.Point(0, 340)
+        Me.btnConsumos.Name = "btnConsumos"
+        Me.btnConsumos.Size = New System.Drawing.Size(250, 40)
+        Me.btnConsumos.TabIndex = 4
+        Me.btnConsumos.Text = "Consumos"
+        Me.btnConsumos.UseVisualStyleBackColor = False
         '
         'PanelHeader
         '
@@ -251,22 +270,22 @@ Partial Class FormEmplGen
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
-        'btnConsumos
+        'btnTarifas
         '
-        Me.btnConsumos.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnConsumos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnConsumos.FlatAppearance.BorderSize = 0
-        Me.btnConsumos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnConsumos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnConsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConsumos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConsumos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnConsumos.Location = New System.Drawing.Point(0, 340)
-        Me.btnConsumos.Name = "btnConsumos"
-        Me.btnConsumos.Size = New System.Drawing.Size(250, 40)
-        Me.btnConsumos.TabIndex = 4
-        Me.btnConsumos.Text = "Consumos"
-        Me.btnConsumos.UseVisualStyleBackColor = False
+        Me.btnTarifas.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnTarifas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTarifas.FlatAppearance.BorderSize = 0
+        Me.btnTarifas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnTarifas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnTarifas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTarifas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTarifas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnTarifas.Location = New System.Drawing.Point(0, 390)
+        Me.btnTarifas.Name = "btnTarifas"
+        Me.btnTarifas.Size = New System.Drawing.Size(250, 40)
+        Me.btnTarifas.TabIndex = 5
+        Me.btnTarifas.Text = "Tarifas"
+        Me.btnTarifas.UseVisualStyleBackColor = False
         '
         'FormEmplGen
         '
@@ -312,4 +331,5 @@ Partial Class FormEmplGen
     Friend WithEvents PanelHeader As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnConsumos As Button
+    Friend WithEvents btnTarifas As Button
 End Class

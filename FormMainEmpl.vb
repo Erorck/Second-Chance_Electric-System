@@ -134,6 +134,11 @@ Public Class FormEmplGen
         btnConsumos.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnTarifas.Click
+        AbrirFormEnPanel(Of FormAbcTar)()
+        btnTarifas.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         AbrirFormEnPanel(Of FormAbcEmpl)()
         btnEmpleados.BackColor = Color.FromArgb(26, 50, 54)
@@ -155,6 +160,9 @@ Public Class FormEmplGen
         End If
         If (Application.OpenForms("FormAbcCons") Is Nothing) Then
             btnConsumos.BackColor = Color.DarkCyan
+        End If
+        If (Application.OpenForms("FormAbcTar") Is Nothing) Then
+            btnTarifas.BackColor = Color.DarkCyan
         End If
     End Sub
 

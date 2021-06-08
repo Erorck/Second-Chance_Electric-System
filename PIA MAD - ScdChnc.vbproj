@@ -86,6 +86,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Tabla_Consumo.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Tabla_Tarifa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Tabla_Tarifa.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Vista_Cliente.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -311,6 +316,17 @@
     </None>
     <None Include="DS_Tabla_Consumo.xss">
       <DependentUpon>DS_Tabla_Consumo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Tabla_Tarifa.xsc">
+      <DependentUpon>DS_Tabla_Tarifa.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Tabla_Tarifa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Tabla_Tarifa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Tabla_Tarifa.xss">
+      <DependentUpon>DS_Tabla_Tarifa.xsd</DependentUpon>
     </None>
     <None Include="DS_Vista_Cliente.xsc">
       <DependentUpon>DS_Vista_Cliente.xsd</DependentUpon>
