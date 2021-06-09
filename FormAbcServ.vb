@@ -229,7 +229,7 @@ Public Class FormAbcServ
         'ELIMINAR
 
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(1) As SqlParameter
+        Dim params(2) As SqlParameter
         Dim i As Integer
         Dim Msg As String
 
@@ -240,6 +240,10 @@ Public Class FormAbcServ
 
         params(1) = New SqlParameter("@No_Servicio", SqlDbType.Int)
         params(1).Value = i
+
+        params(2) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
+        params(2).Value = FormLogin.Usuario
+
 
         Msg = "Se ha dado de baja al Servicio: " + CStr(i)
 
@@ -285,7 +289,7 @@ Public Class FormAbcServ
         'REHABILITAR
 
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(1) As SqlParameter
+        Dim params(2) As SqlParameter
         Dim i As Integer
         Dim Msg As String
 
@@ -296,6 +300,9 @@ Public Class FormAbcServ
 
         params(1) = New SqlParameter("@No_Servicio", SqlDbType.Int)
         params(1).Value = i
+
+        params(2) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
+        params(2).Value = FormLogin.Usuario
 
         Msg = "Se ha habilitado el Servicio: " + CStr(i)
 
@@ -394,7 +401,7 @@ Public Class FormAbcServ
 
         Temp = lbUsuarioMod.Text
         params(6) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(6).Value = 0
+        params(6).Value = FormLogin.Usuario
 
 
         Dim command As New SqlCommand()

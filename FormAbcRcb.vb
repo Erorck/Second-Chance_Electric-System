@@ -110,7 +110,7 @@ Public Class FormAbcRcb
             params(6).Value = Nothing
 
             params(7) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-            params(7).Value = 0
+            params(7).Value = FormLogin.Usuario
 
             command.Connection = connection
             command.CommandType = CommandType.StoredProcedure

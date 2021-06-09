@@ -26,6 +26,7 @@ Partial Class FormEmplGen
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.Logo = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnConsulRbc = New System.Windows.Forms.Button()
         Me.btnGenRcb = New System.Windows.Forms.Button()
         Me.btnRepGeneral = New System.Windows.Forms.Button()
         Me.btnRepCons = New System.Windows.Forms.Button()
@@ -44,7 +45,6 @@ Partial Class FormEmplGen
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnConsulRbc = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,6 +112,24 @@ Partial Class FormEmplGen
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(250, 660)
         Me.PanelMenu.TabIndex = 1
+        '
+        'btnConsulRbc
+        '
+        Me.btnConsulRbc.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnConsulRbc.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnConsulRbc.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnConsulRbc.FlatAppearance.BorderSize = 0
+        Me.btnConsulRbc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsulRbc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsulRbc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsulRbc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsulRbc.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConsulRbc.Location = New System.Drawing.Point(0, 580)
+        Me.btnConsulRbc.Name = "btnConsulRbc"
+        Me.btnConsulRbc.Size = New System.Drawing.Size(250, 40)
+        Me.btnConsulRbc.TabIndex = 11
+        Me.btnConsulRbc.Text = "Consultar Recibo"
+        Me.btnConsulRbc.UseVisualStyleBackColor = False
         '
         'btnGenRcb
         '
@@ -393,24 +411,6 @@ Partial Class FormEmplGen
         Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
-        '
-        'btnConsulRbc
-        '
-        Me.btnConsulRbc.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnConsulRbc.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnConsulRbc.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnConsulRbc.FlatAppearance.BorderSize = 0
-        Me.btnConsulRbc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnConsulRbc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnConsulRbc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConsulRbc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConsulRbc.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnConsulRbc.Location = New System.Drawing.Point(0, 580)
-        Me.btnConsulRbc.Name = "btnConsulRbc"
-        Me.btnConsulRbc.Size = New System.Drawing.Size(250, 40)
-        Me.btnConsulRbc.TabIndex = 11
-        Me.btnConsulRbc.Text = "Consultar Recibo"
-        Me.btnConsulRbc.UseVisualStyleBackColor = False
         '
         'FormEmplGen
         '

@@ -250,7 +250,7 @@ Public Class FormAbcCons
         params(2) = New SqlParameter("@Mes", SqlDbType.Int)
         params(2).Value = CInt(Temp)
 
-        Msg += cbMes.SelectedValue + " - "
+        Msg += cbMes.GetItemText(cbMes.SelectedItem) + " - "
 
         Temp = txtAño.Text
         params(3) = New SqlParameter("@Año", SqlDbType.Int)
@@ -269,9 +269,8 @@ Public Class FormAbcCons
         params(5).Value = CInt(Temp)
 
 
-        Temp = lbUsuarioMod.Text
         params(6) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(6).Value = 0
+        params(6).Value = FormLogin.Usuario
 
         params(7) = New SqlParameter("@Archivo", SqlDbType.VarChar)
         params(7).Value = Nothing
@@ -351,7 +350,7 @@ Public Class FormAbcCons
         params(5).Value = Nothing
 
         params(6) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(6).Value = Nothing
+        params(6).Value = FormLogin.Usuario
 
         params(7) = New SqlParameter("@Archivo", SqlDbType.VarChar)
         params(7).Value = Temp

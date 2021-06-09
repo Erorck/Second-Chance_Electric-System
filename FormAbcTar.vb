@@ -180,7 +180,7 @@ Public Class FormAbcTar
                     adapter.Fill(ds)
 
                     For CONT = 0 To ds.Tables(0).Rows.Count - 1
-                        lbUsuarioMod.Text = ds.Tables(0).Rows(0).Item(8)
+                        lbUsuarioMod.Text = ds.Tables(0).Rows(0).Item(7)
                     Next
 
                     connection.Close()
@@ -238,8 +238,7 @@ Public Class FormAbcTar
         params(2) = New SqlParameter("@Mes", SqlDbType.Int)
         params(2).Value = CInt(Temp)
 
-        Msg += Temp + " - "
-
+        Msg += cbMes.GetItemText(cbMes.SelectedItem) + " - "
         Temp = txtAño.Text
         params(3) = New SqlParameter("@Año", SqlDbType.Int)
         params(3).Value = CInt(Temp)
@@ -264,10 +263,11 @@ Public Class FormAbcTar
         params(7) = New SqlParameter("@Tipo", SqlDbType.VarChar)
         params(7).Value = Temp
 
+        Msg += " de tipo: " + cbTipo.GetItemText(cbTipo.SelectedItem)
 
         Temp = lbUsuarioMod.Text
         params(8) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(8).Value = 0
+        params(8).Value = FormLogin.Usuario
 
         params(9) = New SqlParameter("@Archivo", SqlDbType.VarChar)
         params(9).Value = Nothing
@@ -363,7 +363,7 @@ Public Class FormAbcTar
         params(7).Value = Nothing
 
         params(8) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(8).Value = Nothing
+        params(8).Value = FormLogin.Usuario
 
         params(9) = New SqlParameter("@Archivo", SqlDbType.VarChar)
         params(9).Value = Temp

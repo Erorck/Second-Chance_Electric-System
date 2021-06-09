@@ -206,7 +206,7 @@ Public Class FormAbcCliente
         'ELIMINAR
 
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(1) As SqlParameter
+        Dim params(2) As SqlParameter
         Dim i As Integer
         Dim Msg As String
 
@@ -217,6 +217,9 @@ Public Class FormAbcCliente
 
         params(1) = New SqlParameter("@No_Usuario", SqlDbType.Int)
         params(1).Value = i
+
+        params(2) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
+        params(2).Value = FormLogin.Usuario
 
         Msg = "Se ha dado de baja al Cliente: " + CStr(i)
 
@@ -253,7 +256,7 @@ Public Class FormAbcCliente
 #Region "Habilitar"
     Private Sub btnHabilitar_Click(sender As Object, e As EventArgs) Handles btnHabilitar.Click
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(1) As SqlParameter
+        Dim params(2) As SqlParameter
         Dim i As Integer
         Dim Msg As String
 
@@ -264,6 +267,9 @@ Public Class FormAbcCliente
 
         params(1) = New SqlParameter("@No_Usuario", SqlDbType.Int)
         params(1).Value = i
+
+        params(2) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
+        params(2).Value = FormLogin.Usuario
 
         Msg = "Se ha habilitado al Cliente: " + CStr(i)
 
@@ -366,7 +372,7 @@ Public Class FormAbcCliente
 
         Temp = lbUsuarioMod.Text
         params(9) = New SqlParameter("@Usuario_Mod", SqlDbType.Int)
-        params(9).Value = 0
+        params(9).Value = FormLogin.Usuario
 
         Temp = DHSTextBox.Text
         params(10) = New SqlParameter("@DHS", SqlDbType.Int)

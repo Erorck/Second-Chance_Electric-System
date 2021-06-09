@@ -166,9 +166,65 @@ Public Class FormEmplGen
         btnConsulRbc.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
+
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         AbrirFormEnPanel(Of FormAbcEmpl)()
         btnEmpleados.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+#End Region
+
+#Region "Metodo Preparacion"
+    Private Sub SetRestrictions(Tipo As Integer)
+        If Tipo = 0 Then
+            btnEmpleados.Visible = True
+            btnClientes.Visible = True
+            btnServicios.Visible = True
+            btnConsumos.Visible = True
+            btnTarifas.Visible = True
+            btnGenRcb.Visible = True
+            btnCuenta.Visible = True
+            btnReportes.Visible = True
+            btnRepCons.Visible = True
+            btnRepTar.Visible = True
+            btnRepGeneral.Visible = True
+            btnConsulRbc.Visible = True
+        End If
+
+        If Tipo = 1 Then
+            btnEmpleados.Visible = False
+            btnClientes.Visible = True
+            btnServicios.Visible = True
+            btnConsumos.Visible = True
+            btnTarifas.Visible = True
+            btnGenRcb.Visible = True
+            btnCuenta.Visible = True
+            btnReportes.Visible = True
+            btnRepCons.Visible = True
+            btnRepTar.Visible = True
+            btnRepGeneral.Visible = True
+            btnConsulRbc.Visible = True
+        End If
+
+        If Tipo = 2 Then
+            btnClientes.Visible = False
+            btnServicios.Visible = False
+            btnConsumos.Visible = False
+            btnTarifas.Visible = False
+            btnGenRcb.Visible = False
+            btnCuenta.Visible = True
+            btnReportes.Visible = True
+            btnRepCons.Visible = False
+            btnRepTar.Visible = False
+            btnRepGeneral.Visible = False
+            btnConsulRbc.Visible = True
+        End If
+
+    End Sub
+#End Region
+
+#Region "Cargar form"
+    Private Sub FormEmplGen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetRestrictions(FormLogin.TipoU)
     End Sub
 #End Region
 

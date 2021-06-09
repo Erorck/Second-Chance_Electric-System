@@ -2,7 +2,8 @@
 
 Public Class FormLogin
 
-    Private Usuario As Integer
+    Protected Friend Usuario As Integer
+    Protected Friend TipoU As Integer
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
 
@@ -39,7 +40,9 @@ Public Class FormLogin
 
             If cbTipoUsuario.SelectedValue = 1 Then
                 command.CommandText = "sp_Empleado"
-                If txtBUser.Text = "admin" And txtBPass.Text = "root" Then
+                TipoU = 1
+                If txtBUser.Text = "0" And txtBPass.Text = "root" Then
+                    TipoU = 0
                     Usuario = 0
                     Me.Hide()
                     FormEmplGen.ShowDialog()
@@ -47,6 +50,7 @@ Public Class FormLogin
                 End If
             Else
                 command.CommandText = "sp_Cliente"
+                TipoU = 2
             End If
 
             command.Parameters.AddRange(params)
@@ -70,6 +74,8 @@ Public Class FormLogin
 
         If dt.Rows.Count > 0 Then
             Usuario = CInt(txtBUser.Text)
+            Me.Hide()
+            FormEmplGen.ShowDialog()
         Else
             lbMsg.Text = "*Usuario y/o contraseña incorrectos"
             Return
@@ -78,8 +84,7 @@ Public Class FormLogin
 
 #End Region
 
-        Me.Hide()
-        FormEmplGen.ShowDialog()
+
 
     End Sub
 
@@ -104,7 +109,7 @@ Public Class FormLogin
         cbTipoUsuario.DataSource = dtG
         cbTipoUsuario.DisplayMember = "Name"
         cbTipoUsuario.ValueMember = "Id"
-        cbTipoUsuario.SelectedIndex = 1
+        cbTipoUsuario.SelectedValue = 1
 #End Region
 
         lbMsg.Text = ""
