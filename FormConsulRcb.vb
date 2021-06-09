@@ -109,6 +109,7 @@ Public Class FormConsulRcb
 
         btnPagar.Enabled = False
         cbFo_Pago.Visible = False
+        lbMsg.Text = ""
 
     End Sub
 #End Region
@@ -257,6 +258,17 @@ Public Class FormConsulRcb
         Dim TempS As String
         Dim Msg As String
 
+        If cbServicio.SelectedIndex < 0 Then
+            lbMsg.Text = "*Ingrese un Servicio"
+            Return
+        End If
+
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
+
         params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
         params(0).Value = "SLC1S"
 
@@ -325,6 +337,11 @@ Public Class FormConsulRcb
     Private Sub btnPagar_Click(sender As Object, e As EventArgs) Handles btnPagar.Click
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
         Dim params(2) As SqlParameter
+
+        If cbFo_Pago.SelectedValue = "FP" Then
+            lbMsg.Text = "*Seleccione una forma de pago"
+            Return
+        End If
 
         Dim i As Integer
         Dim Msg As String

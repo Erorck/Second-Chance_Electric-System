@@ -57,6 +57,22 @@ Partial Class FormAbcEmpl
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.EmpleadoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HomoC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpleadoTableAdapter = New PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.EmpleadoTableAdapter()
         Me.TableAdapterManager = New PIA_MAD___ScdChnc.ScdChncDataSetTableAdapters.TableAdapterManager()
         Me.DHSTextBox = New System.Windows.Forms.TextBox()
@@ -74,22 +90,7 @@ Partial Class FormAbcEmpl
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.btnHabilitar = New System.Windows.Forms.Button()
-        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RFC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HomoC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbMsg = New System.Windows.Forms.Label()
         DHSLabel = New System.Windows.Forms.Label()
         DVLabel = New System.Windows.Forms.Label()
         HomoCLabel = New System.Windows.Forms.Label()
@@ -457,6 +458,134 @@ Partial Class FormAbcEmpl
         Me.EmpleadoDataGridView.Size = New System.Drawing.Size(444, 523)
         Me.EmpleadoDataGridView.TabIndex = 62
         '
+        'No_Usuario
+        '
+        Me.No_Usuario.DataPropertyName = "No_Usuario"
+        Me.No_Usuario.HeaderText = "Usuario"
+        Me.No_Usuario.Name = "No_Usuario"
+        Me.No_Usuario.ReadOnly = True
+        Me.No_Usuario.Width = 68
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 69
+        '
+        'Apellido_P
+        '
+        Me.Apellido_P.DataPropertyName = "Apellido_P"
+        Me.Apellido_P.HeaderText = "Apellido paterno"
+        Me.Apellido_P.Name = "Apellido_P"
+        Me.Apellido_P.ReadOnly = True
+        Me.Apellido_P.Width = 99
+        '
+        'Apellido_M
+        '
+        Me.Apellido_M.DataPropertyName = "Apellido_M"
+        Me.Apellido_M.HeaderText = "Apellido materno"
+        Me.Apellido_M.Name = "Apellido_M"
+        Me.Apellido_M.ReadOnly = True
+        Me.Apellido_M.Width = 101
+        '
+        'Estatus
+        '
+        Me.Estatus.DataPropertyName = "Estatus"
+        Me.Estatus.HeaderText = "Estatus"
+        Me.Estatus.Name = "Estatus"
+        Me.Estatus.ReadOnly = True
+        Me.Estatus.Width = 67
+        '
+        'Contraseña
+        '
+        Me.Contraseña.DataPropertyName = "Contraseña"
+        Me.Contraseña.HeaderText = "Contraseña"
+        Me.Contraseña.Name = "Contraseña"
+        Me.Contraseña.ReadOnly = True
+        Me.Contraseña.Visible = False
+        '
+        'Email
+        '
+        Me.Email.DataPropertyName = "Email"
+        Me.Email.HeaderText = "Email"
+        Me.Email.Name = "Email"
+        Me.Email.ReadOnly = True
+        Me.Email.Visible = False
+        '
+        'CURP
+        '
+        Me.CURP.DataPropertyName = "CURP"
+        Me.CURP.HeaderText = "CURP"
+        Me.CURP.Name = "CURP"
+        Me.CURP.ReadOnly = True
+        Me.CURP.Visible = False
+        '
+        'DHS
+        '
+        Me.DHS.DataPropertyName = "DHS"
+        Me.DHS.HeaderText = "DHS"
+        Me.DHS.Name = "DHS"
+        Me.DHS.ReadOnly = True
+        Me.DHS.Visible = False
+        '
+        'DV
+        '
+        Me.DV.DataPropertyName = "DV"
+        Me.DV.HeaderText = "DV"
+        Me.DV.Name = "DV"
+        Me.DV.ReadOnly = True
+        Me.DV.Visible = False
+        '
+        'Genero
+        '
+        Me.Genero.DataPropertyName = "Genero"
+        Me.Genero.HeaderText = "Genero"
+        Me.Genero.Name = "Genero"
+        Me.Genero.ReadOnly = True
+        Me.Genero.Visible = False
+        '
+        'RFC
+        '
+        Me.RFC.DataPropertyName = "RFC"
+        Me.RFC.HeaderText = "RFC"
+        Me.RFC.Name = "RFC"
+        Me.RFC.ReadOnly = True
+        Me.RFC.Visible = False
+        '
+        'HomoC
+        '
+        Me.HomoC.DataPropertyName = "HomoC"
+        Me.HomoC.HeaderText = "HomoC"
+        Me.HomoC.Name = "HomoC"
+        Me.HomoC.ReadOnly = True
+        Me.HomoC.Visible = False
+        '
+        'F_Nac
+        '
+        Me.F_Nac.DataPropertyName = "F_Nac"
+        Me.F_Nac.HeaderText = "F_Nac"
+        Me.F_Nac.Name = "F_Nac"
+        Me.F_Nac.ReadOnly = True
+        Me.F_Nac.Visible = False
+        '
+        'Usuario_Mod
+        '
+        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
+        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
+        Me.Usuario_Mod.Name = "Usuario_Mod"
+        Me.Usuario_Mod.ReadOnly = True
+        Me.Usuario_Mod.Visible = False
+        '
+        'F_Mod
+        '
+        Me.F_Mod.DataPropertyName = "F_Mod"
+        Me.F_Mod.HeaderText = "F_Mod"
+        Me.F_Mod.Name = "F_Mod"
+        Me.F_Mod.ReadOnly = True
+        Me.F_Mod.Visible = False
+        '
         'EmpleadoTableAdapter
         '
         Me.EmpleadoTableAdapter.ClearBeforeFill = True
@@ -616,133 +745,16 @@ Partial Class FormAbcEmpl
         Me.btnHabilitar.Text = "Habilitar"
         Me.btnHabilitar.UseVisualStyleBackColor = False
         '
-        'No_Usuario
+        'lbMsg
         '
-        Me.No_Usuario.DataPropertyName = "No_Usuario"
-        Me.No_Usuario.HeaderText = "Usuario"
-        Me.No_Usuario.Name = "No_Usuario"
-        Me.No_Usuario.ReadOnly = True
-        Me.No_Usuario.Width = 68
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 69
-        '
-        'Apellido_P
-        '
-        Me.Apellido_P.DataPropertyName = "Apellido_P"
-        Me.Apellido_P.HeaderText = "Apellido paterno"
-        Me.Apellido_P.Name = "Apellido_P"
-        Me.Apellido_P.ReadOnly = True
-        Me.Apellido_P.Width = 99
-        '
-        'Apellido_M
-        '
-        Me.Apellido_M.DataPropertyName = "Apellido_M"
-        Me.Apellido_M.HeaderText = "Apellido materno"
-        Me.Apellido_M.Name = "Apellido_M"
-        Me.Apellido_M.ReadOnly = True
-        Me.Apellido_M.Width = 101
-        '
-        'Estatus
-        '
-        Me.Estatus.DataPropertyName = "Estatus"
-        Me.Estatus.HeaderText = "Estatus"
-        Me.Estatus.Name = "Estatus"
-        Me.Estatus.ReadOnly = True
-        Me.Estatus.Width = 67
-        '
-        'Contraseña
-        '
-        Me.Contraseña.DataPropertyName = "Contraseña"
-        Me.Contraseña.HeaderText = "Contraseña"
-        Me.Contraseña.Name = "Contraseña"
-        Me.Contraseña.ReadOnly = True
-        Me.Contraseña.Visible = False
-        '
-        'Email
-        '
-        Me.Email.DataPropertyName = "Email"
-        Me.Email.HeaderText = "Email"
-        Me.Email.Name = "Email"
-        Me.Email.ReadOnly = True
-        Me.Email.Visible = False
-        '
-        'CURP
-        '
-        Me.CURP.DataPropertyName = "CURP"
-        Me.CURP.HeaderText = "CURP"
-        Me.CURP.Name = "CURP"
-        Me.CURP.ReadOnly = True
-        Me.CURP.Visible = False
-        '
-        'DHS
-        '
-        Me.DHS.DataPropertyName = "DHS"
-        Me.DHS.HeaderText = "DHS"
-        Me.DHS.Name = "DHS"
-        Me.DHS.ReadOnly = True
-        Me.DHS.Visible = False
-        '
-        'DV
-        '
-        Me.DV.DataPropertyName = "DV"
-        Me.DV.HeaderText = "DV"
-        Me.DV.Name = "DV"
-        Me.DV.ReadOnly = True
-        Me.DV.Visible = False
-        '
-        'Genero
-        '
-        Me.Genero.DataPropertyName = "Genero"
-        Me.Genero.HeaderText = "Genero"
-        Me.Genero.Name = "Genero"
-        Me.Genero.ReadOnly = True
-        Me.Genero.Visible = False
-        '
-        'RFC
-        '
-        Me.RFC.DataPropertyName = "RFC"
-        Me.RFC.HeaderText = "RFC"
-        Me.RFC.Name = "RFC"
-        Me.RFC.ReadOnly = True
-        Me.RFC.Visible = False
-        '
-        'HomoC
-        '
-        Me.HomoC.DataPropertyName = "HomoC"
-        Me.HomoC.HeaderText = "HomoC"
-        Me.HomoC.Name = "HomoC"
-        Me.HomoC.ReadOnly = True
-        Me.HomoC.Visible = False
-        '
-        'F_Nac
-        '
-        Me.F_Nac.DataPropertyName = "F_Nac"
-        Me.F_Nac.HeaderText = "F_Nac"
-        Me.F_Nac.Name = "F_Nac"
-        Me.F_Nac.ReadOnly = True
-        Me.F_Nac.Visible = False
-        '
-        'Usuario_Mod
-        '
-        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
-        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
-        Me.Usuario_Mod.Name = "Usuario_Mod"
-        Me.Usuario_Mod.ReadOnly = True
-        Me.Usuario_Mod.Visible = False
-        '
-        'F_Mod
-        '
-        Me.F_Mod.DataPropertyName = "F_Mod"
-        Me.F_Mod.HeaderText = "F_Mod"
-        Me.F_Mod.Name = "F_Mod"
-        Me.F_Mod.ReadOnly = True
-        Me.F_Mod.Visible = False
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(133, 72)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 165
+        Me.lbMsg.Text = "Msg"
         '
         'FormAbcEmpl
         '
@@ -750,6 +762,7 @@ Partial Class FormAbcEmpl
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(860, 666)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.lbFechaMod)
@@ -864,4 +877,5 @@ Partial Class FormAbcEmpl
     Friend WithEvents F_Nac As DataGridViewTextBoxColumn
     Friend WithEvents Usuario_Mod As DataGridViewTextBoxColumn
     Friend WithEvents F_Mod As DataGridViewTextBoxColumn
+    Friend WithEvents lbMsg As Label
 End Class

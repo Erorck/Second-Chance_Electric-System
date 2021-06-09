@@ -21,6 +21,12 @@ Public Class FormRepCons
         Dim command As New SqlCommand()
         Dim Temp As Integer
 
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
+
         Try
             params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
             params(0S).Value = "CNS"
@@ -56,7 +62,7 @@ Public Class FormRepCons
 #End Region
 
     Private Sub FormRepCons_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        lbMsg.Text = ""
     End Sub
 
 #Region "Metodos para exportar datos"

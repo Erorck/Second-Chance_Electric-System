@@ -22,6 +22,10 @@ Public Class FormRepGeneral
         Dim command As New SqlCommand()
         Dim Temp As Integer
 
+        If txtAño.Text = "" Then
+            lbMsg.Text = "Ingrese un año"
+            Return
+        End If
 
         Try
             Temp = CInt(txtAño.Text)
@@ -103,6 +107,7 @@ Public Class FormRepGeneral
         cbTipo.SelectedValue = "A"
 #End Region
 
+        lbMsg.Text = ""
     End Sub
 #End Region
 

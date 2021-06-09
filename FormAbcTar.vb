@@ -209,6 +209,27 @@ Public Class FormAbcTar
         Dim i As String
         Dim Msg As String
 
+        If txtCant_B.Text = "" Then
+            lbMsg.Text = "*Ingrese el precio de la tarifa básica"
+            Return
+        End If
+
+        If txtCant_I.Text = "" Then
+            lbMsg.Text = "*Ingrese el precio de la tarifa intermedia"
+            Return
+        End If
+
+        If txtCant_E.Text = "" Then
+            lbMsg.Text = "*Ingrese el precio de la tarifa básica"
+            Return
+        End If
+
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
+
         i = lbId.Text
 
         If i = "" Then

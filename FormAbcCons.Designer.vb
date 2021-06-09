@@ -71,6 +71,7 @@ Partial Class FormAbcCons
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.lbMsg = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConsumoBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DS_Tabla_Consumo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -540,12 +541,24 @@ Partial Class FormAbcCons
         Me.Label11.TabIndex = 113
         Me.Label11.Text = "Consumo Total"
         '
+        'lbMsg
+        '
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(23, 61)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 166
+        Me.lbMsg.Text = "Msg"
+        '
         'FormAbcCons
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 560)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.Controls.Add(Me.btnLimpiar)
@@ -639,4 +652,5 @@ Partial Class FormAbcCons
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnCerrarFormulario As PictureBox
     Friend WithEvents Label11 As Label
+    Friend WithEvents lbMsg As Label
 End Class

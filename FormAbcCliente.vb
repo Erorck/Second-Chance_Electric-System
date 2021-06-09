@@ -57,6 +57,7 @@ Public Class FormAbcCliente
 
         lbUsuarioMod.Text = ""
         lbFechaMod.Text = ""
+        lbMsg.Text = ""
 
         btnHabilitar.Enabled = False
         btnEliminar.Enabled = False
@@ -191,6 +192,8 @@ Public Class FormAbcCliente
         btnHabilitar.Enabled = False
         btnEliminar.Enabled = False
 
+        lbMsg.Text = ""
+
     End Sub
 #End Region
 
@@ -311,6 +314,54 @@ Public Class FormAbcCliente
         Dim Temp As String
         Dim i As String
         Dim Msg As String
+
+
+        If txtNombre.Text = "" Then
+            lbMsg.Text = "*Ingrese el nombre"
+            Return
+        End If
+
+        If txtApellidoP.Text = "" Then
+            lbMsg.Text = "*Ingrese el apellido paterno"
+            Return
+        End If
+
+        If txtApellidoM.Text = "" Then
+            lbMsg.Text = "*Ingrese el apellido materno"
+            Return
+        End If
+
+        If txtPass.Text = "" Then
+            lbMsg.Text = "*Ingrese la contraseña"
+            Return
+        End If
+
+        If txtDomicilio.Text = "" Then
+            lbMsg.Text = "*Ingrese el domicilio"
+            Return
+        End If
+
+        If DateAndTime.Today.Year - FechaNac.Value.Year < 18 Then
+            lbMsg.Text = "*El cliente debe ser mayor de edad"
+            Return
+        End If
+
+
+        If DHSTextBox.Text = "" Then
+            lbMsg.Text = "*Ingrese el Digito de Homonima y Siglo del CURP del cliente"
+            Return
+        End If
+
+        If DVTextBox.Text = "" Then
+            lbMsg.Text = "*Ingrese el Digito Verificador del CURP del cliente"
+            Return
+        End If
+
+        If txtEmail.Text = "" Then
+            lbMsg.Text = "*Ingrese el Email del cliente"
+            Return
+        End If
+
 
         i = lbId.Text
 

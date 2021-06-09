@@ -49,6 +49,8 @@ Public Class FormAbcRcb
         cbTipo.SelectedValue = "A"
 #End Region
 
+        lbMsg.Text = ""
+
     End Sub
 #End Region
 

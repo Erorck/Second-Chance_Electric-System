@@ -23,8 +23,8 @@ Partial Class FormAbcTar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnLimpiar = New System.Windows.Forms.Button()
@@ -42,20 +42,6 @@ Partial Class FormAbcTar
         Me.btnSubirArchivo = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.TarifaDataViewGrid = New System.Windows.Forms.DataGridView()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCant_E = New System.Windows.Forms.TextBox()
-        Me.txtCant_I = New System.Windows.Forms.TextBox()
-        Me.txtCant_B = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbMes = New System.Windows.Forms.ComboBox()
-        Me.DS_Tabla_Tarifa = New PIA_MAD___ScdChnc.DS_Tabla_Tarifa()
-        Me.TarifaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TarifaTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_TarifaTableAdapters.TarifaTableAdapter()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.cbTipo = New System.Windows.Forms.ComboBox()
-        Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.No_Tarifa = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Mes = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Año = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -65,11 +51,26 @@ Partial Class FormAbcTar
         Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TarifaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DS_Tabla_Tarifa = New PIA_MAD___ScdChnc.DS_Tabla_Tarifa()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtCant_E = New System.Windows.Forms.TextBox()
+        Me.txtCant_I = New System.Windows.Forms.TextBox()
+        Me.txtCant_B = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbMes = New System.Windows.Forms.ComboBox()
+        Me.TarifaTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_TarifaTableAdapters.TarifaTableAdapter()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cbTipo = New System.Windows.Forms.ComboBox()
+        Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
+        Me.lbMsg = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.TarifaDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DS_Tabla_Tarifa, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TarifaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DS_Tabla_Tarifa, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -280,27 +281,27 @@ Partial Class FormAbcTar
         Me.TarifaDataViewGrid.AutoGenerateColumns = False
         Me.TarifaDataViewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.TarifaDataViewGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle11.NullValue = "NULL"
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TarifaDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.NullValue = "NULL"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TarifaDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.TarifaDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TarifaDataViewGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Tarifa, Me.Mes, Me.Año, Me.Tar_B, Me.Tar_I, Me.Tar_E, Me.Tipo, Me.Usuario_Mod, Me.F_Mod})
         Me.TarifaDataViewGrid.DataSource = Me.TarifaBindingSource
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle12.NullValue = "NULL"
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TarifaDataViewGrid.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.NullValue = "NULL"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TarifaDataViewGrid.DefaultCellStyle = DataGridViewCellStyle2
         Me.TarifaDataViewGrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.TarifaDataViewGrid.Location = New System.Drawing.Point(25, 76)
         Me.TarifaDataViewGrid.Name = "TarifaDataViewGrid"
@@ -308,6 +309,90 @@ Partial Class FormAbcTar
         Me.TarifaDataViewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.TarifaDataViewGrid.Size = New System.Drawing.Size(502, 252)
         Me.TarifaDataViewGrid.TabIndex = 120
+        '
+        'No_Tarifa
+        '
+        Me.No_Tarifa.DataPropertyName = "No_Tarifa"
+        Me.No_Tarifa.HeaderText = "Numero Tarifa"
+        Me.No_Tarifa.Name = "No_Tarifa"
+        Me.No_Tarifa.ReadOnly = True
+        Me.No_Tarifa.Width = 91
+        '
+        'Mes
+        '
+        Me.Mes.DataPropertyName = "Mes"
+        Me.Mes.HeaderText = "Mes"
+        Me.Mes.Name = "Mes"
+        Me.Mes.ReadOnly = True
+        Me.Mes.Width = 52
+        '
+        'Año
+        '
+        Me.Año.DataPropertyName = "Año"
+        Me.Año.HeaderText = "Año"
+        Me.Año.Name = "Año"
+        Me.Año.ReadOnly = True
+        Me.Año.Width = 51
+        '
+        'Tar_B
+        '
+        Me.Tar_B.DataPropertyName = "Tar_B"
+        Me.Tar_B.HeaderText = "Tarifa Basica"
+        Me.Tar_B.Name = "Tar_B"
+        Me.Tar_B.ReadOnly = True
+        Me.Tar_B.Width = 87
+        '
+        'Tar_I
+        '
+        Me.Tar_I.DataPropertyName = "Tar_I"
+        Me.Tar_I.HeaderText = "Tarifa Intermedia"
+        Me.Tar_I.Name = "Tar_I"
+        Me.Tar_I.ReadOnly = True
+        Me.Tar_I.Width = 102
+        '
+        'Tar_E
+        '
+        Me.Tar_E.DataPropertyName = "Tar_E"
+        Me.Tar_E.HeaderText = "Tarifa Excedente"
+        Me.Tar_E.Name = "Tar_E"
+        Me.Tar_E.ReadOnly = True
+        Me.Tar_E.Width = 104
+        '
+        'Tipo
+        '
+        Me.Tipo.DataPropertyName = "Tipo"
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        Me.Tipo.Width = 53
+        '
+        'Usuario_Mod
+        '
+        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
+        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
+        Me.Usuario_Mod.Name = "Usuario_Mod"
+        Me.Usuario_Mod.ReadOnly = True
+        Me.Usuario_Mod.Visible = False
+        Me.Usuario_Mod.Width = 95
+        '
+        'F_Mod
+        '
+        Me.F_Mod.DataPropertyName = "F_Mod"
+        Me.F_Mod.HeaderText = "F_Mod"
+        Me.F_Mod.Name = "F_Mod"
+        Me.F_Mod.ReadOnly = True
+        Me.F_Mod.Visible = False
+        Me.F_Mod.Width = 65
+        '
+        'TarifaBindingSource
+        '
+        Me.TarifaBindingSource.DataMember = "Tarifa"
+        Me.TarifaBindingSource.DataSource = Me.DS_Tabla_Tarifa
+        '
+        'DS_Tabla_Tarifa
+        '
+        Me.DS_Tabla_Tarifa.DataSetName = "DS_Tabla_Tarifa"
+        Me.DS_Tabla_Tarifa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label4
         '
@@ -396,16 +481,6 @@ Partial Class FormAbcTar
         Me.cbMes.TabIndex = 112
         Me.cbMes.Text = "MM"
         '
-        'DS_Tabla_Tarifa
-        '
-        Me.DS_Tabla_Tarifa.DataSetName = "DS_Tabla_Tarifa"
-        Me.DS_Tabla_Tarifa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TarifaBindingSource
-        '
-        Me.TarifaBindingSource.DataMember = "Tarifa"
-        Me.TarifaBindingSource.DataSource = Me.DS_Tabla_Tarifa
-        '
         'TarifaTableAdapter
         '
         Me.TarifaTableAdapter.ClearBeforeFill = True
@@ -445,79 +520,16 @@ Partial Class FormAbcTar
         Me.btnCerrarFormulario.TabIndex = 139
         Me.btnCerrarFormulario.TabStop = False
         '
-        'No_Tarifa
+        'lbMsg
         '
-        Me.No_Tarifa.DataPropertyName = "No_Tarifa"
-        Me.No_Tarifa.HeaderText = "Numero Tarifa"
-        Me.No_Tarifa.Name = "No_Tarifa"
-        Me.No_Tarifa.ReadOnly = True
-        Me.No_Tarifa.Width = 99
-        '
-        'Mes
-        '
-        Me.Mes.DataPropertyName = "Mes"
-        Me.Mes.HeaderText = "Mes"
-        Me.Mes.Name = "Mes"
-        Me.Mes.ReadOnly = True
-        Me.Mes.Width = 52
-        '
-        'Año
-        '
-        Me.Año.DataPropertyName = "Año"
-        Me.Año.HeaderText = "Año"
-        Me.Año.Name = "Año"
-        Me.Año.ReadOnly = True
-        Me.Año.Width = 51
-        '
-        'Tar_B
-        '
-        Me.Tar_B.DataPropertyName = "Tar_B"
-        Me.Tar_B.HeaderText = "Tarifa Basica"
-        Me.Tar_B.Name = "Tar_B"
-        Me.Tar_B.ReadOnly = True
-        Me.Tar_B.Width = 94
-        '
-        'Tar_I
-        '
-        Me.Tar_I.DataPropertyName = "Tar_I"
-        Me.Tar_I.HeaderText = "Tarifa Intermedia"
-        Me.Tar_I.Name = "Tar_I"
-        Me.Tar_I.ReadOnly = True
-        Me.Tar_I.Width = 102
-        '
-        'Tar_E
-        '
-        Me.Tar_E.DataPropertyName = "Tar_E"
-        Me.Tar_E.HeaderText = "Tarifa Excedente"
-        Me.Tar_E.Name = "Tar_E"
-        Me.Tar_E.ReadOnly = True
-        Me.Tar_E.Width = 104
-        '
-        'Tipo
-        '
-        Me.Tipo.DataPropertyName = "Tipo"
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        Me.Tipo.ReadOnly = True
-        Me.Tipo.Width = 53
-        '
-        'Usuario_Mod
-        '
-        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
-        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
-        Me.Usuario_Mod.Name = "Usuario_Mod"
-        Me.Usuario_Mod.ReadOnly = True
-        Me.Usuario_Mod.Visible = False
-        Me.Usuario_Mod.Width = 95
-        '
-        'F_Mod
-        '
-        Me.F_Mod.DataPropertyName = "F_Mod"
-        Me.F_Mod.HeaderText = "F_Mod"
-        Me.F_Mod.Name = "F_Mod"
-        Me.F_Mod.ReadOnly = True
-        Me.F_Mod.Visible = False
-        Me.F_Mod.Width = 65
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(22, 58)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 167
+        Me.lbMsg.Text = "Msg"
         '
         'FormAbcTar
         '
@@ -525,6 +537,7 @@ Partial Class FormAbcTar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 560)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.Controls.Add(Me.cbTipo)
         Me.Controls.Add(Me.Label5)
@@ -559,8 +572,8 @@ Partial Class FormAbcTar
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.TarifaDataViewGrid, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DS_Tabla_Tarifa, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TarifaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DS_Tabla_Tarifa, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -606,4 +619,5 @@ Partial Class FormAbcTar
     Friend WithEvents Tipo As DataGridViewTextBoxColumn
     Friend WithEvents Usuario_Mod As DataGridViewTextBoxColumn
     Friend WithEvents F_Mod As DataGridViewTextBoxColumn
+    Friend WithEvents lbMsg As Label
 End Class

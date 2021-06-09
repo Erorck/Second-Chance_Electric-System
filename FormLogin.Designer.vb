@@ -81,24 +81,30 @@ Partial Class FormLogin
         '
         'buttonLogin
         '
-        Me.buttonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.buttonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.buttonLogin.Location = New System.Drawing.Point(387, 345)
         Me.buttonLogin.Name = "buttonLogin"
         Me.buttonLogin.Size = New System.Drawing.Size(89, 32)
         Me.buttonLogin.TabIndex = 4
         Me.buttonLogin.Text = "Ingresar"
-        Me.buttonLogin.UseVisualStyleBackColor = True
+        Me.buttonLogin.UseVisualStyleBackColor = False
         '
         'buttonExit
         '
         Me.buttonExit.AutoSize = True
-        Me.buttonExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.buttonExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonExit.ForeColor = System.Drawing.Color.Maroon
         Me.buttonExit.Location = New System.Drawing.Point(503, 345)
         Me.buttonExit.Name = "buttonExit"
         Me.buttonExit.Size = New System.Drawing.Size(89, 32)
         Me.buttonExit.TabIndex = 5
         Me.buttonExit.Text = "Salir"
-        Me.buttonExit.UseVisualStyleBackColor = True
+        Me.buttonExit.UseVisualStyleBackColor = False
         '
         'checkBRemeber
         '

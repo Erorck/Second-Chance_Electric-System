@@ -354,6 +354,22 @@ Public Class FormAbcServ
 
         i = lbId.Text
 
+        If cbClientes.SelectedIndex < 0 Then
+            lbMsg.Text = "*Seleccione un Cliente"
+            Return
+        End If
+
+        If txtMedidor.Text = "" Then
+            lbMsg.Text = "*Ingrese el número de medidor"
+            Return
+        End If
+
+        If txtUbicacion.Text = "" Then
+            lbMsg.Text = "*Ingrese la ubicación"
+            Return
+        End If
+
+
         If i = "" Then
             'SERVICIO NUEVO
             params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)

@@ -23,8 +23,8 @@ Partial Class FormAbcServ
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtMedidor = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUbicacion = New System.Windows.Forms.TextBox()
@@ -36,6 +36,14 @@ Partial Class FormAbcServ
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ServiciosDataViewGrid = New System.Windows.Forms.DataGridView()
+        Me.No_Servicio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.No_Medidor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ServicioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DS_Tabla_Servicios = New PIA_MAD___ScdChnc.DS_Tabla_Servicios()
         Me.ServicioTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_ServiciosTableAdapters.ServicioTableAdapter()
@@ -53,14 +61,7 @@ Partial Class FormAbcServ
         Me.lbId = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
-        Me.No_Servicio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.No_Medidor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbMsg = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.ServiciosDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,27 +195,27 @@ Partial Class FormAbcServ
         Me.ServiciosDataViewGrid.AutoGenerateColumns = False
         Me.ServiciosDataViewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ServiciosDataViewGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.NullValue = "NULL"
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ServiciosDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.NullValue = "NULL"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ServiciosDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.ServiciosDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ServiciosDataViewGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Servicio, Me.No_Medidor, Me.Tipo, Me.Cliente, Me.Ubicacion, Me.Usuario_Mod, Me.F_Mod, Me.Estatus})
         Me.ServiciosDataViewGrid.DataSource = Me.ServicioBindingSource
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle10.NullValue = "NULL"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ServiciosDataViewGrid.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.NullValue = "NULL"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ServiciosDataViewGrid.DefaultCellStyle = DataGridViewCellStyle2
         Me.ServiciosDataViewGrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ServiciosDataViewGrid.Location = New System.Drawing.Point(27, 68)
         Me.ServiciosDataViewGrid.Name = "ServiciosDataViewGrid"
@@ -222,6 +223,64 @@ Partial Class FormAbcServ
         Me.ServiciosDataViewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.ServiciosDataViewGrid.Size = New System.Drawing.Size(742, 221)
         Me.ServiciosDataViewGrid.TabIndex = 121
+        '
+        'No_Servicio
+        '
+        Me.No_Servicio.DataPropertyName = "No_Servicio"
+        Me.No_Servicio.HeaderText = "Numero Servicio"
+        Me.No_Servicio.Name = "No_Servicio"
+        Me.No_Servicio.ReadOnly = True
+        '
+        'No_Medidor
+        '
+        Me.No_Medidor.DataPropertyName = "No_Medidor"
+        Me.No_Medidor.HeaderText = "Numero Medidor"
+        Me.No_Medidor.Name = "No_Medidor"
+        Me.No_Medidor.ReadOnly = True
+        '
+        'Tipo
+        '
+        Me.Tipo.DataPropertyName = "Tipo"
+        Me.Tipo.HeaderText = "Tipo"
+        Me.Tipo.Name = "Tipo"
+        Me.Tipo.ReadOnly = True
+        '
+        'Cliente
+        '
+        Me.Cliente.DataPropertyName = "Cliente"
+        Me.Cliente.HeaderText = "Cliente"
+        Me.Cliente.Name = "Cliente"
+        Me.Cliente.ReadOnly = True
+        '
+        'Ubicacion
+        '
+        Me.Ubicacion.DataPropertyName = "Ubicacion"
+        Me.Ubicacion.HeaderText = "Ubicacion"
+        Me.Ubicacion.Name = "Ubicacion"
+        Me.Ubicacion.ReadOnly = True
+        '
+        'Usuario_Mod
+        '
+        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
+        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
+        Me.Usuario_Mod.Name = "Usuario_Mod"
+        Me.Usuario_Mod.ReadOnly = True
+        Me.Usuario_Mod.Visible = False
+        '
+        'F_Mod
+        '
+        Me.F_Mod.DataPropertyName = "F_Mod"
+        Me.F_Mod.HeaderText = "F_Mod"
+        Me.F_Mod.Name = "F_Mod"
+        Me.F_Mod.ReadOnly = True
+        Me.F_Mod.Visible = False
+        '
+        'Estatus
+        '
+        Me.Estatus.DataPropertyName = "Estatus"
+        Me.Estatus.HeaderText = "Estado"
+        Me.Estatus.Name = "Estatus"
+        Me.Estatus.ReadOnly = True
         '
         'ServicioBindingSource
         '
@@ -398,63 +457,16 @@ Partial Class FormAbcServ
         Me.btnCerrarFormulario.TabIndex = 140
         Me.btnCerrarFormulario.TabStop = False
         '
-        'No_Servicio
+        'lbMsg
         '
-        Me.No_Servicio.DataPropertyName = "No_Servicio"
-        Me.No_Servicio.HeaderText = "Numero Servicio"
-        Me.No_Servicio.Name = "No_Servicio"
-        Me.No_Servicio.ReadOnly = True
-        '
-        'No_Medidor
-        '
-        Me.No_Medidor.DataPropertyName = "No_Medidor"
-        Me.No_Medidor.HeaderText = "Numero Medidor"
-        Me.No_Medidor.Name = "No_Medidor"
-        Me.No_Medidor.ReadOnly = True
-        '
-        'Tipo
-        '
-        Me.Tipo.DataPropertyName = "Tipo"
-        Me.Tipo.HeaderText = "Tipo"
-        Me.Tipo.Name = "Tipo"
-        Me.Tipo.ReadOnly = True
-        '
-        'Cliente
-        '
-        Me.Cliente.DataPropertyName = "Cliente"
-        Me.Cliente.HeaderText = "Cliente"
-        Me.Cliente.Name = "Cliente"
-        Me.Cliente.ReadOnly = True
-        '
-        'Ubicacion
-        '
-        Me.Ubicacion.DataPropertyName = "Ubicacion"
-        Me.Ubicacion.HeaderText = "Ubicacion"
-        Me.Ubicacion.Name = "Ubicacion"
-        Me.Ubicacion.ReadOnly = True
-        '
-        'Usuario_Mod
-        '
-        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
-        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
-        Me.Usuario_Mod.Name = "Usuario_Mod"
-        Me.Usuario_Mod.ReadOnly = True
-        Me.Usuario_Mod.Visible = False
-        '
-        'F_Mod
-        '
-        Me.F_Mod.DataPropertyName = "F_Mod"
-        Me.F_Mod.HeaderText = "F_Mod"
-        Me.F_Mod.Name = "F_Mod"
-        Me.F_Mod.ReadOnly = True
-        Me.F_Mod.Visible = False
-        '
-        'Estatus
-        '
-        Me.Estatus.DataPropertyName = "Estatus"
-        Me.Estatus.HeaderText = "Estado"
-        Me.Estatus.Name = "Estatus"
-        Me.Estatus.ReadOnly = True
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(12, 486)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 163
+        Me.lbMsg.Text = "Msg"
         '
         'FormAbcServ
         '
@@ -462,6 +474,7 @@ Partial Class FormAbcServ
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 666)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.Controls.Add(Me.lbId)
         Me.Controls.Add(Me.Label7)
@@ -536,4 +549,5 @@ Partial Class FormAbcServ
     Friend WithEvents Usuario_Mod As DataGridViewTextBoxColumn
     Friend WithEvents F_Mod As DataGridViewTextBoxColumn
     Friend WithEvents Estatus As DataGridViewTextBoxColumn
+    Friend WithEvents lbMsg As Label
 End Class

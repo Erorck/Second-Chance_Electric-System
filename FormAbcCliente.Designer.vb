@@ -25,13 +25,28 @@ Partial Class FormAbcCliente
         Me.components = New System.ComponentModel.Container()
         Dim DVLabel As System.Windows.Forms.Label
         Dim DHSLabel As System.Windows.Forms.Label
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
+        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Domicilio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DS_Tabla_Cliente = New PIA_MAD___ScdChnc.DS_Tabla_Cliente()
         Me.lbFechaMod = New System.Windows.Forms.Label()
@@ -66,25 +81,11 @@ Partial Class FormAbcCliente
         Me.DSVistaClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AllClientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.All_ClientsTableAdapter = New PIA_MAD___ScdChnc.DS_Vista_ClienteTableAdapters.All_ClientsTableAdapter()
-        Me.No_Usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_P = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido_M = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Estatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Contraseña = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CURP = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DHS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DV = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Domicilio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Nac = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Usuario_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtDomicilio = New System.Windows.Forms.TextBox()
         Me.btnHabilitar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.lbMsg = New System.Windows.Forms.Label()
         DVLabel = New System.Windows.Forms.Label()
         DHSLabel = New System.Windows.Forms.Label()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -178,27 +179,27 @@ Partial Class FormAbcCliente
         Me.ClienteDataGridView.AutoGenerateColumns = False
         Me.ClienteDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.ClienteDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.NullValue = "NULL"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ClienteDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.NullValue = "NULL"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ClienteDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No_Usuario, Me.Nombre, Me.Apellido_P, Me.Apellido_M, Me.Estatus, Me.Contraseña, Me.Email, Me.CURP, Me.DHS, Me.DV, Me.Genero, Me.Domicilio, Me.F_Nac, Me.Usuario_Mod, Me.F_Mod})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.NullValue = "NULL"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ClienteDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.NullValue = "NULL"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ClienteDataGridView.DefaultCellStyle = DataGridViewCellStyle4
         Me.ClienteDataGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClienteDataGridView.Location = New System.Drawing.Point(356, 64)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
@@ -206,6 +207,136 @@ Partial Class FormAbcCliente
         Me.ClienteDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.ClienteDataGridView.Size = New System.Drawing.Size(478, 557)
         Me.ClienteDataGridView.TabIndex = 65
+        '
+        'No_Usuario
+        '
+        Me.No_Usuario.DataPropertyName = "No_Usuario"
+        Me.No_Usuario.HeaderText = "Usuario"
+        Me.No_Usuario.Name = "No_Usuario"
+        Me.No_Usuario.ReadOnly = True
+        Me.No_Usuario.Width = 68
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 69
+        '
+        'Apellido_P
+        '
+        Me.Apellido_P.DataPropertyName = "Apellido_P"
+        Me.Apellido_P.HeaderText = "Apellido paterno"
+        Me.Apellido_P.Name = "Apellido_P"
+        Me.Apellido_P.ReadOnly = True
+        Me.Apellido_P.Width = 99
+        '
+        'Apellido_M
+        '
+        Me.Apellido_M.DataPropertyName = "Apellido_M"
+        Me.Apellido_M.HeaderText = "Apellido materno"
+        Me.Apellido_M.Name = "Apellido_M"
+        Me.Apellido_M.ReadOnly = True
+        Me.Apellido_M.Width = 101
+        '
+        'Estatus
+        '
+        Me.Estatus.DataPropertyName = "Estatus"
+        Me.Estatus.HeaderText = "Estatus"
+        Me.Estatus.Name = "Estatus"
+        Me.Estatus.ReadOnly = True
+        Me.Estatus.Width = 67
+        '
+        'Contraseña
+        '
+        Me.Contraseña.DataPropertyName = "Contraseña"
+        Me.Contraseña.HeaderText = "Contraseña"
+        Me.Contraseña.Name = "Contraseña"
+        Me.Contraseña.ReadOnly = True
+        Me.Contraseña.Visible = False
+        Me.Contraseña.Width = 86
+        '
+        'Email
+        '
+        Me.Email.DataPropertyName = "Email"
+        Me.Email.HeaderText = "Email"
+        Me.Email.Name = "Email"
+        Me.Email.ReadOnly = True
+        Me.Email.Visible = False
+        Me.Email.Width = 57
+        '
+        'CURP
+        '
+        Me.CURP.DataPropertyName = "CURP"
+        Me.CURP.HeaderText = "CURP"
+        Me.CURP.Name = "CURP"
+        Me.CURP.ReadOnly = True
+        Me.CURP.Visible = False
+        Me.CURP.Width = 62
+        '
+        'DHS
+        '
+        Me.DHS.DataPropertyName = "DHS"
+        Me.DHS.HeaderText = "DHS"
+        Me.DHS.Name = "DHS"
+        Me.DHS.ReadOnly = True
+        Me.DHS.Visible = False
+        Me.DHS.Width = 55
+        '
+        'DV
+        '
+        Me.DV.DataPropertyName = "DV"
+        Me.DV.HeaderText = "DV"
+        Me.DV.Name = "DV"
+        Me.DV.ReadOnly = True
+        Me.DV.Visible = False
+        Me.DV.Width = 47
+        '
+        'Genero
+        '
+        Me.Genero.DataPropertyName = "Genero"
+        Me.Genero.HeaderText = "Genero"
+        Me.Genero.Name = "Genero"
+        Me.Genero.ReadOnly = True
+        Me.Genero.Visible = False
+        Me.Genero.Width = 67
+        '
+        'Domicilio
+        '
+        Me.Domicilio.DataPropertyName = "Domicilio"
+        Me.Domicilio.HeaderText = "Domicilio"
+        Me.Domicilio.Name = "Domicilio"
+        Me.Domicilio.ReadOnly = True
+        Me.Domicilio.Visible = False
+        Me.Domicilio.Width = 74
+        '
+        'F_Nac
+        '
+        Me.F_Nac.DataPropertyName = "F_Nac"
+        Me.F_Nac.HeaderText = "F_Nac"
+        Me.F_Nac.Name = "F_Nac"
+        Me.F_Nac.ReadOnly = True
+        Me.F_Nac.Visible = False
+        Me.F_Nac.Width = 64
+        '
+        'Usuario_Mod
+        '
+        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
+        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
+        Me.Usuario_Mod.Name = "Usuario_Mod"
+        Me.Usuario_Mod.ReadOnly = True
+        Me.Usuario_Mod.Visible = False
+        Me.Usuario_Mod.Width = 95
+        '
+        'F_Mod
+        '
+        Me.F_Mod.DataPropertyName = "F_Mod"
+        Me.F_Mod.HeaderText = "F_Mod"
+        Me.F_Mod.Name = "F_Mod"
+        Me.F_Mod.ReadOnly = True
+        Me.F_Mod.Visible = False
+        Me.F_Mod.Width = 65
         '
         'ClienteBindingSource
         '
@@ -530,136 +661,6 @@ Partial Class FormAbcCliente
         '
         Me.All_ClientsTableAdapter.ClearBeforeFill = True
         '
-        'No_Usuario
-        '
-        Me.No_Usuario.DataPropertyName = "No_Usuario"
-        Me.No_Usuario.HeaderText = "Usuario"
-        Me.No_Usuario.Name = "No_Usuario"
-        Me.No_Usuario.ReadOnly = True
-        Me.No_Usuario.Width = 68
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 69
-        '
-        'Apellido_P
-        '
-        Me.Apellido_P.DataPropertyName = "Apellido_P"
-        Me.Apellido_P.HeaderText = "Apellido paterno"
-        Me.Apellido_P.Name = "Apellido_P"
-        Me.Apellido_P.ReadOnly = True
-        Me.Apellido_P.Width = 99
-        '
-        'Apellido_M
-        '
-        Me.Apellido_M.DataPropertyName = "Apellido_M"
-        Me.Apellido_M.HeaderText = "Apellido materno"
-        Me.Apellido_M.Name = "Apellido_M"
-        Me.Apellido_M.ReadOnly = True
-        Me.Apellido_M.Width = 101
-        '
-        'Estatus
-        '
-        Me.Estatus.DataPropertyName = "Estatus"
-        Me.Estatus.HeaderText = "Estatus"
-        Me.Estatus.Name = "Estatus"
-        Me.Estatus.ReadOnly = True
-        Me.Estatus.Width = 67
-        '
-        'Contraseña
-        '
-        Me.Contraseña.DataPropertyName = "Contraseña"
-        Me.Contraseña.HeaderText = "Contraseña"
-        Me.Contraseña.Name = "Contraseña"
-        Me.Contraseña.ReadOnly = True
-        Me.Contraseña.Visible = False
-        Me.Contraseña.Width = 86
-        '
-        'Email
-        '
-        Me.Email.DataPropertyName = "Email"
-        Me.Email.HeaderText = "Email"
-        Me.Email.Name = "Email"
-        Me.Email.ReadOnly = True
-        Me.Email.Visible = False
-        Me.Email.Width = 57
-        '
-        'CURP
-        '
-        Me.CURP.DataPropertyName = "CURP"
-        Me.CURP.HeaderText = "CURP"
-        Me.CURP.Name = "CURP"
-        Me.CURP.ReadOnly = True
-        Me.CURP.Visible = False
-        Me.CURP.Width = 62
-        '
-        'DHS
-        '
-        Me.DHS.DataPropertyName = "DHS"
-        Me.DHS.HeaderText = "DHS"
-        Me.DHS.Name = "DHS"
-        Me.DHS.ReadOnly = True
-        Me.DHS.Visible = False
-        Me.DHS.Width = 55
-        '
-        'DV
-        '
-        Me.DV.DataPropertyName = "DV"
-        Me.DV.HeaderText = "DV"
-        Me.DV.Name = "DV"
-        Me.DV.ReadOnly = True
-        Me.DV.Visible = False
-        Me.DV.Width = 47
-        '
-        'Genero
-        '
-        Me.Genero.DataPropertyName = "Genero"
-        Me.Genero.HeaderText = "Genero"
-        Me.Genero.Name = "Genero"
-        Me.Genero.ReadOnly = True
-        Me.Genero.Visible = False
-        Me.Genero.Width = 67
-        '
-        'Domicilio
-        '
-        Me.Domicilio.DataPropertyName = "Domicilio"
-        Me.Domicilio.HeaderText = "Domicilio"
-        Me.Domicilio.Name = "Domicilio"
-        Me.Domicilio.ReadOnly = True
-        Me.Domicilio.Visible = False
-        Me.Domicilio.Width = 74
-        '
-        'F_Nac
-        '
-        Me.F_Nac.DataPropertyName = "F_Nac"
-        Me.F_Nac.HeaderText = "F_Nac"
-        Me.F_Nac.Name = "F_Nac"
-        Me.F_Nac.ReadOnly = True
-        Me.F_Nac.Visible = False
-        Me.F_Nac.Width = 64
-        '
-        'Usuario_Mod
-        '
-        Me.Usuario_Mod.DataPropertyName = "Usuario_Mod"
-        Me.Usuario_Mod.HeaderText = "Usuario_Mod"
-        Me.Usuario_Mod.Name = "Usuario_Mod"
-        Me.Usuario_Mod.ReadOnly = True
-        Me.Usuario_Mod.Visible = False
-        Me.Usuario_Mod.Width = 95
-        '
-        'F_Mod
-        '
-        Me.F_Mod.DataPropertyName = "F_Mod"
-        Me.F_Mod.HeaderText = "F_Mod"
-        Me.F_Mod.Name = "F_Mod"
-        Me.F_Mod.ReadOnly = True
-        Me.F_Mod.Visible = False
-        Me.F_Mod.Width = 65
-        '
         'Label7
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -710,12 +711,24 @@ Partial Class FormAbcCliente
         Me.btnLimpiar.Text = "Limpiar"
         Me.btnLimpiar.UseVisualStyleBackColor = False
         '
+        'lbMsg
+        '
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(37, 56)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 164
+        Me.lbMsg.Text = "Msg"
+        '
         'FormAbcCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(860, 650)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.Label7)
@@ -826,4 +839,5 @@ Partial Class FormAbcCliente
     Friend WithEvents txtDomicilio As TextBox
     Friend WithEvents btnHabilitar As Button
     Friend WithEvents btnLimpiar As Button
+    Friend WithEvents lbMsg As Label
 End Class

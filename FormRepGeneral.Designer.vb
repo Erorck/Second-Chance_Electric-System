@@ -35,6 +35,7 @@ Partial Class FormRepGeneral
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cbMes = New System.Windows.Forms.ComboBox()
+        Me.lbMsg = New System.Windows.Forms.Label()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepGenDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -193,12 +194,24 @@ Partial Class FormRepGeneral
         Me.cbMes.TabIndex = 155
         Me.cbMes.Text = "MM"
         '
+        'lbMsg
+        '
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(28, 114)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 168
+        Me.lbMsg.Text = "Msg"
+        '
         'FormRepGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.cbMes)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.Controls.Add(Me.RepGenDataViewGrid)
@@ -231,4 +244,5 @@ Partial Class FormRepGeneral
     Friend WithEvents Label15 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents cbMes As ComboBox
+    Friend WithEvents lbMsg As Label
 End Class

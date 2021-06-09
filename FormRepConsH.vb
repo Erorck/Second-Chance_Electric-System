@@ -18,6 +18,16 @@ Public Class FormRepConsH
         Dim command As New SqlCommand()
         Dim Temp As Integer
 
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
+        If txtServicio.Text = "" Then
+            lbMsg.Text = "*Ingrese el numero de servicio"
+            Return
+        End If
+
         Try
             Temp = CInt(txtAño.Text)
             params(0) = New SqlParameter("@Año", SqlDbType.Int)
@@ -116,6 +126,10 @@ Public Class FormRepConsH
         End Try
 
     End Sub
+
 #End Region
+    Private Sub FormRepConsH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbMsg.Text = ""
+    End Sub
 
 End Class

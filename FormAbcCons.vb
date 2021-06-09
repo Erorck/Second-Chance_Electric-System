@@ -73,7 +73,7 @@ Public Class FormAbcCons
         cbMes.DataSource = dtG
         cbMes.DisplayMember = "Name"
         cbMes.ValueMember = "Id"
-        cbMes.SelectedIndex = -1
+        cbMes.SelectedIndex = 1
 #End Region
 
 
@@ -208,6 +208,8 @@ Public Class FormAbcCons
         txtAño.Enabled = True
         txtCant_T.ReadOnly = False
 
+        lbMsg.Text = ""
+
     End Sub
 
 #End Region
@@ -219,6 +221,21 @@ Public Class FormAbcCons
         Dim Temp As String
         Dim i As String
         Dim Msg As String
+
+        If cbServicio.SelectedIndex < 0 Then
+            lbMsg.Text = "*Ingrese un Servicio"
+            Return
+        End If
+
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
+        If txtCant_T.Text = "" Then
+            lbMsg.Text = "*Ingrese el consumo en el periodo"
+            Return
+        End If
 
         i = lbId.Text
 
