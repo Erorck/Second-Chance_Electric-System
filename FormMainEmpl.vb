@@ -110,6 +110,7 @@ Public Class FormEmplGen
 
     End Sub
 
+#Region "Abrir Formularios"
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnCuenta.Click
         AbrirFormEnPanel(Of FormCambiarContra)()
         btnCuenta.BackColor = Color.FromArgb(26, 50, 54)
@@ -160,11 +161,18 @@ Public Class FormEmplGen
         btnGenRcb.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
 
+    Private Sub btnConsulRbc_Click(sender As Object, e As EventArgs) Handles btnConsulRbc.Click
+        AbrirFormEnPanel(Of FormConsulRcb)()
+        btnConsulRbc.BackColor = Color.FromArgb(26, 50, 54)
+    End Sub
+
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
         AbrirFormEnPanel(Of FormAbcEmpl)()
         btnEmpleados.BackColor = Color.FromArgb(26, 50, 54)
     End Sub
+#End Region
 
+#Region "Cerrar Formularios"
     'Metodo al cerrar un formulario
     Private Sub CerrarFormulario(ByVal sender As Object, ByVal e As FormClosedEventArgs)
         If (Application.OpenForms("FormCambiarContra") Is Nothing) Then
@@ -200,6 +208,12 @@ Public Class FormEmplGen
         If (Application.OpenForms("FormAbcRcb") Is Nothing) Then
             btnGenRcb.BackColor = Color.DarkCyan
         End If
+        If (Application.OpenForms("FormConsulRcb") Is Nothing) Then
+            btnConsulRbc.BackColor = Color.DarkCyan
+        End If
     End Sub
+#End Region
+
+
 
 End Class

@@ -25,7 +25,6 @@ Partial Class FormRepTar
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.RepTarDataViewGrid = New System.Windows.Forms.DataGridView()
-        Me.F_Mod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtAño = New System.Windows.Forms.TextBox()
         Me.btnFiltrar = New System.Windows.Forms.Button()
         Me.btnGenerarPDF = New System.Windows.Forms.Button()
@@ -53,7 +52,6 @@ Partial Class FormRepTar
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.RepTarDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.RepTarDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RepTarDataViewGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.F_Mod})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -70,14 +68,6 @@ Partial Class FormRepTar
         Me.RepTarDataViewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.RepTarDataViewGrid.Size = New System.Drawing.Size(742, 291)
         Me.RepTarDataViewGrid.TabIndex = 140
-        '
-        'F_Mod
-        '
-        Me.F_Mod.DataPropertyName = "F_Mod"
-        Me.F_Mod.HeaderText = "F_Mod"
-        Me.F_Mod.Name = "F_Mod"
-        Me.F_Mod.ReadOnly = True
-        Me.F_Mod.Visible = False
         '
         'txtAño
         '
@@ -180,7 +170,6 @@ Partial Class FormRepTar
     End Sub
 
     Friend WithEvents RepTarDataViewGrid As DataGridView
-    Friend WithEvents F_Mod As DataGridViewTextBoxColumn
     Friend WithEvents txtAño As TextBox
     Friend WithEvents btnFiltrar As Button
     Friend WithEvents btnGenerarPDF As Button

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormConsulRcb
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,271 +20,281 @@ Partial Class FormConsulRcb
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.ConsulRcbDataViewGrid = New System.Windows.Forms.DataGridView()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.cbServicio = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtAño = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestiónTarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestiónConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsumoHistóricoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsultaDeReciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TarifasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CambiarContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSesiónToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
+        Me.cbMes = New System.Windows.Forms.ComboBox()
+        Me.btnGenerarRcbPDF = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnPagar = New System.Windows.Forms.Button()
+        Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.lbId = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        CType(Me.ConsulRcbDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'ConsulRcbDataViewGrid
         '
-        Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Ejemplo_recibo
-        Me.PictureBox1.Location = New System.Drawing.Point(396, 35)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(392, 533)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
+        Me.ConsulRcbDataViewGrid.AllowUserToAddRows = False
+        Me.ConsulRcbDataViewGrid.AllowUserToDeleteRows = False
+        Me.ConsulRcbDataViewGrid.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ConsulRcbDataViewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.ConsulRcbDataViewGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.ConsulRcbDataViewGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.NullValue = "NULL"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ConsulRcbDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.ConsulRcbDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.NullValue = "NULL"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ConsulRcbDataViewGrid.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ConsulRcbDataViewGrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.ConsulRcbDataViewGrid.Location = New System.Drawing.Point(23, 68)
+        Me.ConsulRcbDataViewGrid.Name = "ConsulRcbDataViewGrid"
+        Me.ConsulRcbDataViewGrid.ReadOnly = True
+        Me.ConsulRcbDataViewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.ConsulRcbDataViewGrid.Size = New System.Drawing.Size(742, 101)
+        Me.ConsulRcbDataViewGrid.TabIndex = 160
         '
-        'Label2
+        'Label16
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(211, 436)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Estatus del recibo"
+        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(33, 25)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(202, 28)
+        Me.Label16.TabIndex = 161
+        Me.Label16.Text = "Consulta Recibo"
         '
-        'Button1
+        'cbServicio
         '
-        Me.Button1.Enabled = False
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(187, 461)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 30)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Generar PDF"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cbServicio.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbServicio.FormattingEnabled = True
+        Me.cbServicio.Location = New System.Drawing.Point(347, 251)
+        Me.cbServicio.Name = "cbServicio"
+        Me.cbServicio.Size = New System.Drawing.Size(247, 21)
+        Me.cbServicio.TabIndex = 162
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(184, 226)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 20)
+        Me.Label4.TabIndex = 166
+        Me.Label4.Text = "Mes"
+        '
+        'txtAño
+        '
+        Me.txtAño.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtAño.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAño.Location = New System.Drawing.Point(254, 249)
+        Me.txtAño.MaxLength = 4
+        Me.txtAño.Name = "txtAño"
+        Me.txtAño.Size = New System.Drawing.Size(80, 26)
+        Me.txtAño.TabIndex = 165
+        Me.txtAño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(80, 398)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(223, 209)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 20)
-        Me.Label1.TabIndex = 12
+        Me.Label1.TabIndex = 164
         Me.Label1.Text = "Periodo"
         '
-        'ComboBox2
+        'cbMes
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(214, 395)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(80, 28)
-        Me.ComboBox2.TabIndex = 11
-        Me.ComboBox2.Text = "YYYY"
+        Me.cbMes.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbMes.FormattingEnabled = True
+        Me.cbMes.Location = New System.Drawing.Point(163, 249)
+        Me.cbMes.Name = "cbMes"
+        Me.cbMes.Size = New System.Drawing.Size(85, 26)
+        Me.cbMes.TabIndex = 163
+        Me.cbMes.Text = "MM"
         '
-        'ComboBox1
+        'btnGenerarRcbPDF
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(156, 395)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(52, 28)
-        Me.ComboBox1.TabIndex = 10
-        Me.ComboBox1.Text = "MM"
+        Me.btnGenerarRcbPDF.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnGenerarRcbPDF.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.btnGenerarRcbPDF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGenerarRcbPDF.Enabled = False
+        Me.btnGenerarRcbPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGenerarRcbPDF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGenerarRcbPDF.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnGenerarRcbPDF.Location = New System.Drawing.Point(373, 299)
+        Me.btnGenerarRcbPDF.Name = "btnGenerarRcbPDF"
+        Me.btnGenerarRcbPDF.Size = New System.Drawing.Size(159, 33)
+        Me.btnGenerarRcbPDF.TabIndex = 167
+        Me.btnGenerarRcbPDF.Text = "Generar en PDF"
+        Me.btnGenerarRcbPDF.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Label3
         '
-        Me.Button2.Enabled = False
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(102, 461)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 29)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "Pagar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(274, 226)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 20)
+        Me.Label3.TabIndex = 168
+        Me.Label3.Text = "Año"
         '
-        'MenuStrip1
+        'Label2
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpleadosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.SalirToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
-        Me.MenuStrip1.TabIndex = 16
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Location = New System.Drawing.Point(429, 228)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 20)
+        Me.Label2.TabIndex = 169
+        Me.Label2.Text = "Servicio"
         '
-        'EmpleadosToolStripMenuItem
+        'btnPagar
         '
-        Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
-        Me.EmpleadosToolStripMenuItem.Text = "Empleados"
+        Me.btnPagar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnPagar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(110, Byte), Integer))
+        Me.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPagar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPagar.Location = New System.Drawing.Point(207, 299)
+        Me.btnPagar.Name = "btnPagar"
+        Me.btnPagar.Size = New System.Drawing.Size(77, 33)
+        Me.btnPagar.TabIndex = 170
+        Me.btnPagar.Text = "Pagar"
+        Me.btnPagar.UseVisualStyleBackColor = False
         '
-        'ClientesToolStripMenuItem
+        'btnCerrarFormulario
         '
-        Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.GestiónTarifasToolStripMenuItem, Me.GestiónConsumosToolStripMenuItem})
-        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        Me.btnCerrarFormulario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCerrarFormulario.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Close
+        Me.btnCerrarFormulario.Location = New System.Drawing.Point(749, 37)
+        Me.btnCerrarFormulario.Name = "btnCerrarFormulario"
+        Me.btnCerrarFormulario.Size = New System.Drawing.Size(16, 16)
+        Me.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.btnCerrarFormulario.TabIndex = 171
+        Me.btnCerrarFormulario.TabStop = False
         '
-        'GestionToolStripMenuItem
+        'btnBuscar
         '
-        Me.GestionToolStripMenuItem.Name = "GestionToolStripMenuItem"
-        Me.GestionToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
-        Me.GestionToolStripMenuItem.Text = "Gestion"
+        Me.btnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnBuscar.Location = New System.Drawing.Point(290, 299)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(77, 33)
+        Me.btnBuscar.TabIndex = 172
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
-        'ServiciosToolStripMenuItem
+        'lbId
         '
-        Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
-        Me.ServiciosToolStripMenuItem.Text = "Servicios"
+        Me.lbId.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbId.AutoSize = True
+        Me.lbId.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbId.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbId.Location = New System.Drawing.Point(363, 180)
+        Me.lbId.Name = "lbId"
+        Me.lbId.Size = New System.Drawing.Size(71, 20)
+        Me.lbId.TabIndex = 174
+        Me.lbId.Text = "Numero"
+        Me.lbId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'GestiónTarifasToolStripMenuItem
+        'Label6
         '
-        Me.GestiónTarifasToolStripMenuItem.Name = "GestiónTarifasToolStripMenuItem"
-        Me.GestiónTarifasToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
-        Me.GestiónTarifasToolStripMenuItem.Text = "Gestión Tarifas"
-        '
-        'GestiónConsumosToolStripMenuItem
-        '
-        Me.GestiónConsumosToolStripMenuItem.Name = "GestiónConsumosToolStripMenuItem"
-        Me.GestiónConsumosToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
-        Me.GestiónConsumosToolStripMenuItem.Text = "Gestión Consumos"
-        '
-        'ReportesToolStripMenuItem
-        '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GeneralToolStripMenuItem, Me.ConsumoHistóricoToolStripMenuItem, Me.ConsultaDeReciboToolStripMenuItem, Me.TarifasToolStripMenuItem, Me.ConsumosToolStripMenuItem})
-        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-        Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'GeneralToolStripMenuItem
-        '
-        Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
-        Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.GeneralToolStripMenuItem.Text = "General"
-        '
-        'ConsumoHistóricoToolStripMenuItem
-        '
-        Me.ConsumoHistóricoToolStripMenuItem.Name = "ConsumoHistóricoToolStripMenuItem"
-        Me.ConsumoHistóricoToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.ConsumoHistóricoToolStripMenuItem.Text = "Consumo histórico"
-        '
-        'ConsultaDeReciboToolStripMenuItem
-        '
-        Me.ConsultaDeReciboToolStripMenuItem.Name = "ConsultaDeReciboToolStripMenuItem"
-        Me.ConsultaDeReciboToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.ConsultaDeReciboToolStripMenuItem.Text = "Recibos"
-        '
-        'TarifasToolStripMenuItem
-        '
-        Me.TarifasToolStripMenuItem.Name = "TarifasToolStripMenuItem"
-        Me.TarifasToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.TarifasToolStripMenuItem.Text = "Tarifas"
-        '
-        'ConsumosToolStripMenuItem
-        '
-        Me.ConsumosToolStripMenuItem.Name = "ConsumosToolStripMenuItem"
-        Me.ConsumosToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.ConsumosToolStripMenuItem.Text = "Consumos"
-        '
-        'CerrarSesiónToolStripMenuItem
-        '
-        Me.CerrarSesiónToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CambiarContraseñaToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem1})
-        Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.CerrarSesiónToolStripMenuItem.Text = "Cuenta"
-        '
-        'CambiarContraseñaToolStripMenuItem
-        '
-        Me.CambiarContraseñaToolStripMenuItem.Name = "CambiarContraseñaToolStripMenuItem"
-        Me.CambiarContraseñaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CambiarContraseñaToolStripMenuItem.Text = "Cambiar contraseña"
-        '
-        'CerrarSesiónToolStripMenuItem1
-        '
-        Me.CerrarSesiónToolStripMenuItem1.Name = "CerrarSesiónToolStripMenuItem1"
-        Me.CerrarSesiónToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.CerrarSesiónToolStripMenuItem1.Text = "Cerrar sesión"
-        '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 35)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(368, 342)
-        Me.ListBox1.TabIndex = 17
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(277, 180)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(80, 20)
+        Me.Label6.TabIndex = 173
+        Me.Label6.Text = "Recibo #"
         '
         'FormConsulRcb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 574)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Button2)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(800, 400)
+        Me.Controls.Add(Me.lbId)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.btnCerrarFormulario)
+        Me.Controls.Add(Me.btnPagar)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.btnGenerarRcbPDF)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txtAño)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.cbMes)
+        Me.Controls.Add(Me.cbServicio)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.ConsulRcbDataViewGrid)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormConsulRcb"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consulta de Recibos"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        CType(Me.ConsulRcbDataViewGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ConsulRcbDataViewGrid As DataGridView
+    Friend WithEvents Label16 As Label
+    Friend WithEvents cbServicio As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtAño As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GestionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ServiciosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GestiónTarifasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GestiónConsumosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConsumoHistóricoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConsultaDeReciboToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TarifasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConsumosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSesiónToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CambiarContraseñaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSesiónToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents cbMes As ComboBox
+    Friend WithEvents btnGenerarRcbPDF As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnPagar As Button
+    Friend WithEvents btnCerrarFormulario As PictureBox
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents lbId As Label
+    Friend WithEvents Label6 As Label
 End Class

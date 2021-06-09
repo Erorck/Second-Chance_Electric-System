@@ -1,4 +1,7 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
+Imports iTextSharp.text
+Imports iTextSharp.text.pdf
 
 Public Class FormRepGeneral
 
@@ -103,5 +106,72 @@ Public Class FormRepGeneral
     End Sub
 #End Region
 
+#Region "Metodos para exportar datos"
+    Public Function Getcolumnaszise(ByVal dg As DataGridView) As Single()
+        Dim values As Single() = New Single(dg.ColumnCount - 1) {}
+        For i As Integer = 0 To dg.ColumnCount - 1
+            values(i) = CSng(dg.Columns(i).Width)
+        Next
+
+        Return values
+
+    End Function
+
+    Public Sub exportardatospdf(ByVal document As Document, ByVal Header As String, ByVal Frase As String)
+
+        Dim datatable As New PdfPTable(RepGenDataViewGrid.ColumnCount)
+        datatable.DefaultCell.Padding = 3
+        Dim headerwidths As Single() = Getcolumnaszise(RepGenDataViewGrid)
+
+        datatable.SetWidths(headerwidths)
+        datatable.WidthPercentage = 100
+        datatable.DefaultCell.BorderWidth = 2
+        datatable.DefaultCell.HorizontalAlignment = Element.ALIGN_CENTER
+
+        Dim encabezado As New iTextSharp.text.Paragraph(Header, New Font(Font.Name = "Tahoma", 20, Font.Bold))
+
+        Dim texto As New Phrase(Frase, New Font(Font.Name = "Tahoma", 14, Font.Bold))
+
+
+        For i As Integer = 0 To RepGenDataViewGrid.ColumnCount - 1
+            datatable.AddCell(RepGenDataViewGrid.Columns(i).HeaderText)
+        Next
+
+        datatable.HeaderRows = 1
+        datatable.DefaultCell.BorderWidth = 1
+
+        For i As Integer = 0 To RepGenDataViewGrid.RowCount - 1
+            For j As Integer = 0 To RepGenDataViewGrid.ColumnCount - 1
+                datatable.AddCell(RepGenDataViewGrid(j, i).Value.ToString())
+            Next
+
+            datatable.CompleteRow()
+        Next
+
+        document.Add(encabezado)
+        document.Add(texto)
+        document.Add(datatable)
+
+    End Sub
+#End Region
+
+#Region "Generar PDF"
+    Private Sub btnGenerarPDF_Click(sender As Object, e As EventArgs) Handles btnGenerarPDF.Click
+        Try
+            Dim doc As New Document(PageSize.A4.Rotate(), 10, 10, 10, 10)
+            Dim filename As String = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\Reporte General.pdf"
+            Dim file As New FileStream(filename, FileMode.Create, FileAccess.Write, FileShare.ReadWrite)
+            PdfWriter.GetInstance(doc, file)
+            doc.Open()
+            exportardatospdf(doc, "Reporte", "Reporte General")
+            doc.Close()
+            Process.Start(filename)
+        Catch ex As Exception
+            MessageBox.Show("No se puede crear el documento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End Try
+
+    End Sub
+#End Region
 
 End Class

@@ -26,24 +26,25 @@ Partial Class FormEmplGen
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.Logo = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnGenRcb = New System.Windows.Forms.Button()
+        Me.btnRepGeneral = New System.Windows.Forms.Button()
+        Me.btnRepCons = New System.Windows.Forms.Button()
+        Me.btnRepTar = New System.Windows.Forms.Button()
         Me.btnServicios = New System.Windows.Forms.Button()
         Me.btnTarifas = New System.Windows.Forms.Button()
         Me.btnConsumos = New System.Windows.Forms.Button()
-        Me.PanelHeader = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCuenta = New System.Windows.Forms.Button()
         Me.btnReportes = New System.Windows.Forms.Button()
         Me.btnClientes = New System.Windows.Forms.Button()
         Me.btnEmpleados = New System.Windows.Forms.Button()
+        Me.PanelHeader = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnRepTar = New System.Windows.Forms.Button()
-        Me.btnRepCons = New System.Windows.Forms.Button()
-        Me.btnRepGeneral = New System.Windows.Forms.Button()
-        Me.btnGenRcb = New System.Windows.Forms.Button()
+        Me.btnConsulRbc = New System.Windows.Forms.Button()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +94,7 @@ Partial Class FormEmplGen
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.DarkCyan
+        Me.PanelMenu.Controls.Add(Me.btnConsulRbc)
         Me.PanelMenu.Controls.Add(Me.btnGenRcb)
         Me.PanelMenu.Controls.Add(Me.btnRepGeneral)
         Me.PanelMenu.Controls.Add(Me.btnRepCons)
@@ -110,6 +112,78 @@ Partial Class FormEmplGen
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(250, 660)
         Me.PanelMenu.TabIndex = 1
+        '
+        'btnGenRcb
+        '
+        Me.btnGenRcb.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnGenRcb.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGenRcb.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnGenRcb.FlatAppearance.BorderSize = 0
+        Me.btnGenRcb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnGenRcb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnGenRcb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGenRcb.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGenRcb.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGenRcb.Location = New System.Drawing.Point(0, 540)
+        Me.btnGenRcb.Name = "btnGenRcb"
+        Me.btnGenRcb.Size = New System.Drawing.Size(250, 40)
+        Me.btnGenRcb.TabIndex = 10
+        Me.btnGenRcb.Text = "Generar Recibos"
+        Me.btnGenRcb.UseVisualStyleBackColor = False
+        '
+        'btnRepGeneral
+        '
+        Me.btnRepGeneral.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnRepGeneral.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRepGeneral.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRepGeneral.FlatAppearance.BorderSize = 0
+        Me.btnRepGeneral.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRepGeneral.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRepGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnRepGeneral.Location = New System.Drawing.Point(0, 500)
+        Me.btnRepGeneral.Name = "btnRepGeneral"
+        Me.btnRepGeneral.Size = New System.Drawing.Size(250, 40)
+        Me.btnRepGeneral.TabIndex = 9
+        Me.btnRepGeneral.Text = "Reporte General"
+        Me.btnRepGeneral.UseVisualStyleBackColor = False
+        '
+        'btnRepCons
+        '
+        Me.btnRepCons.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnRepCons.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRepCons.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRepCons.FlatAppearance.BorderSize = 0
+        Me.btnRepCons.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepCons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepCons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRepCons.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRepCons.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnRepCons.Location = New System.Drawing.Point(0, 460)
+        Me.btnRepCons.Name = "btnRepCons"
+        Me.btnRepCons.Size = New System.Drawing.Size(250, 40)
+        Me.btnRepCons.TabIndex = 8
+        Me.btnRepCons.Text = "Reporte Consumos"
+        Me.btnRepCons.UseVisualStyleBackColor = False
+        '
+        'btnRepTar
+        '
+        Me.btnRepTar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnRepTar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRepTar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnRepTar.FlatAppearance.BorderSize = 0
+        Me.btnRepTar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepTar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnRepTar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRepTar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRepTar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnRepTar.Location = New System.Drawing.Point(0, 420)
+        Me.btnRepTar.Name = "btnRepTar"
+        Me.btnRepTar.Size = New System.Drawing.Size(250, 40)
+        Me.btnRepTar.TabIndex = 7
+        Me.btnRepTar.Text = "Reporte Tarifas"
+        Me.btnRepTar.UseVisualStyleBackColor = False
         '
         'btnServicios
         '
@@ -164,26 +238,6 @@ Partial Class FormEmplGen
         Me.btnConsumos.TabIndex = 4
         Me.btnConsumos.Text = "Consumos"
         Me.btnConsumos.UseVisualStyleBackColor = False
-        '
-        'PanelHeader
-        '
-        Me.PanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(13, Byte), Integer), CType(CType(28, Byte), Integer))
-        Me.PanelHeader.Controls.Add(Me.PictureBox1)
-        Me.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeader.Location = New System.Drawing.Point(0, 0)
-        Me.PanelHeader.Name = "PanelHeader"
-        Me.PanelHeader.Size = New System.Drawing.Size(250, 140)
-        Me.PanelHeader.TabIndex = 1
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Header
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 15)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(223, 109)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'btnCuenta
         '
@@ -258,6 +312,26 @@ Partial Class FormEmplGen
         Me.btnEmpleados.Text = "Empleados"
         Me.btnEmpleados.UseVisualStyleBackColor = False
         '
+        'PanelHeader
+        '
+        Me.PanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(13, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.PanelHeader.Controls.Add(Me.PictureBox1)
+        Me.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelHeader.Location = New System.Drawing.Point(0, 0)
+        Me.PanelHeader.Name = "PanelHeader"
+        Me.PanelHeader.Size = New System.Drawing.Size(250, 140)
+        Me.PanelHeader.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.PIA_MAD___ScdChnc.My.Resources.Resources.Header
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(223, 109)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'PanelBarraTitulo
         '
         Me.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
@@ -320,77 +394,23 @@ Partial Class FormEmplGen
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
-        'btnRepTar
+        'btnConsulRbc
         '
-        Me.btnRepTar.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnRepTar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRepTar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRepTar.FlatAppearance.BorderSize = 0
-        Me.btnRepTar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepTar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepTar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRepTar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRepTar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRepTar.Location = New System.Drawing.Point(0, 420)
-        Me.btnRepTar.Name = "btnRepTar"
-        Me.btnRepTar.Size = New System.Drawing.Size(250, 40)
-        Me.btnRepTar.TabIndex = 7
-        Me.btnRepTar.Text = "Reporte Tarifas"
-        Me.btnRepTar.UseVisualStyleBackColor = False
-        '
-        'btnRepCons
-        '
-        Me.btnRepCons.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnRepCons.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRepCons.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRepCons.FlatAppearance.BorderSize = 0
-        Me.btnRepCons.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepCons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepCons.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRepCons.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRepCons.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRepCons.Location = New System.Drawing.Point(0, 460)
-        Me.btnRepCons.Name = "btnRepCons"
-        Me.btnRepCons.Size = New System.Drawing.Size(250, 40)
-        Me.btnRepCons.TabIndex = 8
-        Me.btnRepCons.Text = "Reporte Consumos"
-        Me.btnRepCons.UseVisualStyleBackColor = False
-        '
-        'btnRepGeneral
-        '
-        Me.btnRepGeneral.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnRepGeneral.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRepGeneral.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRepGeneral.FlatAppearance.BorderSize = 0
-        Me.btnRepGeneral.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnRepGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRepGeneral.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRepGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRepGeneral.Location = New System.Drawing.Point(0, 500)
-        Me.btnRepGeneral.Name = "btnRepGeneral"
-        Me.btnRepGeneral.Size = New System.Drawing.Size(250, 40)
-        Me.btnRepGeneral.TabIndex = 9
-        Me.btnRepGeneral.Text = "Reporte General"
-        Me.btnRepGeneral.UseVisualStyleBackColor = False
-        '
-        'btnGenRcb
-        '
-        Me.btnGenRcb.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnGenRcb.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnGenRcb.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnGenRcb.FlatAppearance.BorderSize = 0
-        Me.btnGenRcb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnGenRcb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.btnGenRcb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGenRcb.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenRcb.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGenRcb.Location = New System.Drawing.Point(0, 540)
-        Me.btnGenRcb.Name = "btnGenRcb"
-        Me.btnGenRcb.Size = New System.Drawing.Size(250, 40)
-        Me.btnGenRcb.TabIndex = 10
-        Me.btnGenRcb.Text = "Generar Recibos"
-        Me.btnGenRcb.UseVisualStyleBackColor = False
+        Me.btnConsulRbc.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnConsulRbc.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnConsulRbc.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnConsulRbc.FlatAppearance.BorderSize = 0
+        Me.btnConsulRbc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsulRbc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnConsulRbc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsulRbc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsulRbc.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConsulRbc.Location = New System.Drawing.Point(0, 580)
+        Me.btnConsulRbc.Name = "btnConsulRbc"
+        Me.btnConsulRbc.Size = New System.Drawing.Size(250, 40)
+        Me.btnConsulRbc.TabIndex = 11
+        Me.btnConsulRbc.Text = "Consultar Recibo"
+        Me.btnConsulRbc.UseVisualStyleBackColor = False
         '
         'FormEmplGen
         '
@@ -442,4 +462,5 @@ Partial Class FormEmplGen
     Friend WithEvents btnRepTar As Button
     Friend WithEvents btnRepGeneral As Button
     Friend WithEvents btnGenRcb As Button
+    Friend WithEvents btnConsulRbc As Button
 End Class
