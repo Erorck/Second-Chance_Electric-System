@@ -23,8 +23,8 @@ Partial Class FormAbcRcb
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtAño = New System.Windows.Forms.TextBox()
         Me.cbMes = New System.Windows.Forms.ComboBox()
@@ -34,9 +34,6 @@ Partial Class FormAbcRcb
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnGenerarRcb = New System.Windows.Forms.Button()
         Me.GenRcbDataViewGrid = New System.Windows.Forms.DataGridView()
-        Me.DS_Tabla_Rcb = New PIA_MAD___ScdChnc.DS_Tabla_Rcb()
-        Me.AllReceiptsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.All_ReceiptsTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.All_ReceiptsTableAdapter()
         Me.NumeroReciboDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClienteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -71,11 +68,15 @@ Partial Class FormAbcRcb
         Me.ModificadoporDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FechamodificacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AllReceiptsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DS_Tabla_Rcb = New PIA_MAD___ScdChnc.DS_Tabla_Rcb()
+        Me.All_ReceiptsTableAdapter = New PIA_MAD___ScdChnc.DS_Tabla_RcbTableAdapters.All_ReceiptsTableAdapter()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.btnCerrarFormulario = New System.Windows.Forms.PictureBox()
+        Me.lbMsg = New System.Windows.Forms.Label()
         CType(Me.GenRcbDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DS_Tabla_Rcb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AllReceiptsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DS_Tabla_Rcb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -173,27 +174,27 @@ Partial Class FormAbcRcb
         Me.GenRcbDataViewGrid.AutoGenerateColumns = False
         Me.GenRcbDataViewGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.GenRcbDataViewGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.NullValue = "NULL"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GenRcbDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.NullValue = "NULL"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GenRcbDataViewGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.GenRcbDataViewGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GenRcbDataViewGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumeroReciboDataGridViewTextBoxColumn, Me.ClienteDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn, Me.CURPDataGridViewTextBoxColumn, Me.DomicilioDataGridViewTextBoxColumn, Me.AñoDataGridViewTextBoxColumn, Me.MesDataGridViewTextBoxColumn, Me.NumeroMesDataGridViewTextBoxColumn, Me.NumeroContratoDataGridViewTextBoxColumn, Me.TipoServicioDataGridViewTextBoxColumn, Me.NumeroMedidorDataGridViewTextBoxColumn, Me.UbicacionDataGridViewTextBoxColumn, Me.NumeroConsumoDataGridViewTextBoxColumn, Me.ConsumoBasicoDataGridViewTextBoxColumn, Me.ConsumoIntermedioDataGridViewTextBoxColumn, Me.ConsumoExcedenteDataGridViewTextBoxColumn, Me.ConsumoTotalDataGridViewTextBoxColumn, Me.NumeroTarifaDataGridViewTextBoxColumn, Me.TarifaBasicaDataGridViewTextBoxColumn, Me.TarifaIntermediaDataGridViewTextBoxColumn, Me.TarifaExcedenteDataGridViewTextBoxColumn, Me.SubtotalBasicoDataGridViewTextBoxColumn, Me.SubtotalIntermedioDataGridViewTextBoxColumn, Me.SubtotalExcedenteDataGridViewTextBoxColumn, Me.SubtotalFinalDataGridViewTextBoxColumn, Me.IVADataGridViewTextBoxColumn, Me.TotalDataGridViewTextBoxColumn, Me.TotalNumeroDataGridViewTextBoxColumn, Me.TotalNombreDataGridViewTextBoxColumn, Me.FechaLimitePagoDataGridViewTextBoxColumn, Me.FormaPagoDataGridViewTextBoxColumn, Me.ModificadoporDataGridViewTextBoxColumn, Me.FechamodificacionDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn})
         Me.GenRcbDataViewGrid.DataSource = Me.AllReceiptsBindingSource
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle4.NullValue = "NULL"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GenRcbDataViewGrid.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.NullValue = "NULL"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(181, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GenRcbDataViewGrid.DefaultCellStyle = DataGridViewCellStyle2
         Me.GenRcbDataViewGrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.GenRcbDataViewGrid.Location = New System.Drawing.Point(22, 67)
         Me.GenRcbDataViewGrid.Name = "GenRcbDataViewGrid"
@@ -201,20 +202,6 @@ Partial Class FormAbcRcb
         Me.GenRcbDataViewGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.GenRcbDataViewGrid.Size = New System.Drawing.Size(742, 291)
         Me.GenRcbDataViewGrid.TabIndex = 159
-        '
-        'DS_Tabla_Rcb
-        '
-        Me.DS_Tabla_Rcb.DataSetName = "DS_Tabla_Rcb"
-        Me.DS_Tabla_Rcb.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'AllReceiptsBindingSource
-        '
-        Me.AllReceiptsBindingSource.DataMember = "All Receipts"
-        Me.AllReceiptsBindingSource.DataSource = Me.DS_Tabla_Rcb
-        '
-        'All_ReceiptsTableAdapter
-        '
-        Me.All_ReceiptsTableAdapter.ClearBeforeFill = True
         '
         'NumeroReciboDataGridViewTextBoxColumn
         '
@@ -488,6 +475,20 @@ Partial Class FormAbcRcb
         Me.EstadoDataGridViewTextBoxColumn.ReadOnly = True
         Me.EstadoDataGridViewTextBoxColumn.Width = 65
         '
+        'AllReceiptsBindingSource
+        '
+        Me.AllReceiptsBindingSource.DataMember = "All Receipts"
+        Me.AllReceiptsBindingSource.DataSource = Me.DS_Tabla_Rcb
+        '
+        'DS_Tabla_Rcb
+        '
+        Me.DS_Tabla_Rcb.DataSetName = "DS_Tabla_Rcb"
+        Me.DS_Tabla_Rcb.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'All_ReceiptsTableAdapter
+        '
+        Me.All_ReceiptsTableAdapter.ClearBeforeFill = True
+        '
         'Label16
         '
         Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -512,12 +513,24 @@ Partial Class FormAbcRcb
         Me.btnCerrarFormulario.TabIndex = 161
         Me.btnCerrarFormulario.TabStop = False
         '
+        'lbMsg
+        '
+        Me.lbMsg.AutoSize = True
+        Me.lbMsg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMsg.ForeColor = System.Drawing.Color.Gold
+        Me.lbMsg.Location = New System.Drawing.Point(19, 530)
+        Me.lbMsg.Name = "lbMsg"
+        Me.lbMsg.Size = New System.Drawing.Size(31, 15)
+        Me.lbMsg.TabIndex = 162
+        Me.lbMsg.Text = "Msg"
+        '
         'FormAbcRcb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(802, 564)
+        Me.Controls.Add(Me.lbMsg)
         Me.Controls.Add(Me.btnCerrarFormulario)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.GenRcbDataViewGrid)
@@ -534,8 +547,8 @@ Partial Class FormAbcRcb
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gestion de Recibos"
         CType(Me.GenRcbDataViewGrid, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DS_Tabla_Rcb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AllReceiptsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DS_Tabla_Rcb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -589,4 +602,5 @@ Partial Class FormAbcRcb
     Friend WithEvents EstadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Label16 As Label
     Friend WithEvents btnCerrarFormulario As PictureBox
+    Friend WithEvents lbMsg As Label
 End Class

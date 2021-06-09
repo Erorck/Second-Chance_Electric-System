@@ -68,6 +68,11 @@ Public Class FormAbcRcb
         Dim Temp As Integer
 
 
+        If txtAño.Text = "" Then
+            lbMsg.Text = "*Ingrese un año"
+            Return
+        End If
+
         Try
             If cbMes.SelectedValue = 0 And cbTipo.SelectedValue = "A" Then
                 params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
@@ -137,6 +142,7 @@ Public Class FormAbcRcb
         Finally
             connection.Close()
         End Try
+        lbMsg.Text = ""
     End Sub
 #End Region
 

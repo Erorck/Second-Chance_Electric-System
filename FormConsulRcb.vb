@@ -90,7 +90,25 @@ Public Class FormConsulRcb
         End Try
 #End Region
 
+#Region "CARGAR COMBOBOX FORMA DE PAGO"
+
+        Dim dtF As DataTable = New DataTable()
+        dtF.Columns.AddRange(New DataColumn() {New DataColumn("Id", typeString), New DataColumn("Name", typeString)})
+        dtF.Rows.Add("FP", "Forma de pago")
+        dtF.Rows.Add("EFC", "Efectivo")
+        dtF.Rows.Add("TB", "Transferencia bancaria")
+        dtF.Rows.Add("TD", "Tarjeta Debito")
+        dtF.Rows.Add("TC", "Tarjeta Credito")
+
+        'Assign DataTable as DataSource.
+        cbFo_Pago.DataSource = dtF
+        cbFo_Pago.DisplayMember = "Name"
+        cbFo_Pago.ValueMember = "Id"
+        cbFo_Pago.SelectedIndex = 0
+#End Region
+
         btnPagar.Enabled = False
+        cbFo_Pago.Visible = False
 
     End Sub
 #End Region
@@ -291,8 +309,10 @@ Public Class FormConsulRcb
 
         If TempS = "PP" Then
             btnPagar.Enabled = True
+            cbFo_Pago.Visible = True
         Else
             btnPagar.Enabled = False
+            cbFo_Pago.Visible = False
         End If
 
         btnGenerarRcbPDF.Enabled = True
@@ -304,7 +324,7 @@ Public Class FormConsulRcb
 #Region "Pagar"
     Private Sub btnPagar_Click(sender As Object, e As EventArgs) Handles btnPagar.Click
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(1) As SqlParameter
+        Dim params(2) As SqlParameter
 
         Dim i As Integer
         Dim Msg As String
@@ -316,6 +336,10 @@ Public Class FormConsulRcb
 
         params(1) = New SqlParameter("@No_Recibo", SqlDbType.Int)
         params(1).Value = i
+
+        params(2) = New SqlParameter("@Fo_Pago", SqlDbType.VarChar)
+        params(2).Value = cbFo_Pago.SelectedValue
+
 
         Msg = "Se ha pagado el recibo: " + CStr(i)
 
@@ -340,7 +364,8 @@ Public Class FormConsulRcb
             Return
         End Try
 
-
+        btnPagar.Enabled = False
+        cbFo_Pago.Visible = False
 
         connection.Close()
 

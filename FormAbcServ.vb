@@ -7,6 +7,9 @@ Public Class FormAbcServ
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
         Dim params(0) As SqlParameter
         'TODO: This line of code loads data into the 'DS_Tabla_Servicios.Servicio' table. You can move, or remove it, as needed.
+
+
+
         Me.ServicioTableAdapter.Fill(Me.DS_Tabla_Servicios.Servicio)
 
         Dim typeString As System.Type = System.Type.GetType("System.String")
@@ -82,19 +85,18 @@ Public Class FormAbcServ
         End Try
 #End Region
 
-        btnCerrarFormulario.Enabled = False
+
         btnEliminar.Enabled = False
         btnHabilitar.Enabled = False
         cbEstado.Enabled = False
+
+        LimpiarRegistro()
 
     End Sub
 #End Region
 
 #Region "Metodo Limpiar espacios"
     Private Sub LimpiarRegistro()
-        Dim i As Integer
-
-        i = ServiciosDataViewGrid.CurrentRow.Index
 
         txtMedidor.Clear()
         cbClientes.SelectedIndex = 0
@@ -353,18 +355,18 @@ Public Class FormAbcServ
         i = lbId.Text
 
         If i = "" Then
-            'USUARIO NUEVO
+            'SERVICIO NUEVO
             params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
             params(0).Value = "INS"
 
             params(1) = New SqlParameter("@No_Servicio", SqlDbType.Int)
-            params(1).Value = 0
+            params(1).Value = Nothing
 
             Msg = "Se ha dado de alta el Servicio "
 
         Else
 
-            'EDITAR USUARIO YA CREADO
+            'EDITAR SERVICIO
             params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
             params(0).Value = "ED"
 

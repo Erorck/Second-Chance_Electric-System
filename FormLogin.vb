@@ -162,6 +162,8 @@ Public Class FormLogin
                     Return
 
                 End Try
+
+                lbMsg.Text = "*Usuario suspendido por demasiados intentos fallidos. Contacte a soporte"
             End If
 
             connection.Close()

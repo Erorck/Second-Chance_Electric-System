@@ -381,7 +381,6 @@ Public Class FormAbcTar
 
             command.ExecuteNonQuery()
 
-            connection.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

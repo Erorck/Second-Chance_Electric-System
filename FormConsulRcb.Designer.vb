@@ -39,6 +39,7 @@ Partial Class FormConsulRcb
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.lbId = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.cbFo_Pago = New System.Windows.Forms.ComboBox()
         CType(Me.ConsulRcbDataViewGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrarFormulario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -251,12 +252,22 @@ Partial Class FormConsulRcb
         Me.Label6.TabIndex = 173
         Me.Label6.Text = "Recibo #"
         '
+        'cbFo_Pago
+        '
+        Me.cbFo_Pago.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbFo_Pago.FormattingEnabled = True
+        Me.cbFo_Pago.Location = New System.Drawing.Point(23, 301)
+        Me.cbFo_Pago.Name = "cbFo_Pago"
+        Me.cbFo_Pago.Size = New System.Drawing.Size(178, 28)
+        Me.cbFo_Pago.TabIndex = 175
+        '
         'FormConsulRcb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 400)
+        Me.Controls.Add(Me.cbFo_Pago)
         Me.Controls.Add(Me.lbId)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnBuscar)
@@ -297,4 +308,5 @@ Partial Class FormConsulRcb
     Friend WithEvents btnBuscar As Button
     Friend WithEvents lbId As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents cbFo_Pago As ComboBox
 End Class
