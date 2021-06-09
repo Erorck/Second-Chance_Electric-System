@@ -40,7 +40,6 @@ Partial Class FormLogin
         '
         'Label1
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Aquamarine
@@ -52,27 +51,25 @@ Partial Class FormLogin
         '
         'txtBUser
         '
-        Me.txtBUser.Location = New System.Drawing.Point(392, 195)
+        Me.txtBUser.Location = New System.Drawing.Point(416, 193)
         Me.txtBUser.MaxLength = 6
         Me.txtBUser.Name = "txtBUser"
-        Me.txtBUser.Size = New System.Drawing.Size(198, 20)
+        Me.txtBUser.Size = New System.Drawing.Size(152, 20)
         Me.txtBUser.TabIndex = 1
         Me.txtBUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtBPass
         '
-        Me.txtBPass.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.txtBPass.Location = New System.Drawing.Point(392, 261)
+        Me.txtBPass.Location = New System.Drawing.Point(416, 259)
         Me.txtBPass.MaxLength = 20
         Me.txtBPass.Name = "txtBPass"
         Me.txtBPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtBPass.Size = New System.Drawing.Size(198, 20)
+        Me.txtBPass.Size = New System.Drawing.Size(152, 20)
         Me.txtBPass.TabIndex = 3
         Me.txtBPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Aquamarine
@@ -84,8 +81,8 @@ Partial Class FormLogin
         '
         'buttonLogin
         '
-        Me.buttonLogin.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.buttonLogin.Location = New System.Drawing.Point(392, 355)
+        Me.buttonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonLogin.Location = New System.Drawing.Point(387, 345)
         Me.buttonLogin.Name = "buttonLogin"
         Me.buttonLogin.Size = New System.Drawing.Size(89, 32)
         Me.buttonLogin.TabIndex = 4
@@ -94,9 +91,9 @@ Partial Class FormLogin
         '
         'buttonExit
         '
-        Me.buttonExit.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.buttonExit.AutoSize = True
-        Me.buttonExit.Location = New System.Drawing.Point(510, 355)
+        Me.buttonExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonExit.Location = New System.Drawing.Point(503, 345)
         Me.buttonExit.Name = "buttonExit"
         Me.buttonExit.Size = New System.Drawing.Size(89, 32)
         Me.buttonExit.TabIndex = 5
@@ -105,7 +102,6 @@ Partial Class FormLogin
         '
         'checkBRemeber
         '
-        Me.checkBRemeber.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.checkBRemeber.AutoSize = True
         Me.checkBRemeber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.checkBRemeber.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -139,7 +135,6 @@ Partial Class FormLogin
         '
         'cbTipoUsuario
         '
-        Me.cbTipoUsuario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbTipoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cbTipoUsuario.FormattingEnabled = True
         Me.cbTipoUsuario.Items.AddRange(New Object() {"A - ACTIVO", "S - SUSPENDIDO", "E - ELIMINADO"})
@@ -150,7 +145,6 @@ Partial Class FormLogin
         '
         'Label3
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Aquamarine
@@ -168,7 +162,7 @@ Partial Class FormLogin
         Me.lbMsg.Location = New System.Drawing.Point(315, 403)
         Me.lbMsg.Name = "lbMsg"
         Me.lbMsg.Size = New System.Drawing.Size(31, 15)
-        Me.lbMsg.TabIndex = 93
+        Me.lbMsg.TabIndex = 25
         Me.lbMsg.Text = "Msg"
         '
         'FormLogin

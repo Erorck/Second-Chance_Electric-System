@@ -159,7 +159,7 @@ Public Class FormAbcEmpl
                 adapter.Fill(ds)
 
                 For CONT = 0 To ds.Tables(0).Rows.Count - 1
-                    lbUsuarioMod.Text = ds.Tables(0).Rows(0).Item(7)
+                    lbUsuarioMod.Text = ds.Tables(0).Rows(0).Item(8)
                 Next
 
                 connection.Close()

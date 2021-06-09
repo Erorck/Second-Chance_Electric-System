@@ -63,6 +63,66 @@ Namespace My
                 Return CType(Me("ScdChncConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Numero_Usuario() As Long
+            Get
+                Return CType(Me("Numero_Usuario"),Long)
+            End Get
+            Set
+                Me("Numero_Usuario") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Password() As String
+            Get
+                Return CType(Me("Password"),String)
+            End Get
+            Set
+                Me("Password") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property Check() As Boolean
+            Get
+                Return CType(Me("Check"),Boolean)
+            End Get
+            Set
+                Me("Check") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Tipo() As Integer
+            Get
+                Return CType(Me("Tipo"),Integer)
+            End Get
+            Set
+                Me("Tipo") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Strike() As Integer
+            Get
+                Return CType(Me("Strike"),Integer)
+            End Get
+            Set
+                Me("Strike") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -207,6 +207,7 @@ Public Class FormEmplGen
         End If
 
         If Tipo = 2 Then
+            btnEmpleados.Visible = False
             btnClientes.Visible = False
             btnServicios.Visible = False
             btnConsumos.Visible = False
@@ -226,8 +227,7 @@ Public Class FormEmplGen
 #Region "Cargar form"
     Private Sub FormEmplGen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetRestrictions(FormLogin.TipoU)
-        FormCambiarContra.Close()
-        FormConsulRcb.Close()
+
     End Sub
 #End Region
 
