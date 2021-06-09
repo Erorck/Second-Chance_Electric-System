@@ -23,7 +23,7 @@ Public Class FormAbcCons
 
 
             params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
-            params(0).Value = "SLCT"
+            params(0).Value = "SLCA"
 
             command.Connection = connection
             command.CommandType = CommandType.StoredProcedure

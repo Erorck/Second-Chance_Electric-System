@@ -175,6 +175,7 @@ Public Class FormEmplGen
 
 #Region "Metodo Preparacion"
     Private Sub SetRestrictions(Tipo As Integer)
+
         If Tipo = 0 Then
             btnEmpleados.Visible = True
             btnClientes.Visible = True
@@ -225,6 +226,8 @@ Public Class FormEmplGen
 #Region "Cargar form"
     Private Sub FormEmplGen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetRestrictions(FormLogin.TipoU)
+        FormCambiarContra.Close()
+        FormConsulRcb.Close()
     End Sub
 #End Region
 
@@ -252,7 +255,7 @@ Public Class FormEmplGen
         If (Application.OpenForms("FormAbcServ") Is Nothing) Then
             btnServicios.BackColor = Color.DarkCyan
         End If
-        If (Application.OpenForms("FormAbcEmpl") Is Nothing) Then
+        If (Application.OpenForms("FormRepTar") Is Nothing) Then
             btnRepTar.BackColor = Color.DarkCyan
         End If
         If (Application.OpenForms("FormRepCons") Is Nothing) Then

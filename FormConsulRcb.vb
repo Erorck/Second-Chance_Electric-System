@@ -14,7 +14,7 @@ Public Class FormConsulRcb
 #Region "Cargar form"
     Private Sub FormConsulRcb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
-        Dim params(0) As SqlParameter
+        Dim params(1) As SqlParameter
 
 #Region "CARGAR COMBOBOX MES"
         Dim typeString As System.Type = System.Type.GetType("System.String")
@@ -50,9 +50,21 @@ Public Class FormConsulRcb
 
         Try
 
+            If FormLogin.TipoU = 2 Then
+                params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
+                params(0).Value = "SLAC"
 
-            params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
-            params(0).Value = "SLCT"
+                params(1) = New SqlParameter("@Cliente", SqlDbType.Int)
+                params(1).Value = FormLogin.Usuario
+            Else
+                params(0) = New SqlParameter("@Oper", SqlDbType.VarChar)
+                params(0).Value = "SLCT"
+
+                params(1) = New SqlParameter("@Cliente", SqlDbType.Int)
+                params(1).Value = Nothing
+            End If
+
+
 
             command.Connection = connection
             command.CommandType = CommandType.StoredProcedure

@@ -5,6 +5,7 @@ Public Class FormLogin
     Protected Friend Usuario As Integer
     Protected Friend TipoU As Integer
 
+#Region "Funcionalidad Login"
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
 
         Dim connection As New SqlConnection("Server= DESKTOP-51SJOGN; Database = ScdChnc; Integrated Security = true")
@@ -20,7 +21,6 @@ Public Class FormLogin
             Return
         End If
 
-#Region "Funcionalidad Login"
         Dim command As New SqlCommand()
         Dim da As SqlDataAdapter = New SqlDataAdapter
         Dim dt As DataTable = New DataTable
@@ -83,8 +83,6 @@ Public Class FormLogin
 
 
 #End Region
-
-
 
     End Sub
 
